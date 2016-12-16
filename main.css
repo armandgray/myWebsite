@@ -1,0 +1,16 @@
+/*********************************************
+1. Global Styles
+1. Background
+*********************************************/
+
+/*======== Global Styles ========*/
+body {
+	z-index: 0
+	background: #000;
+	color: #fff;
+}
+
+/*======== Background ========*/
+.background {
+	z-index: -1
+}
