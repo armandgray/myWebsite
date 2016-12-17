@@ -5,12 +5,30 @@
 
 /*======== Global Styles ========*/
 body {
-	z-index: 0
-	background: #000;
+	background-color: #333;
 	color: #fff;
 }
 
 /*======== Background ========*/
-.background {
-	z-index: -1
+h1 {
+	color: #0000FF;
+}
+
+.img-responsive.background {
+	filter:alpha(opacity=40);
+		-moz-opacity:0.4;
+		-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+
+.container {
+	position:absolute;
+	left:4%;
+	top:0%;
+	
+}
+
+.btn.btn-default {
+	background-color: #333;
+	color: #fff;
 }
