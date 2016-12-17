@@ -1,18 +1,20 @@
 /*********************************************
 1. Global Styles
-1. Background
+2. Background
+X. Miscellaneous
 *********************************************/
 
 /*======== Global Styles ========*/
 body {
 	background-color: #333;
+	color: #000;
+}
+
+p {
 	color: #fff;
 }
 
 /*======== Background ========*/
-h1 {
-	color: #0000FF;
-}
 
 .img-responsive.background {
 	filter:alpha(opacity=40);
@@ -26,6 +28,14 @@ h1 {
 	left:4%;
 	top:0%;
 	
+}
+
+/*======== Miscellaneous ========*/
+
+.page-header img {
+	position:absolute;
+	right:5%;
+	top:8%;
 }
 
 .btn.btn-default {
