@@ -1,0 +1,52 @@
+/*********************************************
+1. Global Styles
+2. Background
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+body {
+	background-color: #CCCCCC;
+	color: #FFF;
+}
+
+/*======== Background ========*/
+
+.container {
+	padding-left: 100px;
+	padding-right: 100px;
+	position:absolute;
+	left:4%;
+	top:8%;
+	
+}
+
+/*======== Miscellaneous ========*/
+
+.landing-header h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.cta a:link, .cta a:visited {
+	color: #FFF;
+}
+
+.cta a:hover, .cta a:active {
+	color: #00F;
+	text-decoration: none;
+}
+
+.cta.row {
+	margin: 40px;
+}
+
+.icon img {
+	margin: 30px 50px 30px 50px;
+	width: 30px;
+	height: 30px;
+}
+
+p.cta {
+	padding-top: 20px;
+}

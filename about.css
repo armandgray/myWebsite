@@ -40,6 +40,10 @@ p {
 	top:8%;
 }
 
+.btn-group {
+	margin: 30px 0 30px 0;
+}
+
 .btn.btn-default {
 	background-color: #333;
 	color: #fff;
