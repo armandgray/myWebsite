@@ -6,8 +6,18 @@ X. Miscellaneous
 
 /*======== Global Styles ========*/
 body {
+	font-family: "Futura PT", Helvetica, sans-serif;
 	background-color: #CCCCCC;
 	color: #FFF;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #00F;
+	text-decoration: none;
 }
 
 /*======== Background ========*/
@@ -28,13 +38,11 @@ body {
 	text-align: center;
 }
 
-.cta a:link, .cta a:visited {
-	color: #FFF;
-}
-
-.cta a:hover, .cta a:active {
-	color: #00F;
-	text-decoration: none;
+h2 {
+	font-size: .8em;
+	position: absolute;
+	top: 1%;
+	left: 3%;
 }
 
 .cta.row {

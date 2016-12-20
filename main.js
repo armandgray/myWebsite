@@ -3,9 +3,14 @@ window.onload = function() {
 };
 
 function whenWindowReady() {
-	var rows = document.getElementsByClassName('row');
-	for (var i = 0; i < rows.length; i++) {
-		addAnimationTo(rows[i], 'bounce');
+	addListenersToIcons();
+}
+
+function addListenersToIcons() {
+	var iconsList = document.getElementsByClassName('icon');
+	for (var i = 0; i < iconsList.length; i++) {
+		var img = iconsList[i].childNodes[1];
+		img.addEventListener('mouseover', addAnimationTo(img, 'bounce'), false);
 	}
 }
 

@@ -7,11 +7,23 @@ X. Miscellaneous
 /*======== Global Styles ========*/
 body {
 	background-color: #333;
-	color: #000;
+	color: #FFF;
 }
 
-p {
-	color: #fff;
+h2 {
+	font-size: .8em;
+	position: absolute;
+	top: 1%;
+	right: -2%;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #00F;
+	text-decoration: none;
 }
 
 /*======== Background ========*/
