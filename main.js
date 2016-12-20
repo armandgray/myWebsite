@@ -4,12 +4,17 @@ window.onload = function() {
 
 function whenWindowReady() {
 	var rows = document.getElementsByClassName('row');
-	if (rows[0].className.indexOf('animated') < 0 && rows[0].className.indexOf('pulse') < 0) {
-		rows[0].className += ' animated pulse';
-	} else if (rows[0].className.indexOf('animated') < 0 && rows[0].className.indexOf('pulse') >= 0) {
-		rows[0].className += ' animated';
-	} else if (rows[0].className.indexOf('animated') >= 0 && rows[0].className.indexOf('pulse') < 0) {
-		rows[0].className += ' pulse';
+	for (var i = 0; i < rows.length; i++) {
+		addAnimationTo(rows[i], 'bounce');
 	}
-	// $('#row').addClass('animated pulse');
+}
+
+function addAnimationTo(element, anim) {
+	if (element.className.indexOf('animated') < 0 && element.className.indexOf(anim) < 0) {
+		element.className += ' animated ' + anim;
+	} else if (element.className.indexOf('animated') < 0 && element.className.indexOf(anim) >= 0) {
+		element.className += ' animated';
+	} else if (element.className.indexOf('animated') >= 0 && element.className.indexOf(anim) < 0) {
+		element.className += ' ' + anim;
+	}
 }
