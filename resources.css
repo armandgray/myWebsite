@@ -22,6 +22,42 @@ a:hover, a:active {
 
 /*======== Miscellaneous ========*/
 
+.first-item {
+	background-color: #0000D6;
+}
+
+.second-item {
+	background-color: #6DA8D4;
+}
+
+.third-item {
+	background-color: #D47200;
+}
+
+.fourth-item {
+	background-color: #D40000;
+}
+
+.fifth-item {
+	background-color: #121212;
+}
+
+.sixth-item {
+	background-color: #80D4A0;
+}
+
+.seventh-item {
+	background-color: #FFF;
+}
+
+.eigth-item {
+	background-color: #F0F;
+}
+
+.ninth-item {
+	background-color: #0000FF;
+}
+
 .btn-color-background {
 	background-color: #CCCCCC;
 	position: absolute;
@@ -40,7 +76,7 @@ a:hover, a:active {
 
 .page-header {
 	text-align: center;
-	margin: 15px 0px;
+	margin: 15px 0 0 0;
 	padding-bottom: 15px; 
 }
 
