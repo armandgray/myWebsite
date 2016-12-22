@@ -22,6 +22,22 @@ a:hover, a:active {
 
 /*======== Miscellaneous ========*/
 
+.btn-color-background {
+	background-color: #CCCCCC;
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
+}
+
+.icon-bar {
+	display: block;
+	margin: 5px;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: #FFF;
+}
+
 .page-header {
 	text-align: center;
 	margin: 15px 0px;
