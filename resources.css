@@ -27,6 +27,9 @@ a:hover, a:active {
 /*======== CTA Items ========*/
 
 .item-container {
+	border: solid;
+	border-width: 4px;
+	border-color: #000;
 	height: 440px;
 	position: relative;
 }
@@ -85,7 +88,7 @@ a:hover, a:active {
 }
 
 .seventh-item {
-	background-color: #FFF;
+	background-color: #131241;
 }
 
 .eigth-item {
