@@ -11,6 +11,10 @@ body {
 	color: #FFF;
 }
 
+sup {
+	font-size: .5em;
+}
+
 a:link, a:visited {
 	color: #FFF;
 }
@@ -31,12 +35,6 @@ a:hover, a:active {
 	z-index: 0;
 }
 
-.item-photo img {
-	position: absolute;
-	right: -40%;
-	bottom: -40%;
-}
-
 .item-container .item-content {
 	position: absolute;
 	bottom: 6%;
@@ -48,6 +46,18 @@ a:hover, a:active {
 	width: 30px;
 	height: 30px;
 	margin-right: 10px;
+}
+
+.item-photo-1 img {
+	position: absolute;
+	right: -40%;
+	bottom: -40%;
+}
+
+.item-container .item-content-6 {
+	position: absolute;
+	bottom: 6%;
+	left: 9%;
 }
 
 .first-item {
@@ -71,7 +81,7 @@ a:hover, a:active {
 }
 
 .sixth-item {
-	background-color: #80D4A0;
+	background-color: #D4B329;
 }
 
 .seventh-item {
