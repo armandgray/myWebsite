@@ -1,0 +1,56 @@
+/*********************************************
+1. Global Styles
+2. Background
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+body {
+	font-family: "Futura PT", Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #FFF;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #00F;
+	text-decoration: none;
+}
+
+/*======== Miscellaneous ========*/
+
+.page-header {
+	text-align: center;
+	margin: 15px 0px;
+	padding-bottom: 15px; 
+}
+
+.page-header img {
+	position: absolute;
+	left: 3%;
+	margin-top: 5px;
+}
+
+h2 {
+	font-size: .8em;
+	position: absolute;
+	top: 1%;
+	left: 3%;
+}
+
+.cta.row {
+	margin: 40px;
+}
+
+.icon img {
+	margin: 30px 60px 30px 60px;
+	width: 30px;
+	height: 30px;
+}
+
+p.cta {
+	padding-top: 20px;
+}
