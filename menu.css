@@ -1,0 +1,108 @@
+/*********************************************
+1. Global Styles
+2. Background
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+body {
+	font-family: "Futura PT", Helvetica, sans-serif;
+	background-color: #000;
+	color: #FFF;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #00F;
+	text-decoration: none;
+}
+
+/*======== Miscellaneous ========*/
+
+.first-item {
+	background-color: #0000D6;
+}
+
+.second-item {
+	background-color: #6DA8D4;
+}
+
+.third-item {
+	background-color: #D47200;
+}
+
+.fourth-item {
+	background-color: #D40000;
+}
+
+.fifth-item {
+	background-color: #121212;
+}
+
+.sixth-item {
+	background-color: #80D4A0;
+}
+
+.seventh-item {
+	background-color: #FFF;
+}
+
+.eigth-item {
+	background-color: #F0F;
+}
+
+.ninth-item {
+	background-color: #0000FF;
+}
+
+.btn-color-background {
+	background-color: #000;
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
+}
+
+.icon-bar {
+	display: block;
+	margin: 5px;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: #FFF;
+}
+
+.page-header {
+	text-align: center;
+	margin: 15px 0 0 0;
+	padding-bottom: 15px; 
+}
+
+.page-header img {
+	position: absolute;
+	left: 3%;
+	margin-top: 5px;
+}
+
+h2 {
+	font-size: .8em;
+	position: absolute;
+	top: 1%;
+	left: 3%;
+}
+
+.cta.row {
+	margin: 40px;
+}
+
+.icon img {
+	margin: 30px 60px 30px 60px;
+	width: 30px;
+	height: 30px;
+}
+
+p.cta {
+	padding-top: 20px;
+}
