@@ -56,13 +56,24 @@ a:hover, a:active {
 	background-color: #FFF;
 }
 
+.footer {
+	margin: 50px 0 0 0;
+	padding-bottom: 15px; 
+	border-bottom: 1px solid #dddddd;
+}
+
 .page-footer-copyright {
-  padding-top: 10px;
-  margin: 22px 0 44px;
-  border-top: 1px solid #dddddd;
+  	text-align: center;
+	margin: 50px 0 0 0;
+	padding-bottom: 15px; 
+	border-bottom: 1px solid #dddddd;
 }
 
 /*======== CTA Items ========*/
+
+#all-items-container {
+	margin-bottom: 5px;
+}
 
 .item-container {
 	border: solid;
