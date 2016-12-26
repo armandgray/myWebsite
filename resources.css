@@ -62,7 +62,7 @@ a:hover, a:active {
 	color: #949494;
 }
 
-.footer h4 {
+.footer h4, a, li {
 	color: #333333;
 	font-size: .7em;
 }
@@ -70,7 +70,6 @@ a:hover, a:active {
 .footer ul {
 	list-style: none;
 	padding-left: 0px;
-	font-size: .7em;
 	color: #949494;
 }
 
