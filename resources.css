@@ -64,7 +64,13 @@ a:hover, a:active {
 
 .footer h4, a, li {
 	color: #333333;
-	font-size: .7em;
+	font-size: .8em;
+}
+
+.footer .footer-bottom-text {
+	margin-top: -25px;
+	color: #949494;
+	font-size: .8em;
 }
 
 .footer ul {
@@ -88,10 +94,19 @@ a:hover, a:active {
 }
 
 .page-footer-copyright {
+	font-size: .7em;
   	text-align: center;
 	margin: 50px 0 0 0;
 	padding-top: 15px; 
-	border-top: 1px solid #dddddd;
+	border-top: 1px solid #949494;
+}
+
+#footer-personal-logo {
+	margin: -2.7px 2px 0 0;
+}
+
+#language {
+	margin-top: -30px;
 }
 
 /*======== CTA Items ========*/
