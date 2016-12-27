@@ -42,16 +42,13 @@ a:hover, a:active {
 
 /*======== Header ========*/
 
-.page-header {
+.header {
 	text-align: center;
-	margin: 15px 0 0 0;
-	padding-bottom: 15px; 
+	margin: 15px 15px;
 	border: none;
 }
 
-.page-header img {
-	position: absolute;
-	left: 3%;
+.header img {
 	margin-top: 5px;
 }
 
