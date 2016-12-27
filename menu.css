@@ -2,7 +2,7 @@
 1. Global Styles
 2. Header
 3. Footer
-4. CTA Items
+4. Main Content
 X. Miscellaneous
 *********************************************/
 
@@ -34,6 +34,12 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+.icon img {
+	margin: 30px 60px 30px 60px;
+	width: 30px;
+	height: 30px;
+}
+
 /*======== Header ========*/
 
 .page-header {
@@ -46,6 +52,13 @@ a:hover, a:active {
 	position: absolute;
 	left: 3%;
 	margin-top: 5px;
+}
+
+.btn-color-background {
+	background-color: #000;
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
 }
 
 .icon-bar {
@@ -116,114 +129,16 @@ a:hover, a:active {
 	margin: -2.7px 5px 0 0;
 }
 
-/*======== CTA Items ========*/
+/*======== Main Content ========*/
 
-#all-items-container {
-	margin-bottom: 5px;
-}
-
-.item-container {
-	border: solid;
-	border-width: 4px;
-	border-color: #000;
-	height: 440px;
-	position: relative;
-}
-
-.item-container img {
-	z-index: 0;
-}
-
-.item-container .item-content {
-	position: absolute;
-	bottom: 6%;
-	left: 9%;
-}
-
-.item-container .item-content img {
-	margin: 5px;
-	width: 30px;
-	height: 30px;
-	margin-right: 10px;
-}
-
-.item-photo-1 img {
-	position: absolute;
-	right: -40%;
-	bottom: -40%;
-}
-
-.item-container .item-content-3 {
-	position: absolute;
-	bottom: 6%;
-	left: 9%;
-}
-
-.item-container .item-content-3 img {
-	position: absolute;
-	bottom: 40%;
-	left: 0%;
-}
-
-.item-container .item-content-6 {
-	position: absolute;
-	bottom: 6%;
-	left: 9%;
-}
-
-.first-item {
-	background-color: #0000D6;
-}
-
-.second-item {
-	background-color: #6DA8D4;
-}
-
-.third-item {
-	background-color: #D47200;
-}
-
-.fourth-item {
-	background-color: #D40000;
-}
-
-.fifth-item {
-	background-color: #121212;
-}
-
-.sixth-item {
-	background-color: #D4B329;
-}
-
-.seventh-item {
-	background-color: #131241;
-}
-
-.eigth-item {
-	background-color: #F0F;
-}
-
-.ninth-item {
-	background-color: #0ED482;
+.main-content {
+	padding-top: 200px;
 }
 
 /*======== Miscellaneous ========*/
 
-.btn-color-background {
-	background-color: #000;
-	position: absolute;
-	right: 2%;
-	margin-top: -1px;
-}
-
 .cta.row {
 	margin: 40px;
-}
-
-.icon img {
-	margin: 30px 60px 30px 60px;
-	width: 30px;
-	height: 30px;
 }
 
 p.cta {
