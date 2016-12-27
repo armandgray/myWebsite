@@ -105,8 +105,12 @@ a:hover, a:active {
 	margin: -2.7px 2px 0 0;
 }
 
-#language {
-	margin-top: -30px;
+.language {
+	margin-top: -26px;
+}
+
+.language img {
+	margin: -2.7px 5px 0 0;
 }
 
 /*======== CTA Items ========*/
