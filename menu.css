@@ -122,10 +122,6 @@ a:hover, a:active {
 	margin: -2.7px 2px 0 0;
 }
 
-/*.language {
-	margin-top: -26px;
-}*/
-
 .language img {
 	margin: -2.7px 5px 0 0;
 }
@@ -133,7 +129,8 @@ a:hover, a:active {
 /*======== Main Content ========*/
 
 .main-content {
-	padding: 220px 0;
+	padding: 220px 0px;
+	margin: 0 50px;
 }
 
 .main-content .cta p {
