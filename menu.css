@@ -133,15 +133,22 @@ a:hover, a:active {
 /*======== Main Content ========*/
 
 .main-content {
-	padding-top: 200px;
+	padding: 220px 0;
+}
+
+.main-content .cta p {
+	padding: 20px 0 10px 0;
+	font-size: .9em;
+}
+
+.main-content .cta img {
+	margin-left: -4px;
+	height: 18px;
+	width: 30px;
 }
 
 /*======== Miscellaneous ========*/
 
-.cta.row {
-	margin: 40px;
-}
 
-p.cta {
-	padding-top: 20px;
-}
+
+
