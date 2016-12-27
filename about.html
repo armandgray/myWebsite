@@ -9,7 +9,7 @@
 	<title>Armand Gray</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_readable.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="about.css">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
@@ -17,13 +17,16 @@
 	<!-- <h2><a href="http://www.wondersauce.com/work/">Design by Wondersauce</a></h2> -->
 
 	<div class="row header"> 
-		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html"><img src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo"></a>
+		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html">
+		<img class="pull-left" src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo">
+		<h2 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Armand Gray</h2>
+		</a>
 
-		<a class="col-lg-offset-10 col-lg-1 col-md-offset-10 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1" href="resources.html">
-			<button type="button" class="btn btn-color-background" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<div class="col-lg-offset-10 col-lg-1 col-md-offset-10 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1">
+			<button type="button" class="btn btn-color-background" onclick="onBackPressed()" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<img src="assets/icons/ic_close_white_48dp.png" width="30" height="30" alt="icon X">
 			</button>
-		</a>
+		</div>
 	</div>
 
 	<div class="container main-content">
@@ -183,6 +186,11 @@
 		<a href="https://www.github.com/armandgray">GitHub<br></a>
 		
 		<p>© 2016 - Armand Gray</p> -->
+	<script>
+		function onBackPressed() {
+		    window.history.back();
+		}
+	</script>
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
