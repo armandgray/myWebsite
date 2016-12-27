@@ -74,3 +74,14 @@ h2 {
 p.cta {
 	padding-top: 20px;
 }
+
+.page-footer-copyright {
+	position: absolute;
+	bottom: 1%;
+	margin: 0 20px;
+	font-size: .8em;
+}
+
+.page-footer-copyright img {
+	margin: 0 4px 3.3px 0;
+}
