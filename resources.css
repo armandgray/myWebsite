@@ -1,7 +1,8 @@
 /*********************************************
 1. Global Styles
-2. Header & Footer
-3. CTA Items
+2. Header
+3. Footer
+4. CTA Items
 X. Miscellaneous
 *********************************************/
 
@@ -33,7 +34,7 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/*======== Header & Footer ========*/
+/*======== Header ========*/
 
 .page-header {
 	text-align: center;
@@ -55,6 +56,8 @@ a:hover, a:active {
 	border-radius: 1px;
 	background-color: #FFF;
 }
+
+/*======== Footer ========*/
 
 .footer {
 	margin: 0px 0 0 0;
