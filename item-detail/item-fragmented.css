@@ -1,0 +1,23 @@
+/*********************************************
+1. Global Styles
+2. Header
+3. Footer
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+
+body {
+	font-family: "Futura PT", Helvetica, sans-serif;
+	background-color: #0000D6;
+	color: #FFF;
+}
+
+/*======== Header ========*/
+
+.btn-color-background {
+	background-color: #0000D6;
+}
+
+/*======== Footer ========*/
+/*======== Miscellaneous ========*/
