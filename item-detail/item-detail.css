@@ -3,15 +3,17 @@
 2. Header
 3. Footer
 4. Content Header
+5. Main Content
 X. Miscellaneous
 *********************************************/
 
 /*======== Global Styles ========*/
 
-body {
+html, body {
 	font-family: "Futura PT", Helvetica, sans-serif;
 	background-color: #CCCCCC;
 	color: #FFF;
+	height: 100%;
 }
 
 h2 {
@@ -45,7 +47,8 @@ a:hover, a:active {
 
 .header {
 	text-align: center;
-	margin: 15px 15px;
+	margin: 0px 15px 15px;
+	padding-top: 15px;
 }
 
 .header img {
@@ -118,6 +121,40 @@ a:hover, a:active {
 
 /*======== Content Header ========*/
 
+.container-fluid {
+	height: -moz-calc(100% - 80px); /* Firefox */
+	height: -webkit-calc(100% - 80px); /* Chrome, Safari */
+	height: calc(100% - 80px); /* IE9+ and future browsers */
+	background-color: yellow; 
+}
+
+#content-header-photo {
+	position: absolute;
+	right: 0%;
+	bottom: 11%;
+}
+
+.item-header {
+	position: absolute;
+	bottom: 15%;
+	left: 4%;
+}
+
+.content-header .item-header h3 {
+	margin: 40px 0px;
+}
+
+.content-header .item-header img {
+	margin: -50px 10px 0 -10px;
+	height: 70px;
+	width: 70px;
+}
+
+/*======== Main Content ========*/
+
+.slider {
+	margin: 25px 0 40px;
+}
 
 /*======== Miscellaneous ========*/
 
