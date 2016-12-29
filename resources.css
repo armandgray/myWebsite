@@ -134,10 +134,9 @@ a:hover, a:active {
 }
 
 .item-container .item-content img {
-	margin: 5px;
+	margin: -5px 10px 5px 0px;
 	width: 30px;
 	height: 30px;
-	margin-right: 10px;
 }
 
 .item-photo-1 img {
@@ -156,6 +155,12 @@ a:hover, a:active {
 	position: absolute;
 	bottom: 40%;
 	left: 0%;
+}
+
+.item-container .item-content-3 span {
+	position: absolute;
+	bottom: 70%;
+	left: 52%;
 }
 
 .item-container .item-content-6 {
