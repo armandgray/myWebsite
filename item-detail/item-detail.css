@@ -11,8 +11,8 @@ X. Miscellaneous
 
 html, body {
 	font-family: "Futura PT", Helvetica, sans-serif;
-	background-color: #CCCCCC;
-	color: #FFF;
+	background-color: #FFF;
+	color: #000;
 	height: 100%;
 }
 
@@ -138,6 +138,10 @@ a:hover, a:active {
 	bottom: 11%;
 }
 
+.content-header {
+	color: #FFF;
+}
+
 .item-header {
 	position: absolute;
 	bottom: 15%;
@@ -160,12 +164,7 @@ a:hover, a:active {
 	margin: 25px 0 20px;
 }
 
-.main-content h3 {
-	color: #969696;
-	font-size: 1em;
-}
-
-.main-content p {
+.main-content h3, p {
 	font-size: 1em;
 }
 
@@ -181,6 +180,21 @@ a:hover, a:active {
 .short-desc div {
 	line-height: .8em;
 	margin: 0 20px 0 50px; 
+}
+
+.gallery-images {
+	background-color: #0000D6;
+	margin: 0 30px 0 0px;
+	padding: 200px;
+}
+
+#gallery-images-caption {
+	padding: 40px 0 100px 40px;
+	font-size: .8em;
+}
+
+.sub-content {
+	padding: 0 0 100px 0;
 }
 
 /*======== Miscellaneous ========*/
