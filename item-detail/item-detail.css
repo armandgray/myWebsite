@@ -121,6 +121,10 @@ a:hover, a:active {
 
 /*======== Content Header ========*/
 
+.container {
+	padding: 0;
+}
+
 .container-fluid {
 	height: -moz-calc(100% - 80px); /* Firefox */
 	height: -webkit-calc(100% - 80px); /* Chrome, Safari */
@@ -153,7 +157,30 @@ a:hover, a:active {
 /*======== Main Content ========*/
 
 .slider {
-	margin: 25px 0 40px;
+	margin: 25px 0 20px;
+}
+
+.main-content h3 {
+	color: #969696;
+	font-size: 1em;
+}
+
+.main-content p {
+	font-size: 1em;
+}
+
+.short-desc {
+	padding-bottom: 100px; 
+}
+
+.short-desc .desc {
+	padding: 15px 20px 0 0;
+	line-height: 2em;
+}
+
+.short-desc div {
+	line-height: .8em;
+	margin: 0 20px 0 50px; 
 }
 
 /*======== Miscellaneous ========*/
