@@ -3,6 +3,7 @@
 2. Header
 3. Footer
 4. CTA Items
+5. Item Image Animations
 X. Miscellaneous
 *********************************************/
 
@@ -116,6 +117,10 @@ a:hover, a:active {
 	margin-bottom: 5px;
 }
 
+#all-items-container a:hover, #all-items-container a:active {
+	color: #FFF;
+}
+
 .item-container {
 	border: solid;
 	border-width: 4px;
@@ -123,6 +128,8 @@ a:hover, a:active {
 	height: 440px;
 	position: relative;
 }
+
+.item-container 
 
 .item-container img {
 	z-index: 0;
@@ -206,6 +213,24 @@ a:hover, a:active {
 	background-color: #0ED482;
 }
 
+/*======== Item Image Animations ========*/
+
+.item-container {
+  overflow: hidden;
+}
+
+figure img {
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+figure:hover img {
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+
 /*======== Miscellaneous ========*/
 
 .btn-color-background {
@@ -223,8 +248,4 @@ a:hover, a:active {
 	margin: 30px 60px 30px 60px;
 	width: 30px;
 	height: 30px;
-}
-
-p.cta {
-	padding-top: 20px;
 }
