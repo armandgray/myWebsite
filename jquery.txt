@@ -1,0 +1,27 @@
+Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
+
+go to: https://developers.google.com/speed/libraries/
+and choose the version you want or use 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+Optional jquery UI:
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+Paste scripts at bottom of body and links at bottom of head
+
+$ - command that references the JQuery library
+$("document") - pass in the target for the JQuery operator
+$("document").ready() - call methods of the passed object
+
+Example: 
+$("document").ready(function() {
+	
+});
+
+This line of code is executed after the window is loaded. All scripts should be executed here.
+
+
+
