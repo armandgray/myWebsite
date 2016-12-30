@@ -23,8 +23,8 @@ a:hover, a:active {
 /*======== Background ========*/
 
 .main-content {
-	
-	
+	padding-top: 100px;
+	margin-bottom: 50px;
 }
 
 /*======== Header ========*/

@@ -4,6 +4,8 @@ window.onload = function() {
 
 function whenWindowReady() {
 	addListenersToIcons();
+	changeFooterDisplay(true);
+	isFooterMenuShowing = false;
 }
 
 function addListenersToIcons() {
