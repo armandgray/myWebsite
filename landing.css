@@ -24,7 +24,7 @@ a:hover, a:active {
 
 .main-content {
 	padding-top: 100px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 /*======== Header ========*/
@@ -99,12 +99,6 @@ a:hover, a:active {
 .language img {
 	margin: -2.7px 5px 0 0;
 }
-
-#explore-btn {
-	cursor: default;
-	color: #949494;
-}
-
 
 /*======== Miscellaneous ========*/
 
