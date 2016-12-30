@@ -1,0 +1,77 @@
+/*======== Introduction ========*/
+
+What is JQuery: "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."
+
+Services: DOM Traversal and Manipulation
+Event Handlind
+AJAX
+
+Visit: https://jquery.com/
+Docs: http://api.jquery.com/
+Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
+
+/*======== Getting Started ========*/
+
+go to: https://developers.google.com/speed/libraries/
+and choose the version you want or use 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+Optional jquery UI:
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+Paste scripts at bottom of body and links at bottom of head
+
+$ - command that references the JQuery library
+$("document") - pass in the target for the JQuery operator
+$("document").ready() - call methods of the passed object
+
+Example: 
+$("document").ready(function() {
+	
+});
+
+This line of code is executed after the window is loaded. All scripts should be executed here.
+
+$("#table p").css("color", "purple") - set CSS by tag within #table: p { color: purple }
+$("#table p").css({
+	"border-color": "black",
+	"border-width": "1px",
+	"border-style": "solid",
+}) 
+- set CSS for multiple attributes with brackets and colons
+
+/*======== Targeting ========*/
+
+$("#idname") - target element with id
+$(".classname") - target elements with class
+$("a") - target elements by tag (ex: 'a')
+$("#tableData a") - target elements by tag within element with id
+$("em + a") - target element with tag ('a') following element with tag ('em')
+$("p > em") - target child elements (ex: 'em' of 'p')
+$("#oListIndent li:nth-child(3)") - target 3rd 'li' child element within #element
+See video for more.
+
+/*======== Common Methods ========*/
+
+$("p:has(i)").hide(); - hide all 'p' that have nested 'i' tags
+alert($("#element").html());
+$("p:has(i)").html("<i>changing this text</i> here").show(); - change html
+$("p:has(i)").append(" add to end.");
+$("p:has(i)").prepend("Add to beginning");
+$("p:has(i)").prepend("Add to beginning");
+$("p:has(i)").before("<p id='after_p'>A new p element</p>"); - add html element before
+$("p:has(i)").after("<p id='after_p'>A new p element</p>"); - add html element after
+
+/*======== Event Handling ========*/
+$("#after_p").click(function() {
+	$(this).remove(); - remove the element that was clicked
+});
+$("#before_p").click(function() {
+	$(this).replaceWith('<p>I\'m the new paragraph</p>');
+});
+
+
+

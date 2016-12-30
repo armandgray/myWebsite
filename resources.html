@@ -6,55 +6,225 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html; charset=utf-8" />
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Armand Gray - Digital Portfolio</title>
+	<title>Armand Gray</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_readable.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link rel="stylesheet" type="text/css" href="resources.css">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body>
-	<h2><a href="http://www.wondersauce.com/">Design by Wondersauce</a></h2>
+	<!-- <h2><a href="http://www.wondersauce.com/work/">Design by Wondersauce</a></h2> -->
 
-	<div class="container text-center">
-
-		<div class="landing-header"> 
-			<img src="assets/personal_logo_white.svg" width="150" height="105" alt="personal logo">
-			<h1>Armand Gray</h1>
-		</div>
-
-		<p class="cta">
-			<span>
-				<a href="about.html">Meet the developer</a>
-			</span>
-			&nbsp;|&nbsp;
-			<span>
-				<a href="resources.html">Use a resource</a>
-			</span>
-		</p>
-
-		<div class="cta row">
-		<a class="icon book animated" href="about.html">
-			<img border="0" alt="book icon" src="assets/icons/ic_apple_finder_white_48dp.png" width="30" height="30">
-		</a>
-		<a class="icon paperclip animated" href="resources.html">
-			<img border="0" alt="book icon" src="assets/icons/ic_paperclip_white_48dp.png" width="30" height="30">
-		</a>
-		<a class="icon send animated" href="send.html">
-			<img border="0" alt="book icon" src="assets/icons/ic_send_white_48dp.png" width="30" height="30">
-		</a>
-		</div>
-
-		<div class="cta row" id="firstrow">
-		<a class="icon gh_logo" href="https://github.com/armandgray">
-			<img border="0" alt="book icon" src="assets/icons/social-1_logo-github.svg" width="30" height="30">
-		</a>
-		<a class="icon in_logo" href="https:linkedin.com/in/armand-gray-03aa03a">
-			<img border="0" alt="book icon" src="assets/icons/social-1_logo-linkedin.svg" width="30" height="30">
-		</a>
-		</div>
+	<div class="row header"> 
+		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html"><img src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo"></a>
 		
-		<p>© 2016 - Armand Gray</p>
+			<div class="btn-group col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-1 col-xs-1 hidden-sm hidden-xs" role="group">
+				<button type="button" class="btn btn-default">All</button>
+				<button type="button" class="btn btn-default">Favorites</button>
+				<button type="button" class="btn btn-default">Assets</button>
+				<button type="button" class="btn btn-default">Projects</button>
+				<button type="button" class="btn btn-default">Android</button>
+			</div>
+
+		<a class="col-lg-offset-1 col-lg-1 col-md-offset-1 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1" href="menu.html">	
+			<button type="button" class="btn btn-color-background" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				
+				<span class="sr-only"></span>
+
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</a>
+	</div>
+
+	<div class="container-fluid" id="all-items-container">
+		<a href="item-detail/item-fragmented.html">
+			<div class="item-container first-item favorites assets android col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-1"><img class="pull-right" src="assets/mic.png" width="517" height="616" alt="microphone"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_android_white_48dp.png" alt="android logo item image">Fragmented</h3>
+					<p>An Android Developer Podcast</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-effective.html">
+			<div class="item-container second-item assets android col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-2"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="Effective Java Book Cover"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_book_open_variant_white_48dp.png" alt="book item image">Effective Java</h3>
+					<p>The Java<sup>TM</sup> Series... from the Source</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-dev-mission.html">
+			<div class="item-container third-item favorites col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-3"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content-3">
+					<h3 class="list-inline"><img src="assets/icons/ic_meda_logo.svg" alt="meda logo item image" height="60" width="75"><span>Mission&nbsp;Techies</span></h3>
+					<p>Learn, Connect, Inspire...</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-bloc.html">
+			<div class="item-container fourth-item projects col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-4"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/positivexxxhdpi.png" alt="bloc logo item image">BLOC Organization</h3>
+					<p>Brotherhood. Unity. Community.</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-clean-code.html">
+			<div class="item-container fifth-item favorites assets col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-5"><img class="pull-right" src="assets/clean_code_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_book_open_variant_white_48dp.png" alt="book item image">Clean Code</h3>
+					<p>A Handbook of Agile Software Craftsmanship</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-lynda.html">
+			<div class="item-container sixth-item favorites assets col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-6"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content-6">
+					<h3><img src="assets/icons/ic_lynda_logo.svg" height="50" width="112" alt="lynda logo item image"></h3>
+					<p>Online Training Library... Learn it all</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-news.html">
+			<div class="item-container seventh-item col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-7"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_newspaper_white_48dp.png" alt="newspaper item image">Android News</h3>
+					<p>Android Weekly &amp; Android Dev Digest</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-taap.html">
+			<div class="item-container eigth-item projects col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-8"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_bowling_white_48dp.png" alt="bowling item image">TAAP</h3>
+					<p>Total Athlete Assessment Portfolio</p>
+				</div>
+			</div>
+		</a>
+		<a href="item-detail/item-patterns.html">
+			<div class="item-container ninth-item assets col-lg-4 col-lg-4 col-sm-6 col-xs-12">
+				<figure class="item-photo-9"><img class="pull-right" src="assets/effective_java_cover.jpg" width="240" height="320" alt="personal logo"></figure>
+				<div class="item-content">
+					<h3><img src="assets/icons/ic_book_open_variant_white_48dp.png" alt="book item image">Design Patterns</h3>
+					<p>Elements of Reusable Object-Oriented Software</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="container">		
+		<div class="footer">
+			<div class="row" id="footer-container">
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" id="cc">
+					<h4>Favorites</h4>
+					<ul>
+						<li><a href="#">Derek Banas</a></li>
+				      	<li><a href="#">/dev/mission</a></li>
+					</ul>
+
+					<h4><br>Explore</h4>
+			        <ul>
+				      	<li><a href="#">Android Dev Digest</a></li>
+				      	<li><a href="#">Android Weekly</a></li>
+				      	<li><a href="#">Bootstrap.js</a></li>
+				      	<li><a href="#">Dagger</a></li>
+				      	<li><a href="#">Espresso</a></li>
+				      	<li><a href="#">JQuery</a></li>
+				      	<li><a href="#">UIL</a></li>
+				      	<li><a href="#">RxJava</a></li>
+			        </ul>
+			    </div>
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>BLOC App</h4>
+			        <ul>
+				      	<li><a href="#">Android - Java, XML</a></li>
+				      	<li><a href="#">Firebase</a></li>
+				      	<li><a href="#">Joda-Time</a></li>
+				      	<li><a href="#">Picasso</a></li>
+				      	<li><a href="#">JUnit</a></li>
+			        </ul>
+			    </div>			 
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>myWebsite</h4>
+			        <ul>
+				      	<li><a href="#">Adobe Illustrator</a></li>
+				      	<li><a href="#">Adobe Photoshop</a></li>
+				      	<li><a href="#">AWS</a></li>
+				      	<li><a href="#">HTML, CSS, JS</a></li>
+				      	<li><a href="#">nginx</a></li>
+			        </ul>
+			    </div>
+
+			    <div class="clearfix visible-xs"></div>
+		 
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+					<h4>Assets</h4>
+					<ul>
+						<li><a href="#">Clean Code</a></li>
+						<li><a href="#">Design Patterns</a></li>
+						<li><a href="#">Effective Java</a></li>
+						<li><a href="#">Lynda.com</a></li>
+						<li><a href="#">TDD</a></li>
+					</ul>
+			    </div>
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>Getting Started</h4>
+			        <ul>
+				      	<li><a href="#">Algorithms</a></li>
+				      	<li><a href="#">Code Efficiency</a></li>
+				      	<li><a href="#">Data Structures</a></li>
+				      	<li><a href="#">Databases</a></li>
+				      	<li><a href="#">Design Patterns</a></li>
+				      	<li><a href="#">Fundamentals</a></li>
+				      	<li><a href="#">Object-Oriented Design</a></li>
+				      	<li><a href="#">Software Quality Assurance</a></li>
+				      	<li><a href="#">Web Services</a></li>
+			        </ul>
+			    </div>	
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>Other</h4>
+			        <ul>
+				      	<li><a href="#">Go</a></li>
+				      	<li><a href="#">Mission Techies</a></li>
+				      	<li><a href="#">Node.js</a></li>
+				      	<li><a href="#">React Native</a></li>
+				      	<li><a href="#">SQL</a></li>
+			        </ul>
+			    </div>
+			</div>
+
+			<div class="footer-bottom-text" id="footer-bottom-text-container">
+				<p id="footer-bottom-text">Find more ways to check out my work: Visit my 
+					<a href="https://www.linkedin.com/in/armand-gray-03aa03a">LinkedIn</a> 
+				or my work on 
+					<a href="https://www.github.com/armandgray">GitHub</a>
+				</p>
+			</div>
+			<div class="page-footer-copyright row" id="bottom-footer">
+				<p class="col-lg-3 col-md-4 col-sm-6 col-xs-1 hidden-xs ">Copyright © 2016 Armand Gray - Digital Portfolio</p>
+				<p class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<a href="landing.html">
+				<img id="footer-personal-logo" src="assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
+				</a>
+				<a href="#bottom-footer" id="explore-btn">Explore</a>
+				&nbsp; | &nbsp; 
+				<a href="share.html">Share</a>
+				&nbsp; | &nbsp; 
+				<a id="more-less-btn" href="#bottom-footer">Less</a>
+				</p>
+				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
+			</div>
+		</div>
 	</div>
 
 	<script
@@ -62,7 +232,7 @@
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="main.js"></script>
+	<script src="footer.js"></script>
 
 </body>
 </html>  

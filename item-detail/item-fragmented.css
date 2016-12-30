@@ -1,0 +1,32 @@
+/*********************************************
+1. Global Styles
+2. Header
+3. Footer
+3. Content Header
+3. Main Content
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+
+/*======== Header ========*/
+
+.btn-color-background {
+	background-color: #0000D6;
+}
+
+/*======== Footer ========*/
+
+/*======== Content Header ========*/
+
+.container-fluid {
+	background-color: #0000D6; 
+}
+
+/*======== Main Content ========*/
+
+.gallery-images {
+	background-color: #0000D6;
+}
+
+/*======== Miscellaneous ========*/

@@ -7,68 +7,77 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html; charset=utf-8" />
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<title>Armand Gray</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap_readable.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="about.css">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap_readable.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="item-detail.css">
+	<link rel="stylesheet" type="text/css" href="item-fragmented.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico" />
 </head>
 
 <body>
 	<!-- <h2><a href="http://www.wondersauce.com/work/">Design by Wondersauce</a></h2> -->
 
-	<div class="row header"> 
-		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html">
-		<img class="pull-left" src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo">
-		<h2 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">Armand Gray</h2>
-		</a>
+	<div class="container-fluid">
+		<div class="row header"> 
+			<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="../landing.html"><img src="../assets/personal_logo_white.svg" width="40" height="28" alt="personal logo"></a>
 
-		<div class="col-lg-offset-10 col-lg-1 col-md-offset-10 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1">
-			<button type="button" class="btn btn-color-background" onclick="onBackPressed()" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<img src="assets/icons/ic_close_white_48dp.png" width="30" height="30" alt="icon X">
-			</button>
+			<a class="col-lg-offset-10 col-lg-1 col-md-offset-10 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1" href="../menu.html">	
+				<button type="button" class="btn btn-color-background">
+					
+					<span class="sr-only"></span>
+
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</a>
+		</div>
+
+		<div class="content-header">
+			<img id="content-header-photo" src="../assets/mic.png" width="517" height="616" alt="microphone">
+			<div class="item-header">
+				<h3><img src="../assets/icons/ic_android_white_48dp.png" alt="android logo item image">Fragmented</h3>
+				<p>An Android Developer Podcast</p>
+			</div>
 		</div>
 	</div>
-
 	<div class="container main-content">
-		<div class="row">
-			<a href="#">
-			    <div class="cta col-lg-2 col-md-2 col-sm-4 col-xs-6">
-					<h3>Work</h3>
-					<p>What I've done</p>
-					<img src="assets/icons/ic_trending_neutral_grey600_48dp.png" width="30" height="18" alt="icon trending right arrow">
-			    </div>
-		    </a>
-			<a href="#">
-			    <div class="cta col-lg-2 col-md-2 col-sm-4 col-xs-6">
-					<h3>Services</h3>
-					<p>What I do</p>
-					<img src="assets/icons/ic_trending_neutral_grey600_48dp.png" width="30" height="18" alt="icon trending right arrow">
-			    </div>			 
-		    </a>
-			<a href="#">
-			    <div class="cta col-lg-2 col-md-2 col-sm-4 col-xs-6">
-					<h3>Story</h3>
-					<p>How I got here</p>
-					<img src="assets/icons/ic_trending_neutral_grey600_48dp.png" width="30" height="18" alt="icon trending right arrow">
-		    	</div>
-		    </a>
-			   
-		    <div class="clearfix visible-sm"></div>
-			 
-			<a href="#">
-				<div class="cta col-lg-2 col-md-2 col-sm-4 col-xs-6">
-					<h3>Resources</h3>
-					<p>What I've found</p>
-					<img src="assets/icons/ic_trending_neutral_grey600_48dp.png" width="30" height="18" alt="icon trending right arrow">
-			    </div>   		 
-		    </a>
-			<a href="#">
-			    <div class="cta col-lg-2 col-md-2 col-sm-4 col-xs-6">
-					<h3>Contact</h3>
-					<p>Get at me</p>
-					<img src="assets/icons/ic_trending_neutral_grey600_48dp.png" width="30" height="18" alt="icon trending right arrow">
-			    </div>
-		    </a>
+		<div class="slider text-center">
+			<img src="../assets/icons/slider.svg" height="35" width="15" alt="slider">			
+		</div>
+		<div class="short-desc row">
+			<p class="desc col-lg-6 col-md-6 col-sm-12 col-xs-12">In our first partnership with Conde Nast we had the privilege of collaborating with the most timeless men's publication as well as the opportunity to usher their iconic presence into the digital age. From the beginning we took a collaborative approach working with each of their major teams in advertising, design, technology, and editorial that focused on bringing the quality and intention of each print execution to every single digital session their audience has. Our goals were simple from the start: re-approach ad revenue tools and create innovative new ways to showcase storytelling beneath the foundation of a user experience for the modern day gentlemen.</p>
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+				<h3>Services</h3>
+				<p>UX</p>
+				<p>Design</p>
+				<p>Front-End Development</p>
+				<p>Advertising Strategy</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+				<h3>Visit</h3>
+				<a href="http://fragmentedpodcast.com/">Fragmented Podcast</a>
+			</div>
+		</div>
+
+		<div class="container gallery-images">
+			<img src="../assets/icons/slider_white.svg" height="35" width="15" alt="slider">			
+		</div>
+		<p id="gallery-images-caption">This is a very cool blue</p>
+
+		<div class="sub-content row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<h3>Services</h3>
+				<p>UX</p>
+				<p>Design</p>
+				<p>Front-End Development</p>
+				<p>Advertising Strategy</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<h3>Visit</h3>
+				<a href="http://fragmentedpodcast.com/">Fragmented Podcast</a>
+			</div>
+			<p class="desc col-lg-6 col-md-6 col-sm-12 col-xs-12">In our first partnership with Conde Nast we had the privilege of collaborating with the most timeless men's publication as well as the opportunity to usher their iconic presence into the digital age. From the beginning we took a collaborative approach working with each of their major teams in advertising, design, technology, and editorial that focused on bringing the quality and intention of each print execution to every single digital session their audience has. Our goals were simple from the start: re-approach ad revenue tools and create innovative new ways to showcase storytelling beneath the foundation of a user experience for the modern day gentlemen.</p>
 		</div>
 	</div>
 
@@ -163,8 +172,8 @@
 			<div class="page-footer-copyright row">
 				<p class="col-lg-3 col-md-4 col-sm-6 col-xs-1 hidden-xs ">Copyright © 2016 Armand Gray - Digital Portfolio</p>
 				<p class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="landing.html">
-				<img id="footer-personal-logo" src="assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
+				<a href="../landing.html">
+				<img id="footer-personal-logo" src="../assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
 				</a>
 				<a href="#">Explore</a>
 				&nbsp; | &nbsp; 
@@ -172,32 +181,16 @@
 				&nbsp; | &nbsp; 
 				<a href="#">Less</a>
 				</p>
-				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
+				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="../assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
 			</div>
 		</div>
 	</div>
-<!-- <p>Resources: </p>
-		<a href="https://www.themuse.com/advice/14-stunning-ways-to-build-your-personal-website-this-week">Design Ideas<br></a>
-		<a href="https://blog.hubspot.com/marketing/landing-page-examples-list#sm.001pauz9b12ytdyq10h5fohhccyeb">Landing Page Designs<br></a>
-		<a href="http://www.dtelepathy.com/blog/inspiration/30-bold-and-clean-web-designs-for-inspiration">Bold &amp; Clean Sites<br></a>
-		<a href="http://convertico.com/">Convert To Ico<br></a>
-		<a href="http://getbootstrap.com/components/">Bootstrap Glyphs<br></a>
-		<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">DOM API<br></a>
-		<a href="https://www.github.com/armandgray">GitHub<br></a>
-		
-		<p>© 2016 - Armand Gray</p> -->
-	<script>
-		function onBackPressed() {
-		    window.history.back();
-		}
-	</script>
+
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>  
-
-
