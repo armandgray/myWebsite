@@ -109,6 +109,11 @@ a:hover, a:active {
 	margin: -2.7px 5px 0 0;
 }
 
+#explore-btn {
+	cursor: default;
+	color: #949494;
+}
+
 /*======== CTA Items ========*/
 
 #all-items-container {
