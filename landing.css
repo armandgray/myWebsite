@@ -1,9 +1,8 @@
 /*********************************************
 1. Global Styles
-2. Background
-3. Header
-4. Footer
-5. Main Content
+2. Header
+3. Footer
+4. Main Content
 X. Miscellaneous
 *********************************************/
 
@@ -21,13 +20,6 @@ a:link, a:visited {
 a:hover, a:active {
 	color: #949494;
 	text-decoration: none;
-}
-
-/*======== Background ========*/
-
-.main-content {
-	padding-top: 100px;
-	margin-bottom: 30px;
 }
 
 /*======== Header ========*/
@@ -131,18 +123,42 @@ a:hover, a:active {
 
 /*======== Main-Content ========*/
 
+.main-content {
+	padding-top: 100px;
+	margin-bottom: 45px;
+}
+
 .landing-header h1 {
 	font-size: 2em;
 	text-align: center;
 }
 
+p.cta {
+	padding-top: 20px;
+}
+
 .cta.row {
-	margin: 40px 0;
+	margin: 0px 0px 0px;
+	padding: 0px 20px;
+}
+
+.cta-2.row {
+	margin: 0 0 20px;
+}
+
+#icon-container {
+	margin-bottom: 0px;
+}
+
+.cta.row a {
+	padding: 20px 80px 20px;
 }
 
 .cta.row p {
 	margin: -20px 0 0 0;
 	z-index: -1000;
+	opacity: 0.3;
+    filter: alpha(opacity=30);
 }
 
 .cta.row #p-about {
@@ -165,8 +181,8 @@ a:hover, a:active {
 	margin-left: -4px;
 }
 
-p.cta {
-	padding-top: 20px;
+a:hover, a:active {
+	color: #FFF;
 }
 
 /*======== Miscellaneous ========*/
