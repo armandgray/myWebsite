@@ -12,7 +12,12 @@ function addListenersToIcons() {
 	var iconsList = document.getElementsByClassName('icon');
 	for (var i = 0; i < iconsList.length; i++) {
 		var img = iconsList[i].childNodes[1];
-		img.addEventListener('mouseover', addAnimationTo(img, 'bounce'), false);
+		$(img).mouseover(function() {
+			addAnimationTo(this, 'pulse');
+		});
+		$(img).mouseout(function() {
+			$(this).removeClass('pulse');
+		});	
 	}
 }
 

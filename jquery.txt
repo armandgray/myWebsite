@@ -8,7 +8,10 @@ AJAX
 
 Visit: https://jquery.com/
 Docs: http://api.jquery.com/
+Docs: http://www.w3schools.com/jquery/
 Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
+Cheat Sheet: http://www.newthinktank.com/2015/10/learn-jquery-one-video/
+
 
 /*======== Getting Started ========*/
 
@@ -16,11 +19,6 @@ go to: https://developers.google.com/speed/libraries/
 and choose the version you want or use 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-Optional jquery UI:
-
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 Paste scripts at bottom of body and links at bottom of head
 
@@ -59,13 +57,19 @@ See video for more.
 $("p:has(i)").hide(); - hide all 'p' that have nested 'i' tags
 alert($("#element").html());
 $("p:has(i)").html("<i>changing this text</i> here").show(); - change html
-$("p:has(i)").append(" add to end.");
-$("p:has(i)").prepend("Add to beginning");
-$("p:has(i)").prepend("Add to beginning");
-$("p:has(i)").before("<p id='after_p'>A new p element</p>"); - add html element before
-$("p:has(i)").after("<p id='after_p'>A new p element</p>"); - add html element after
+$("p").addClass("new-class");
+$("p").attr("font-size");
+
+$("p").text();
+$("p").val();
+$("p").append(" add to end.");
+$("p").prepend("Add to beginning");
+$("p").prepend("Add to beginning");
+$("p").before("<p id='after_p'>A new p element</p>"); - add html element before
+$("p").after("<p id='after_p'>A new p element</p>"); - add html element after
 
 /*======== Event Handling ========*/
+
 $("#after_p").click(function() {
 	$(this).remove(); - remove the element that was clicked
 });
@@ -73,5 +77,197 @@ $("#before_p").click(function() {
 	$(this).replaceWith('<p>I\'m the new paragraph</p>');
 });
 
+.highlight { background-color: yellow }
+$("p").click(function() {
+	$(this).toggleClass('highlight');
+});
 
+$("#img").mouseover(function() {
+	$(#img).attr("src", "flipped-img.png");
+}); - mouse enters element area
 
+$("#img").mouseout(function() {
+	$(#img).attr("src", "normal-img.png");
+}); - mouse leaves element area
+
+$("h2").hover(function() {
+	$(h2).css("color", "green");
+}, function() {
+	$(h2).css("color", "black");	
+}); - hover handles both over and out - here using two functions
+
+$("document").dblclick(function(e) {
+	alert(e.pageX);
+	alert(e.pageY);
+});
+
+$("document").mousemove(function(e) {
+	alert(e.screenX);
+	alert(e.screenY);
+});
+
+$("document").keypress(function(e) {
+	alert(String.fromCharCode(e.which));
+});
+
+$("#inputForm").blur(function() {
+});
+$("#inputForm").changed(function() {
+});
+$("#inputForm").focus(function() {
+});
+$("#inputForm").select(function() {
+});
+See video for more.
+
+/*======== Animations ========*/
+
+$("p").click(function() {
+	$(this).hide();
+});
+
+$("p").click(function() {
+	$(this).hide();
+});
+
+$("p").click(function() {
+	$(this).fadeOut(2000);
+});
+
+$("p").click(function() {
+	$(this).fadeToggle(2000);
+});
+
+$("p").click(function() {
+	$(this).fadeTo('slow', 50);
+});
+
+$("p").click(function() {
+	$(this).slideUp(1000);
+});
+
+$("p").click(function() {
+	$(this).css("position", "relative"); - in order to move position must be relative or absolute
+
+	$(this).animate({
+		left: 300,
+		opacity: .5,
+		'font-size': "22px",
+		width: 300
+	}, 2000, "easeInQuad", function() { alert("all done") });
+});
+
+// The easing method functions are "swing or "linear"
+    // You also have the JQuery UI animations : easeInQuad,
+    // easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic,
+    // easeInOutCubic, easeInQuart, easeOutQuart,
+    // easeInOutQuart, easeInQuint, easeOutQuint,
+    // easeInOutQuint, easeInExpo, easeOutExpo,
+    // easeInOutExpo, easeInSine, easeOutSine, easeInOutSine,
+    // easeInCirc, easeOutCirc, easeInOutCirc, easeInElastic,
+    // easeOutElastic, easeInOutElastic, easeInBack,
+    // easeOutBack, easeInOutBack, easeInBounce,
+    // easeOutBounce, easeInOutBounce
+
+// It is common to use stop to prevent multiple
+  // animations on the same object like this
+  // $("#p_one").stop().animate( ...
+
+/*======== Introduction ========*/
+
+What is JQueryUI: "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice."
+
+Services: DOM Traversal and Manipulation
+Event Handlind
+AJAX
+
+Visit: https://jqueryui.com/
+Docs: http://api.jqueryui.com/
+Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
+Cheat Sheet: http://www.newthinktank.com/2015/10/learn-jquery-one-video/
+
+/*======== Getting Started ========*/
+
+go to: https://developers.google.com/speed/libraries/
+and choose the version you want or use 
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+select and download a theme at: http://jqueryui.com/themeroller/
+
+move and link to jquery-ui.min.css and jquery-ui.min.js
+
+$("#shMenu").menu({
+    position: {
+      // Popup menu comes on the right by default
+      my: "center top", - my is a reference to the menu items itself
+      at: "center bottom" - at is a reference to the menu dropdown
+    }
+});
+
+$("#accordion").accordion({
+    // Slide animation or not or length
+    animate: 1500,
+    // Starting tab
+    active: 1,
+    // Collapsible if same tab is clicked
+    collapsible: true,
+    // Event that triggers
+    event: "click",
+    // Height based on content (content) or largest (auto)
+    heightStyle: "content"
+});
+
+$("#shTabs").tabs({
+    // The event that switches the panel
+    event: "click",
+    // Effects: fadeIn, fadeOut, slideDown, slideUp, animate
+    show: "fadeIn",
+    hide: "fadeOut",
+    // Starting panel
+    active: 3,
+    // Collapse by clicking the current tab
+    collapsible: true,
+    // Height based on content (content) or largest (auto)
+    heightStyle: "auto"
+});
+
+// Create a draggable / resizable dialog box
+  $('#customDialog').dialog({
+    draggable: true, // Set true by default
+    resizable: false, // Set true by default
+    // You can use minWidth, minHeight, maxWidth, maxHeight
+    height: 300, // Defined in pixels
+    width: 300,
+    // If set true the user can't do anything until the
+    // dialog is closed
+    modal: true,
+    // Position the dialog with my and define the browser
+    // position with at
+    // 1st: left, right, center
+    // 2nd: top, center, bottom
+    position: {
+      my: 'center top',
+      at: 'center bottom',
+      // You can also target to place based on an element
+      // on the screen (center under the link)
+      of: "#openDialog"
+    },
+    // Define a delay for showing or hiding it
+    show: 1000,
+    hide: '1000',
+    autoOpen: false, c// Open true by default
+    // create buttons for the dialog
+    buttons : {
+      "OK" : function(){
+        $("#openDialog").html("You clicked ok");
+        $(this).dialog("close");
+      },
+      "CANCEL": function(){
+        $("#openDialog").html("You clicked cancel");
+        $(this).dialog("close");
+      }
+    }
+});
+ 
