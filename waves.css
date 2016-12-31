@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#hello {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wave-outer-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.wave-container {
+  z-index: 0;
+  position: absolute;
+  width: 20em;
+  height: 10em;
+  font-size: 5px;
+  overflow: visible;
+}
+
+.wave {
+  z-index: -1;
+  border-width: 0.1em;
+  border-style: solid;
+  position: absolute;
+  -webkit-animation: wave 1500ms infinite alternate;
+          animation: wave 1500ms infinite alternate;
+  -webkit-transform: rotate(-44.5deg);
+          transform: rotate(-44.5deg);
+}
+.wave:nth-child(1) {
+  width: 19.0125em;
+  height: 19.0125em;
+  bottom: -9.50625em;
+  left: 0.49375em;
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
+  border-color: transparent transparent #949494 #949494;
+  border-radius: 19.0125em;
+}
+.wave:nth-child(2) {
+  width: 18.025em;
+  height: 18.025em;
+  bottom: -9.0125em;
+  left: 0.9875em;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.90476) rgba(148, 148, 148, 0.90476);
+  border-radius: 18.025em;
+}
+.wave:nth-child(3) {
+  width: 17.0375em;
+  height: 17.0375em;
+  bottom: -8.51875em;
+  left: 1.48125em;
+  -webkit-animation-delay: 225ms;
+          animation-delay: 225ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.85714) rgba(148, 148, 148, 0.85714);
+  border-radius: 17.0375em;
+}
+.wave:nth-child(4) {
+  width: 16.05em;
+  height: 16.05em;
+  bottom: -8.025em;
+  left: 1.975em;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.80952) rgba(148, 148, 148, 0.80952);
+  border-radius: 16.05em;
+}
+.wave:nth-child(5) {
+  width: 15.0625em;
+  height: 15.0625em;
+  bottom: -7.53125em;
+  left: 2.46875em;
+  -webkit-animation-delay: 375ms;
+          animation-delay: 375ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.7619) rgba(148, 148, 148, 0.7619);
+  border-radius: 15.0625em;
+}
+.wave:nth-child(6) {
+  width: 14.075em;
+  height: 14.075em;
+  bottom: -7.0375em;
+  left: 2.9625em;
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.71429) rgba(148, 148, 148, 0.71429);
+  border-radius: 14.075em;
+}
+.wave:nth-child(7) {
+  width: 13.0875em;
+  height: 13.0875em;
+  bottom: -6.54375em;
+  left: 3.45625em;
+  -webkit-animation-delay: 525ms;
+          animation-delay: 525ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.66667) rgba(148, 148, 148, 0.66667);
+  border-radius: 13.0875em;
+}
+.wave:nth-child(8) {
+  width: 12.1em;
+  height: 12.1em;
+  bottom: -6.05em;
+  left: 3.95em;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.61905) rgba(148, 148, 148, 0.61905);
+  border-radius: 12.1em;
+}
+.wave:nth-child(9) {
+  width: 11.1125em;
+  height: 11.1125em;
+  bottom: -5.55625em;
+  left: 4.44375em;
+  -webkit-animation-delay: 675ms;
+          animation-delay: 675ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.57143) rgba(148, 148, 148, 0.57143);
+  border-radius: 11.1125em;
+}
+.wave:nth-child(10) {
+  width: 10.125em;
+  height: 10.125em;
+  bottom: -5.0625em;
+  left: 4.9375em;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.52381) rgba(148, 148, 148, 0.52381);
+  border-radius: 10.125em;
+}
+.wave:nth-child(11) {
+  width: 9.1375em;
+  height: 9.1375em;
+  bottom: -4.56875em;
+  left: 5.43125em;
+  -webkit-animation-delay: 825ms;
+          animation-delay: 825ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.47619) rgba(148, 148, 148, 0.47619);
+  border-radius: 9.1375em;
+}
+.wave:nth-child(12) {
+  width: 8.15em;
+  height: 8.15em;
+  bottom: -4.075em;
+  left: 5.925em;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.42857) rgba(148, 148, 148, 0.42857);
+  border-radius: 8.15em;
+}
+.wave:nth-child(13) {
+  width: 7.1625em;
+  height: 7.1625em;
+  bottom: -3.58125em;
+  left: 6.41875em;
+  -webkit-animation-delay: 975ms;
+          animation-delay: 975ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.38095) rgba(148, 148, 148, 0.38095);
+  border-radius: 7.1625em;
+}
+.wave:nth-child(14) {
+  width: 6.175em;
+  height: 6.175em;
+  bottom: -3.0875em;
+  left: 6.9125em;
+  -webkit-animation-delay: 1050ms;
+          animation-delay: 1050ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.33333) rgba(148, 148, 148, 0.33333);
+  border-radius: 6.175em;
+}
+.wave:nth-child(15) {
+  width: 5.1875em;
+  height: 5.1875em;
+  bottom: -2.59375em;
+  left: 7.40625em;
+  -webkit-animation-delay: 1125ms;
+          animation-delay: 1125ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.28571) rgba(148, 148, 148, 0.28571);
+  border-radius: 5.1875em;
+}
+.wave:nth-child(16) {
+  width: 4.2em;
+  height: 4.2em;
+  bottom: -2.1em;
+  left: 7.9em;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.2381) rgba(148, 148, 148, 0.2381);
+  border-radius: 4.2em;
+}
+.wave:nth-child(17) {
+  width: 3.2125em;
+  height: 3.2125em;
+  bottom: -1.60625em;
+  left: 8.39375em;
+  -webkit-animation-delay: 1275ms;
+          animation-delay: 1275ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.19048) rgba(148, 148, 148, 0.19048);
+  border-radius: 3.2125em;
+}
+.wave:nth-child(18) {
+  width: 2.225em;
+  height: 2.225em;
+  bottom: -1.1125em;
+  left: 8.8875em;
+  -webkit-animation-delay: 1350ms;
+          animation-delay: 1350ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.14286) rgba(148, 148, 148, 0.14286);
+  border-radius: 2.225em;
+}
+.wave:nth-child(19) {
+  width: 1.2375em;
+  height: 1.2375em;
+  bottom: -0.61875em;
+  left: 9.38125em;
+  -webkit-animation-delay: 1425ms;
+          animation-delay: 1425ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.09524) rgba(148, 148, 148, 0.09524);
+  border-radius: 1.2375em;
+}
+.wave:nth-child(20) {
+  width: 0.25em;
+  height: 0.25em;
+  bottom: -0.125em;
+  left: 9.875em;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+  border-color: transparent transparent rgba(148, 148, 148, 0.04762) rgba(148, 148, 148, 0.04762);
+  border-radius: 0.25em;
+}
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@keyframes wave {
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
