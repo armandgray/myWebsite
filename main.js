@@ -3,9 +3,21 @@ window.onload = function() {
 };
 
 function whenWindowReady() {
+	checkForJQuery();
 	addListenersToIcons();
 	changeFooterDisplay(true);
 	isFooterMenuShowing = false;
+}
+
+function checkForJQuery() {
+	if (typeof(jQuery) === 'undefined') {
+	    var jQuery;
+	    if (typeof(require) === 'function') {
+		    jQuery = $ = require('jquery');
+	    } else {
+		    jQuery = $;
+	    }
+    }
 }
 
 function addListenersToIcons() {
@@ -23,12 +35,12 @@ function addListenersToIcons() {
 
 function addAnimationTo(element, anim) {
 	if (!isAnimated(element) && !hasAnimation(anim, element)) {
-		addClassTo(element, 'animated');
-		addClassTo(element, anim);
+		appendClassNameTo(element, 'animated');
+		appendClassNameTo(element, anim);
 	} else if (!isAnimated(element)) {
-		addClassTo(element, 'animated');
+		appendClassNameTo(element, 'animated');
 	} else if (!hasAnimation(anim, element)) {
-		addClassTo(element, anim);
+		appendClassNameTo(element, anim);
 	}
 }
 
@@ -40,6 +52,6 @@ function hasAnimation(anim, element) {
 	return element.className.indexOf(anim) >= 0;
 }
 
-function addClassTo(element, className) {
+function appendClassNameTo(element, className) {
 	element.className += ' ' + className;
 }
