@@ -31,12 +31,6 @@ function addListenersToIcons() {
 	// 		$(this).removeClass('pulse');
 	// 	});	
 	// }
-	var img = iconsList[0].childNodes[1];
-	$(img).mouseover(function() {
-		alert("trigger click")
-		$(this).trigger("click");
-	});
-
 }
 
 function addAnimationTo(element, anim) {
