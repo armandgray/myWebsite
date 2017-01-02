@@ -1,12 +1,23 @@
-window.onload = function() {
-	whenWindowReady();
-};
+var iconsTextList = [
+	document.getElementById('p-about'),
+	document.getElementById('p-res'),
+	document.getElementById('p-contact'),
+	document.getElementById('p-gh'),
+	document.getElementById('p-in')
+];
 
-function whenWindowReady() {
+window.onload = function() {
 	checkForJQuery();
+	hideImageText();
 	addListenersToIcons();
 	changeFooterDisplay(true);
 	isFooterMenuShowing = false;
+};
+
+function hideImageText() {
+	for (var i = 0; i < iconsTextList.length; i++) {
+		$(iconsTextList[i]).hide();
+	}
 }
 
 function checkForJQuery() {
@@ -64,14 +75,6 @@ function appendClassNameTo(element, className) {
 }
 
 function toggleTextAnimAt(iconIndex) {
-	var isShowing = true;
-	var iconsTextList = [
-		document.getElementById('p-about'),
-		document.getElementById('p-res'),
-		document.getElementById('p-contact'),
-		document.getElementById('p-gh'),
-		document.getElementById('p-in')
-	];
 	if (isShowing) {
 		$(iconsTextList[iconIndex]).hide();
 		isShowing = false;
