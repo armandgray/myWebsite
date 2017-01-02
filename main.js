@@ -22,13 +22,20 @@ function checkForJQuery() {
 
 function addListenersToIcons() {
 	var iconsList = document.getElementsByClassName('icon');
+	var imgList = [];
 	for (var i = 0; i < iconsList.length; i++) {
 		var img = iconsList[i].childNodes[1];
+		imgList[i] = img;
+
+		var text = iconsList[i].childNodes[2];
 		$(img).mouseover(function() {
+			var iconIndex = i;
 			addAnimationTo(this, 'pulse');
+			toggleTextAnimAt(getImgIndex(this, imgList));
 		});
 		$(img).mouseout(function() {
 			$(this).removeClass('pulse');
+			toggleTextAnimAt(getImgIndex(this, imgList));
 		});	
 	}
 }
@@ -54,4 +61,30 @@ function hasAnimation(anim, element) {
 
 function appendClassNameTo(element, className) {
 	element.className += ' ' + className;
+}
+
+function toggleTextAnimAt(iconIndex) {
+	var isShowing = true;
+	var iconsTextList = [
+		document.getElementById('p-about'),
+		document.getElementById('p-res'),
+		document.getElementById('p-contact'),
+		document.getElementById('p-gh'),
+		document.getElementById('p-in')
+	];
+	if (isShowing) {
+		$(iconsTextList[iconIndex]).hide();
+		isShowing = false;
+	} else {
+		$(iconsTextList[iconIndex]).show();
+		isShowing = true;
+	}
+}
+
+function getImgIndex(imgElement, imgList) {
+	for (var i = 0; i < imgList.length; i++) {
+		if (imgElement == imgList[i]) {
+			return i;
+		} 
+	}
 }
