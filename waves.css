@@ -32,6 +32,7 @@ body {
 }
 
 .wave-outer-container {
+    z-index: -1000;
     width: 100%;
     height: 100%;
     position: relative;
@@ -51,7 +52,7 @@ body {
 }
 
 .wave-container {
-  z-index: 0;
+  z-index: -100;
   position: absolute;
   width: 20em;
   height: 10em;
