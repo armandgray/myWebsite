@@ -162,6 +162,10 @@ p.cta {
     filter: alpha(opacity=30);
 }
 
+.cta.row img {
+	z-index: 1000;
+}
+
 .cta.row #p-about {
 	margin-left: 3px;
 }
