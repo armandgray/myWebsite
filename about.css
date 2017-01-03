@@ -46,10 +46,13 @@ a:hover, a:active {
 /*======== Header ========*/
 
 .header {
+	position: fixed;
+	width: 100%;
 	text-align: center;
-	padding: 25px 40px 15px 30px;
+	padding: 25px 0 15px 25px;
+	margin: 0;
 	border: none;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header img {
