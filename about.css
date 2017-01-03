@@ -8,10 +8,13 @@ X. Miscellaneous
 
 /*======== Global Styles ========*/
 
-body {
+html, body {
 	font-family: "Futura PT", Helvetica, sans-serif;
 	background-color: #000;
 	color: #FFF;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -46,7 +49,7 @@ a:hover, a:active {
 	text-align: center;
 	padding: 25px 40px 15px 30px;
 	border: none;
-	background-color: rgba(18, 18, 18, 0.8);
+	background-color: rgba(18, 18, 18, 0.2);
 }
 
 .header img {
@@ -175,6 +178,17 @@ a:hover, a:active {
 	margin-left: -4px;
 	height: 18px;
 	width: 30px;
+}
+
+#landing-img {
+	position: relative;
+	top: 0;
+	z-index: 10;
+	padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /*======== Miscellaneous ========*/
