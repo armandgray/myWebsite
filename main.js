@@ -5,20 +5,15 @@ var iconsTextList = [
 	document.getElementById('p-gh'),
 	document.getElementById('p-in')
 ];
+var anims = document.getElementsByClassName('wave-container');
 
 window.onload = function() {
 	checkForJQuery();
-	hideImageText();
+	hideImageAnims();
 	addListenersToIcons();
 	changeFooterDisplay(true);
 	isFooterMenuShowing = false;
 };
-
-function hideImageText() {
-	for (var i = 0; i < iconsTextList.length; i++) {
-		$(iconsTextList[i]).hide();
-	}
-}
 
 function checkForJQuery() {
 	if (typeof(jQuery) === 'undefined') {
@@ -29,6 +24,15 @@ function checkForJQuery() {
 		    jQuery = $;
 	    }
     }
+}
+
+function hideImageAnims() {
+	for (var i = 0; i < iconsTextList.length; i++) {
+		$(iconsTextList[i]).hide();
+	}
+	for (var i = 0; i < anims.length; i++) {
+		$(anims[i]).hide();
+	}
 }
 
 function addListenersToIcons() {
@@ -74,20 +78,43 @@ function appendClassNameTo(element, className) {
 	element.className += ' ' + className;
 }
 
+var isShowing = false;
 function toggleTextAnimAt(iconIndex) {
+	var wavesGh = document.getElementById('waves-gh');
+	var wavesIn = document.getElementById('waves-in');
 	if (isShowing) {
+		if (iconIndex <= 2) {
+			$(anims[iconIndex]).hide();
+		} else if (iconIndex == 3) {
+			$(wavesGh).hide();
+		} else if (iconIndex == 4) {
+			$(wavesIn).hide();
+		}
 		$(iconsTextList[iconIndex]).hide();
 		isShowing = false;
 	} else {
 		$(iconsTextList[iconIndex]).show();
+		if (iconIndex <= 2) {
+			$(anims[iconIndex]).show();
+		} else if (iconIndex == 3) {
+			$(wavesGh).show();
+		} else if (iconIndex == 4) {
+			$(wavesIn).show();
+		}
 		isShowing = true;
 	}
 }
 
+function toggleAnim(iconIndex, isShowing) {
+	
+}
+
 function getImgIndex(imgElement, imgList) {
 	for (var i = 0; i < imgList.length; i++) {
-		if (imgElement == imgList[i]) {
+		if (imgElement == imgList[i] && i <= 2) {
 			return i;
-		} 
+		} else if (imgElement == imgList[i] && i > 2) {
+			return i - 1;
+		}
 	}
 }
