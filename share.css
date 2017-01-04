@@ -3,6 +3,7 @@
 2. Header
 3. Footer
 4. Main Content
+5. Carousel Styling
 X. Miscellaneous
 *********************************************/
 
@@ -68,7 +69,7 @@ a:hover, a:active {
 
 .footer {
 	position: absolute;
-	bottom: 0%;
+	bottom: 0;
 	width: 90%;
 	margin: 0px 0 0 0;
 	padding-bottom: 10px; 
@@ -134,10 +135,6 @@ a:hover, a:active {
 	height: 100%;
 }
 
-#carousel-navbar {
-
-}
-
 #carousel-navbar button {
 	margin: 0px;
 	padding: 10px 25.26px;
@@ -145,6 +142,13 @@ a:hover, a:active {
 	color: #FFF;
 	background-color: #333333;
 	border-color: #121212;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 
 /*======== Carousel Styling ========*/
@@ -158,30 +162,11 @@ a:hover, a:active {
 	right: 10%;
 	top: 0;
 	width: 40%;
+	height: 94%;
 }
 
-.slide1 {
-	background-image: url('assets/bay_area_bart/15695249357_64e25544a6_z.jpg');
-	height: 500px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
+.carousel-inner .item {
 
-.slide2 {
-	background-image: url('assets/bay_area_bart/15695249357_64e25544a6_z.jpg');
-	height: 500px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.slide3 {
-	background-image: url('assets/bay_area_bart/15695249357_64e25544a6_z.jpg');
-	height: 500px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .carousel-caption h1 {
