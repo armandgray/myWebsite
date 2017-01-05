@@ -8,10 +8,14 @@ AJAX
 
 Visit: https://jquery.com/
 Docs: http://api.jquery.com/
+<<<<<<< HEAD
 Docs: http://www.w3schools.com/jquery/
 Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
 Cheat Sheet: http://www.newthinktank.com/2015/10/learn-jquery-one-video/
 
+=======
+Source (Derek Banas): https://www.youtube.com/watch?v=BWXggB-T1jQ&t=622s
+>>>>>>> wip/resources
 
 /*======== Getting Started ========*/
 
@@ -20,6 +24,14 @@ and choose the version you want or use
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+<<<<<<< HEAD
+=======
+Optional jquery UI:
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+>>>>>>> wip/resources
 Paste scripts at bottom of body and links at bottom of head
 
 $ - command that references the JQuery library
@@ -57,6 +69,7 @@ See video for more.
 $("p:has(i)").hide(); - hide all 'p' that have nested 'i' tags
 alert($("#element").html());
 $("p:has(i)").html("<i>changing this text</i> here").show(); - change html
+<<<<<<< HEAD
 $("p").addClass("new-class");
 $("p").attr("font-size");
 
@@ -70,6 +83,15 @@ $("p").after("<p id='after_p'>A new p element</p>"); - add html element after
 
 /*======== Event Handling ========*/
 
+=======
+$("p:has(i)").append(" add to end.");
+$("p:has(i)").prepend("Add to beginning");
+$("p:has(i)").prepend("Add to beginning");
+$("p:has(i)").before("<p id='after_p'>A new p element</p>"); - add html element before
+$("p:has(i)").after("<p id='after_p'>A new p element</p>"); - add html element after
+
+/*======== Event Handling ========*/
+>>>>>>> wip/resources
 $("#after_p").click(function() {
 	$(this).remove(); - remove the element that was clicked
 });
@@ -77,6 +99,7 @@ $("#before_p").click(function() {
 	$(this).replaceWith('<p>I\'m the new paragraph</p>');
 });
 
+<<<<<<< HEAD
 .highlight { background-color: yellow }
 $("p").click(function() {
 	$(this).toggleClass('highlight');
@@ -277,3 +300,7 @@ $("#shTabs").tabs({
 .queue for wait with show(1500);
 http://stackoverflow.com/questions/4283141/jquery-change-background-color
 }
+=======
+
+
+>>>>>>> wip/resources
