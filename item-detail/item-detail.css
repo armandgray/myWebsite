@@ -145,15 +145,15 @@ button {
 	background-color: yellow; 
 }
 
+.content-header {
+	color: #FFF;
+}
+
 #content-header-photo {
 	position: absolute;
 	right: 0%;
 	bottom: 11%;
 	z-index: 100;
-}
-
-.content-header {
-	color: #FFF;
 }
 
 .item-header {
