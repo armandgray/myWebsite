@@ -1,9 +1,11 @@
+var backgroundColor = $('.container-fluid').css('background-color');
+
 $(window).load(function() {
 	setupHeaderColorScrollListener();
+	$('.gallery-images').css('background-color', backgroundColor);
 });
 
 function setupHeaderColorScrollListener() {
-	var backgroundColor = $('.container-fluid').css('background-color');
 	$('.header').css('background-color', 'rgba(0, 0, 0, 0)');
 
 	$(window).scroll(function() {
