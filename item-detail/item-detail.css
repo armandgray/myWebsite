@@ -96,11 +96,13 @@ button {
 	color: #949494;
 }
 
-.footer .row a:link, .footer .row a:visited {
+.footer .row a:link, 
+.footer .row a:visited {
 	color: #949494;
 }
 
-.footer .row a:hover, .footer .row a:active {
+.footer .row a:hover, 
+.footer .row a:active {
 	color: #333333;
 	text-decoration: none;
 }

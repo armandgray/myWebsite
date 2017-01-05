@@ -83,8 +83,8 @@
 
 	<div class="container">		
 		<div class="footer">
-			<div class="row">
-			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			<div class="row" id="footer-container">
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" id="cc">
 					<h4>Favorites</h4>
 					<ul>
 						<li><a href="#">Derek Banas</a></li>
@@ -162,24 +162,24 @@
 			    </div>
 			</div>
 
-			<div class="footer-bottom-text">
+			<div class="footer-bottom-text" id="footer-bottom-text-container">
 				<p id="footer-bottom-text">Find more ways to check out my work: Visit my 
 					<a href="https://www.linkedin.com/in/armand-gray-03aa03a">LinkedIn</a> 
 				or my work on 
 					<a href="https://www.github.com/armandgray">GitHub</a>
 				</p>
 			</div>
-			<div class="page-footer-copyright row">
+			<div class="page-footer-copyright row" id="bottom-footer">
 				<p class="col-lg-3 col-md-4 col-sm-6 col-xs-1 hidden-xs ">Copyright © 2016 Armand Gray - Digital Portfolio</p>
 				<p class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="../landing.html">
-				<img id="footer-personal-logo" src="../assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
+				<a href="landing.html">
+				<img id="footer-personal-logo" src="../assets/personal_logo_949494.svg" width="15" height="11" alt="personal logo">
 				</a>
-				<a href="#">Explore</a>
+				<a href="resources.html" id="explore-btn">Explore</a>
 				&nbsp; | &nbsp; 
-				<a href="#">Share</a>
+				<a href="share.html">Share</a>
 				&nbsp; | &nbsp; 
-				<a href="#">Less</a>
+				<a id="more-less-btn" href="#bottom-footer">Less</a>
 				</p>
 				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="../assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
 			</div>
@@ -190,8 +190,10 @@
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="item-detail.js"></script>
+	<script type="text/javascript" src="../footer.js"></script>
 
 </body>
 </html>  
