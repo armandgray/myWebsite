@@ -1,0 +1,48 @@
+/*======== Introduction ========*/
+
+What is Photoshop: "Create anything you can imagine. Anywhere you are. The world’s best imaging and design app is at the core of almost every creative project. Work across desktop and mobile devices to create and enhance your photographs, web and mobile app designs, 3D artwork, videos, and more."
+
+Services: Create Images For Design
+Combine, Remove, and Retouch Images
+Access Adobe Stock Assets
+
+Visit: http://www.adobe.com/products/photoshop.html
+
+
+/*======== Where Photoshop Fits In ========*/
+
+go to: http://www.adobe.com/products/photoshop.html
+and select free trial or choose the plan you want
+
+/*======== Getting Started ========*/
+
+/*======== Viewing Images ========*/
+
+/*======== Understanding Pixels and Image Size ========*/
+
+/*======== Cropping and Straightening Images ========*/
+
+/*======== Increased Control with Layers ========*/
+
+/*======== Improving Exposure ========*/
+
+/*======== Fixing Specific Areas ========*/
+
+/*======== Advanced Adjustment with Masking ========*/
+
+/*======== Fine-Tuning Color ========*/
+
+/*======== Converting to Black and White ========*/
+
+/*======== Filters ========*/
+
+/*======== Sharpening and Reducing Noise ========*/
+
+/*======== Retouching Away Problems ========*/
+
+/*======== Portrait Retouching Essentials ========*/
+
+/*======== Making the Perfect Print ========*/
+
+
+
