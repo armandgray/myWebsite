@@ -52,10 +52,14 @@ button {
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 100;
+	z-index: 1000;
 	text-align: center;
 	margin: 0;
 	padding: 15px 15px 25px;
+}
+
+.header button {
+	z-index: 2000;
 }
 
 .header img {
@@ -145,7 +149,7 @@ button {
 	position: absolute;
 	right: 0%;
 	bottom: 11%;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .content-header {

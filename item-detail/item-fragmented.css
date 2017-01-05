@@ -11,12 +11,8 @@ X. Miscellaneous
 
 /*======== Header ========*/
 
-.header {
-	background-color: #0000D6;
-}
-
 .btn-color-background {
-	background-color: #0000D6;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 /*======== Footer ========*/
