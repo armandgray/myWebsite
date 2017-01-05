@@ -7,6 +7,7 @@ $("document").ready(function() {
 function setupMoreBtnClickListener() {
 	$("#more-less-btn").click(function() {
 		changeFooterDisplay(isFooterMenuShowing);
+		isFooterMenuShowing = !isFooterMenuShowing;
 	});
 }
 
