@@ -378,12 +378,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
 	height: 50px;
+	width: 100%;
+	height: 50%;
 	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
 }
 
 .section {
 	height: 100%;
-	background-size: cover;
+	background-size: cover; /*cover available area*/
+	background-repeat: no-repeat; /*for smaller img that dont cover*/
+	background-attachment: fixed; /*fix the backgrounds and let divs scroll over*/
 }
 
 .sub-section{
@@ -392,8 +397,7 @@ nav {
 }
 
 .section1 {
-	background-image: url("background1.jpg");
-	background-color: red;
+	background-image: url("background1.jpg"); /*must use back-img*/
 }
 
 .section2 {
