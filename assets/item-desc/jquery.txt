@@ -69,7 +69,6 @@ See video for more.
 $("p:has(i)").hide(); - hide all 'p' that have nested 'i' tags
 alert($("#element").html());
 $("p:has(i)").html("<i>changing this text</i> here").show(); - change html
-<<<<<<< HEAD
 $("p").addClass("new-class");
 $("p").attr("font-size");
 
@@ -91,7 +90,6 @@ $("p:has(i)").before("<p id='after_p'>A new p element</p>"); - add html element 
 $("p:has(i)").after("<p id='after_p'>A new p element</p>"); - add html element after
 
 /*======== Event Handling ========*/
->>>>>>> wip/resources
 $("#after_p").click(function() {
 	$(this).remove(); - remove the element that was clicked
 });
@@ -99,7 +97,6 @@ $("#before_p").click(function() {
 	$(this).replaceWith('<p>I\'m the new paragraph</p>');
 });
 
-<<<<<<< HEAD
 .highlight { background-color: yellow }
 $("p").click(function() {
 	$(this).toggleClass('highlight');

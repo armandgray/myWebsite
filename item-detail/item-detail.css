@@ -172,10 +172,22 @@ button {
 	width: 70px;
 }
 
+.slider {
+	position: fixed;
+	bottom: 2.5%;
+	width: 100%;
+}
+
+#needle {
+	position: absolute;
+	bottom: 50%;
+	left: 49.82%;
+}
+
 /*======== Main Content ========*/
 
-.slider {
-	margin: 25px 0 20px;
+.main-content {
+	padding-top: 7%;
 }
 
 .main-content h3, p {
