@@ -2,7 +2,7 @@ var backgroundColor = $('.container-fluid').css('background-color');
 
 $(window).load(function() {
 	$('.gallery-images').css('background-color', backgroundColor);
-	$('#needle').addClass('bounce');
+	startNeedleAnimation();
 
 	setupHeaderColorScrollListener();
 	setupSliderAnim();
@@ -21,13 +21,21 @@ function setupHeaderColorScrollListener() {
 }
 
 function setupSliderAnim() {
+    if ($(this).scrollTop() > 20) {
+    	$('.slider').hide();
+		$('#needle').removeClass('bounce');
+	}
 	$(window).scroll(function() {
 	    if ($(this).scrollTop() > 20) {
 			$('.slider').hide();
-			$('#needle').removeClass('bounce');
 	    } else {
 			$('.slider').show();
-			$('#needle').addClass('bounce');
 	    }
 	});
+}
+
+function startNeedleAnimation() {
+	setInterval(function(){ 
+		$('#needle').toggleClass('bounce');
+	}, 4000);
 }
