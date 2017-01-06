@@ -37,5 +37,5 @@ function setupSliderAnim() {
 function startNeedleAnimation() {
 	setInterval(function(){ 
 		$('#needle').toggleClass('bounce');
-	}, 4000);
+	}, 3000);
 }
