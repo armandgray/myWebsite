@@ -10,7 +10,7 @@ X. Miscellaneous
 
 html, body {
 	font-family: "Futura PT", Helvetica, sans-serif;
-	background-color: none;
+	background-color: #121212;
 	color: #FFF;
 	height: 100%;
 	margin: 0;
@@ -52,7 +52,6 @@ a:hover, a:active {
 .header {
 	position: fixed;
 	width: 100%;
-	text-align: center;
 	padding: 25px 0 15px 25px;
 	margin: 0;
 	border: none;
@@ -112,11 +111,6 @@ a:hover, a:active {
   text-decoration: none;
   color: #ffffff;
   background-color: #121212;
-}
-
-nav {
-	height: 50px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*======== Footer ========*/
@@ -215,8 +209,12 @@ nav {
 .jumbotron {
 	background-color: #000;
 	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.jumbotron.transparent {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .jumbotron h2 {
@@ -229,29 +227,45 @@ nav {
 	padding: 30px 0px 60px;
 }
 
-.section {
+.parallax {
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-.sub-section{
-	height: 50%;
-	background-color: bisque;
+.parallax-section1 {
+	background-image: url("assets/work_rms_photo_profile.png");
 }
 
-.section1 {
-	background-image: url("background1.jpg");
-}
-
-.section2 {
+.parallax-section2 {
 	background-image: url("background2.jpg");
 }
 
-.section3 {
+.parallax-section3 {
 	background-image: url("background3.jpg");
 }
+
+.parallax-section4 {
+	background-image: url("background1.jpg");
+}
+
+.parallax-section5 {
+	background-image: url("background2.jpg");
+}
+
+.parallax-section6 {
+	background-image: url("background3.jpg");
+}
+
+.parallax-section7 {
+	background-image: url("background1.jpg");
+}
+
+.parallax-section8 {
+	background-image: url("background2.jpg");
+}
+
 /*======== Miscellaneous ========*/
 
 

@@ -1,0 +1,110 @@
+/*======== Introduction ========*/
+
+What is Photoshop: "Create anything you can imagine. Anywhere you are. The world’s best imaging and design app is at the core of almost every creative project. Work across desktop and mobile devices to create and enhance your photographs, web and mobile app designs, 3D artwork, videos, and more."
+
+Services: Create Images For Design
+Combine, Remove, and Retouch Images
+Access Adobe Stock Assets
+
+Visit: http://www.adobe.com/products/photoshop.html
+
+Tips:
+
+1. You are not alone
+2. Learning photoshop is a craft and skill
+3. The view from the top is worth the climb
+4. Overwhelmed... Give it a rest/ Take a break
+5. Take good notes and share what you've learned
+
+/*======== Where Photoshop Fits In ========*/
+
+Photoshop not only fits into our workflow after we've captured the image. It actually fits into our workflow as we're making the image and we say, hey, I have a vision for something like this. And sometimes the work is really simple and straight forward as we've seen. Other times, maybe it's a bit more involved. Either way, my hope is that by showing you some of these before and afters of my own work, you can start to think about, okay, well these are some of the things that we can do with Photoshop. Now of course this isn't exhaustive.
+
+There are so many things that you can do. And the way that you use Photoshop is completely up to you. That's the fun part. Yet at least we're starting to get a glimpse into how this tool works and what we might do. Well to dig a little bit deeper into how Photoshop fits in, let's get a bit more pragmatic with how we can use this tool.
+
+/*======== Getting Started ========*/
+
+go to: http://www.adobe.com/products/photoshop.html
+and select free trial or choose the plan you want
+
+Setting Up Color - Selecting the Color Space
+Color Spaces = ranges of colors which defaults to srgb the smaller of the two color spaces
+
+Switch to Adove RGB(1998):
+- Edit > Color Settings (Shift + Command K)
+- Settings (menu) > North America Prepress 2 (auto saves preference)
+
+Tuning Preferences
+- Photoshop CC > Preferences > General (Command K) (Mac)
+- Edit > Preferences > General (PC)
+
+Interface - Theme & Highlight Color (for layer)
+- Border (Drop Shadow) (Prefer None, None, None, Line)
+
+File Handling - Saving - Auto Save (Older Comps moce to 5)
+- Recent Files List: 20 --> 30 (no reduction in performance)
+
+Performance
+Memory Usage - Allocate RAM to Ps. - Ps. needs the most RAM it can get. Default 70% (increase if Ps the only app open)
+
+Choosing and Customizing the Workspace
+Ps Interface
+Left bar = Tools Panel
+Top Bar = Options bar
+Below Top Bar = Document Window (Image)
+Right-side = Panels
+Change By:
+- Top Right Menu Arrow > Essentials...
+- Window > Workspace > Photography...
+
+STICKY SETTINGS - PS REMEMBERS PANEL SETTINGS AND VISIBLE PANELS
+
+Reset Panel:
+Workspace > Reset...
+
+Tools Panel - Click Dbl arrow to toggle collapse
+Same with all panels
+Dbl Click a Panel Group (on right) to hide panel group
+
+Start by using Adobe Bridge
+- File > Open in Camera Raw (Command R)
+- Use Basic panel on right (use 'p' to see before and after)
+
+Tools Panel Sections:
+- Selection Tools
+Crop & Slice
+Measuring
+Retouching & Painting
+Drawing, Type and Shape
+Move & Zoom
+
+/*======== Viewing Images ========*/
+
+/*======== Understanding Pixels and Image Size ========*/
+
+/*======== Cropping and Straightening Images ========*/
+
+/*======== Increased Control with Layers ========*/
+
+/*======== Improving Exposure ========*/
+
+/*======== Fixing Specific Areas ========*/
+
+/*======== Advanced Adjustment with Masking ========*/
+
+/*======== Fine-Tuning Color ========*/
+
+/*======== Converting to Black and White ========*/
+
+/*======== Filters ========*/
+
+/*======== Sharpening and Reducing Noise ========*/
+
+/*======== Retouching Away Problems ========*/
+
+/*======== Portrait Retouching Essentials ========*/
+
+/*======== Making the Perfect Print ========*/
+
+
+
