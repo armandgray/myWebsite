@@ -2,22 +2,21 @@ Swift 3 and SpriteKit
 
 /*======== Introduction ========*/
 
-What is Swift: "Swift is a powerful and intuitive programming language for macOS, iOS, watchOS and tvOS. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design, yet also produces software that runs lightning-fast."
-
-Services: Open Source
-Refined API Naming
-Playgrounds and REPL in Xcode
-Objective-C Interoperability
-
-Visit: https://developer.apple.com/swift/
-https://developer.apple.com/xcode/
-
 What is SpriteKit: "The SpriteKit framework adds new features to make it easier to create high-performance, battery-efficient 2D games. With support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games."
+
+≠ SceneKit for 3D games
+
+Services: SKView
+SKScene
+SKNode
+SKSpriteNode
+SKAction
+SKPhysicsBody
+
+Visit: https://developer.apple.com/reference/spritekit
+https://developer.apple.com/swift/
+https://developer.apple.com/xcode/
+https://developer.apple.com/reference/swift
 
 /*======== Getting Started ========*/
 
-go to: http://www.adobe.com/products/photoshop.html
-and select free trial or choose the plan you want
-
-Setting Up Color - Selecting the Color Space
-Color Spaces = ranges of colors which defaults to srgb the smaller of the two color spaces
