@@ -3,6 +3,7 @@
 2. Header
 3. Footer
 4. Main Content
+5. Parallax Content
 X. Miscellaneous
 *********************************************/
 
@@ -209,23 +210,31 @@ a:hover, a:active {
 .jumbotron {
 	background-color: #000;
 	text-align: center;
-	padding: 0px;
-	margin: 0px;
+	padding: 10px 100px 0px;
+	margin: 0px 0 -25px;
 }
 
 .jumbotron.transparent {
+	margin-top: -25px;
+	padding-top: 100px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
 .jumbotron h2 {
-	font-size: 1.4em;
+	font-size: 5em;
 	padding: 60px 0px 30px;
 }
 
 .jumbotron p {
 	font-size: 1.1em;
-	padding: 30px 0px 60px;
+	padding: 30px 150px 60px;
 }
+
+#work {
+	padding: 30px 0;
+}
+
+/*======== Parallax Content ========*/
 
 .parallax {
 	height: 100%;
@@ -264,6 +273,7 @@ a:hover, a:active {
 
 .parallax-section8 {
 	background-image: url("background2.jpg");
+	margin-bottom: 50px;
 }
 
 /*======== Miscellaneous ========*/
