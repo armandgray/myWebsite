@@ -80,7 +80,69 @@ Move & Zoom
 
 /*======== Viewing Images ========*/
 
+ZOOMING
+
+Toolbar > Zoom Tool ('z') > Click or Opt + Click
+
+Or
+
+Window > Navigator
+
+Hold Space while using the Zoom tool to quickly use the Hand Tool.
+
+SCREEN MODES
+
+Click 'f'
+Click 'tab'
+
+Right Click Background and Change Background Mode
+
+When viewing multiple images:
+Window > Arrange > ...
+
+Cycle Tabs - Control + Tab
+
 /*======== Understanding Pixels and Image Size ========*/
+
+IMAGE SIZE & PIXELS
+
+Image > Image Size (opt + com. i)
+Recommended: Extend Image Dialog to full screen view & evaluate at 100%
+
+Image Size (in memory)
+Dimensions
+Width
+Height
+Resolution: 240
+Resample: Auto
+
+Manipulate Width or Height and Check above values
+
+When Scaling Up be careful not to over-stretch the image.
+
+DOWNSIZING
+1. Resample Off
+2. Change Resolution - increase
+3. Resample On
+4. Resize
+5. Optional: Use Crop Tool. In Options Panel - Change Ratio to "W x H x Resolution", enter W, H, Res values and move around to crop.
+
+Image > Image Size
+
+MINIFYING/ EXPORTING IMAGES
+File > Export > Export As...
+
+Format: JPG
+Quality - Shave to reduce size, but not too far (Goal: 70-80%)
+
+Image Size:
+W: (web 2500px?) (social 1500px?)
+H:
+or
+Scale:
+
+Color Space: Convert to sRGB
+
 
 /*======== Cropping and Straightening Images ========*/
 
