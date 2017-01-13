@@ -28,7 +28,8 @@ sup {
 }
 
 a:link, a:visited {
-	color: #FFF;
+	font-size: 1em;
+	color: #000;
 }
 
 a:hover, a:active {

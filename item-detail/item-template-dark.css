@@ -14,7 +14,12 @@ html, body {
 }
 
 a:link, a:visited {
-	color: #000;
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #949494;
+	text-decoration: none;
 }
 
 /*======== Header ========*/

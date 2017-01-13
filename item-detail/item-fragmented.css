@@ -19,6 +19,12 @@ X. Miscellaneous
 	background-color: #0000D6; 
 }
 
+#content-header-photo {
+	position: absolute;
+	right: -2%;
+	top: 1%;
+}
+
 /*======== Main Content ========*/
 
 /*======== Miscellaneous ========*/
