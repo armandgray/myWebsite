@@ -1,0 +1,36 @@
+/*********************************************
+1. Global Styles
+2. Header
+3. Footer
+3. Content Header
+3. Main Content
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+
+/*======== Header ========*/
+
+/*======== Footer ========*/
+
+/*======== Content Header ========*/
+
+.container-fluid {
+	background-color: #131241; 
+}
+
+#content-header-photo {
+	position: absolute;
+	right: 0%;
+	top: 10.5%;
+	width: 102.5%;
+	height: auto;
+}
+
+.item-header {
+	z-index: 10000;
+}
+
+/*======== Main Content ========*/
+
+/*======== Miscellaneous ========*/

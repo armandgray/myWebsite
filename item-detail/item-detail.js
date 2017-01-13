@@ -1,5 +1,14 @@
 var backgroundColor = $('.container-fluid').css('background-color');
 
+if (initialHeaderColor == null || initialHeaderColor == undefined) {
+	var initialHeaderColor = 'rgba(0, 0, 0, 0)';
+}
+
+if (displayHeaderColorHeight == null || displayHeaderColorHeight == undefined) {
+	var displayHeaderColorHeight = 200;
+}
+
+
 $(window).load(function() {
 	$('.gallery-images').css('background-color', backgroundColor);
 	startNeedleAnimation();
@@ -9,13 +18,13 @@ $(window).load(function() {
 });
 
 function setupHeaderColorScrollListener() {
-	$('.header').css('background-color', 'rgba(0, 0, 0, 0)');
+	$('.header').css('background-color', initialHeaderColor);
 
 	$(window).scroll(function() {
-	    if ($(this).scrollTop() > 200) {
+	    if ($(this).scrollTop() > displayHeaderColorHeight) {
 			$('.header').css('background-color', backgroundColor);
 	    } else {
-			$('.header').css('background-color', 'rgba(0, 0, 0, 0)');
+			$('.header').css('background-color', initialHeaderColor);
 	    }
 	});
 }
