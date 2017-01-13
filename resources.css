@@ -180,6 +180,27 @@ a:hover, a:active {
 	left: 9%;
 }
 
+.item-content-8 {
+	margin: 0px 0px 12px 55px;
+}
+
+.item-content-8 div {
+	margin: 0px 0px -28px -57px;
+}
+
+.item-content-8 p {
+	margin: 0px 0px 0px -55px;
+}
+
+.item-content-8 .icon-bar {
+	display: block;
+	margin: 5px;
+	width: 35px;
+	height: 3px;
+	border-radius: 1px;
+	background-color: #FFF;
+}
+
 .first-item {
 	background-color: #0000D6;
 }
@@ -192,8 +213,23 @@ a:hover, a:active {
 	background-color: #D47200;
 }
 
+.third-item figure {
+	-ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.third-item figure img {
+	margin: -80px 275px 0 0;
+}
+
 .fourth-item {
-	background-color: #D40000;
+	background-color: #FFF;
+	color: #000;
+}
+
+.fourth-item img {
+	margin-top: 20px;
 }
 
 .fifth-item {
@@ -204,12 +240,34 @@ a:hover, a:active {
 	background-color: #D4B329;
 }
 
+.item-photo-6 {
+	margin-top: 15px;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	height: 150px;
+	background-image: url("assets/Computer_Program1_8244.jpg");
+}
+
+.item-photo-6 .jumbotron {
+	background-color: rgba(255, 255, 255, 0);
+}
+
 .seventh-item {
 	background-color: #131241;
 }
 
+.seventh-item img {
+	margin: 0 -20px 0 0;
+}
+
 .eigth-item {
-	background-color: #F0F;
+	background-color: #C92228;
+}
+
+.eigth-item img {
+	margin-top: 40px;
 }
 
 .ninth-item {

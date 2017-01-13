@@ -28,7 +28,8 @@ sup {
 }
 
 a:link, a:visited {
-	color: #FFF;
+	font-size: 1em;
+	color: #000;
 }
 
 a:hover, a:active {
@@ -43,16 +44,23 @@ button {
 /*======== Header ========*/
 
 .btn-color-background {
-	background-color: #CCCCCC;
+	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	right: 2%;
 	margin-top: -1px;
 }
 
 .header {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 	text-align: center;
-	margin: 0px 15px 15px;
-	padding-top: 15px;
+	margin: 0;
+	padding: 15px 15px 25px;
+}
+
+.header button {
+	z-index: 2000;
 }
 
 .header img {
@@ -93,11 +101,13 @@ button {
 	color: #949494;
 }
 
-.footer .row a:link, .footer .row a:visited {
+.footer a:link, 
+.footer a:visited {
 	color: #949494;
 }
 
-.footer .row a:hover, .footer .row a:active {
+.footer a:hover, 
+.footer a:active {
 	color: #333333;
 	text-decoration: none;
 }
@@ -105,6 +115,11 @@ button {
 #footer-bottom-text {
 	padding: 40px 0px 0px 0px;
 	margin-bottom: -40px 
+}
+
+#footer-bottom-text a {
+	font-size: .9em;
+	text-decoration: underline; 
 }
 
 .page-footer-copyright {
@@ -136,14 +151,15 @@ button {
 	background-color: yellow; 
 }
 
+.content-header {
+	color: #FFF;
+}
+
 #content-header-photo {
 	position: absolute;
 	right: 0%;
 	bottom: 11%;
-}
-
-.content-header {
-	color: #FFF;
+	z-index: 100;
 }
 
 .item-header {
@@ -157,15 +173,29 @@ button {
 }
 
 .content-header .item-header img {
-	margin: -50px 10px 0 -10px;
+	margin: -50px 20px 0 -10px;
 	height: 70px;
 	width: 70px;
 }
 
+.slider {
+	position: fixed;
+	bottom: 2.5%;
+	width: 100%;
+}
+
+#needle {
+	position: absolute;
+	height: 9px;
+	width: 3.6px;
+	bottom: 57%;
+	left: 49.86%;
+}
+
 /*======== Main Content ========*/
 
-.slider {
-	margin: 25px 0 20px;
+.main-content {
+	padding-top: 7%;
 }
 
 .main-content h3, p {

@@ -8,21 +8,48 @@ X. Miscellaneous
 *********************************************/
 
 /*======== Global Styles ========*/
+html, body {
+	background-color: #000;
+	color: #FFF;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #949494;
+	text-decoration: none;
+}
 
 /*======== Header ========*/
 
+.icon-bar {
+	background-color: #000;
+}
+
 /*======== Footer ========*/
+
+.footer h4, a, li {
+	color: #FFF;
+	font-size: .8em;
+}
 
 /*======== Content Header ========*/
 
 .container-fluid {
-	background-color: #0000D6; 
+	background-color: #FFFFFF; 
+}
+
+.content-header {
+	color: #000;
 }
 
 #content-header-photo {
 	position: absolute;
-	right: -2%;
-	top: 1%;
+	right: 0%;
+	top: 5%;
+	z-index: 100;
 }
 
 /*======== Main Content ========*/
