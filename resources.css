@@ -180,6 +180,27 @@ a:hover, a:active {
 	left: 9%;
 }
 
+.item-content-8 {
+	margin: 0px 0px 12px 55px;
+}
+
+.item-content-8 div {
+	margin: 0px 0px -28px -57px;
+}
+
+.item-content-8 p {
+	margin: 0px 0px 0px -55px;
+}
+
+.item-content-8 .icon-bar {
+	display: block;
+	margin: 5px;
+	width: 35px;
+	height: 3px;
+	border-radius: 1px;
+	background-color: #FFF;
+}
+
 .first-item {
 	background-color: #0000D6;
 }
