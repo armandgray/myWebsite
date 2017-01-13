@@ -1,0 +1,52 @@
+/*********************************************
+1. Global Styles
+2. Header
+3. Footer
+3. Content Header
+3. Main Content
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+
+/*======== Header ========*/
+
+/*======== Footer ========*/
+
+/*======== Content Header ========*/
+
+.container-fluid {
+	background-color: #D4B329; 
+}
+
+.item-photo-6 {
+	position: absolute;
+	right: 5%;
+	top: 8%;
+	height: 300px;
+	width: 500px;
+	margin-top: 15px;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	background-image: url("../assets/Computer_Program1_8244.jpg");
+}
+
+.item-photo-6 .jumbotron {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.content-header .item-header h3 {
+	margin: 0px 0px -20px 0px;
+}
+
+.content-header .item-header img {
+	margin: -40px 5px 0 -5px;
+	height: 200px;
+	width: 200px;
+}
+
+/*======== Main Content ========*/
+
+/*======== Miscellaneous ========*/
