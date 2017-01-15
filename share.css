@@ -147,11 +147,31 @@ a:hover, a:active {
 
 /*======== Main Content ========*/
 
+.parallax {
+	height: 40%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.parallax-section1 {
+	background-image: url("assets/bay_area_bart/cropped_large_background.jpg");
+	background-size: 100% auto;
+}
+
 #main-content {
+	z-index: 1000;
 	background-color: #000;
 	text-align: center;
-	padding: 10px 100px 0px;
-	margin: -300px 0 -70px;
+	padding: 30px 50px 0px;
+	margin: 0px;
+}
+
+#main-content .item {
+	padding: 0px -10px;
+}
+
+#main-content .item-2 {
+	padding: 0% 5.5%;
 }
 
 #main-content h2 {
@@ -160,22 +180,8 @@ a:hover, a:active {
 }
 
 #main-content p {
-	font-size: 1.1em;
-	padding: 30px 150px 60px;
-}
-
-/*======== Parallax Content ========*/
-
-.parallax {
-	height: 85%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
-.parallax-section1 {
-	background-image: url("assets/bay_area_bart/cropped_large_background.jpg");
-	background-size: 100% auto;
+	font-size: .7em;
+	padding: 0px 0px;
 }
 /*======== Miscellaneous ========*/
 
