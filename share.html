@@ -38,8 +38,8 @@
 
 	<div class="container">		
 		<div class="footer">
-			<div class="row">
-			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			<div class="row" id="footer-container">
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" id="cc">
 					<h4>Favorites</h4>
 					<ul>
 						<li><a href="#">Derek Banas</a></li>
@@ -117,50 +117,37 @@
 			    </div>
 			</div>
 
-			<div class="footer-bottom-text">
+			<div class="footer-bottom-text" id="footer-bottom-text-container">
 				<p id="footer-bottom-text">Find more ways to check out my work: Visit my 
 					<a href="https://www.linkedin.com/in/armand-gray-03aa03a">LinkedIn</a> 
 				or my work on 
 					<a href="https://www.github.com/armandgray">GitHub</a>
 				</p>
 			</div>
-			<div class="page-footer-copyright row">
+			<div class="page-footer-copyright row" id="bottom-footer">
 				<p class="col-lg-3 col-md-4 col-sm-6 col-xs-1 hidden-xs ">Copyright © 2016 Armand Gray - Digital Portfolio</p>
 				<p class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<a href="landing.html">
 				<img id="footer-personal-logo" src="assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
 				</a>
-				<a href="#">Explore</a>
+				<a href="resources.html" id="explore-btn">Explore</a>
 				&nbsp; | &nbsp; 
-				<a href="#">Share</a>
+				<a href="share.html">Share</a>
 				&nbsp; | &nbsp; 
-				<a href="#">Less</a>
+				<a id="more-less-btn" href="#bottom-footer">Less</a>
 				</p>
 				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
 			</div>
 		</div>
 	</div>
-<!-- <p>Resources: </p>
-		<a href="https://www.themuse.com/advice/14-stunning-ways-to-build-your-personal-website-this-week">Design Ideas<br></a>
-		<a href="https://blog.hubspot.com/marketing/landing-page-examples-list#sm.001pauz9b12ytdyq10h5fohhccyeb">Landing Page Designs<br></a>
-		<a href="http://www.dtelepathy.com/blog/inspiration/30-bold-and-clean-web-designs-for-inspiration">Bold &amp; Clean Sites<br></a>
-		<a href="http://convertico.com/">Convert To Ico<br></a>
-		<a href="http://getbootstrap.com/components/">Bootstrap Glyphs<br></a>
-		<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">DOM API<br></a>
-		<a href="https://www.github.com/armandgray">GitHub<br></a>
-		
-		<p>© 2016 - Armand Gray</p> -->
-	<script>
-		function onBackPressed() {
-		    window.history.back();
-		}
-	</script>
+
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="about.js"></script>
+	<script type="text/javascript" src="footer.js"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>  
