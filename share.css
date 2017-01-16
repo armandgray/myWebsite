@@ -192,6 +192,14 @@ a:hover, a:active {
 	line-height: 1.7em;
 	padding: 0px 0px;
 }
+
+/*======== Modal ========*/
+
+.modal-content {
+	color: #000;
+	text-align: left;
+}
+
 /*======== Miscellaneous ========*/
 
 
