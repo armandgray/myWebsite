@@ -163,7 +163,7 @@ a:hover, a:active {
 	z-index: 1000;
 	background-color: #000;
 	text-align: center;
-	padding: 30px 50px 0px;
+	padding: 0px 50px 0px;
 	margin: 0px;
 }
 
@@ -176,6 +176,7 @@ a:hover, a:active {
 }
 
 #main-content img {
+	margin-top: 30px;
 	height: 35px;
 	width: 35px;
 }
@@ -186,9 +187,9 @@ a:hover, a:active {
 }
 
 #main-content p {
-	height: 140px;
+	height: 145px;
 	font-size: .8em;
-	line-height: 1.5em;
+	line-height: 1.7em;
 	padding: 0px 0px;
 }
 /*======== Miscellaneous ========*/
