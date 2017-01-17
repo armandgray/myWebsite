@@ -2,6 +2,7 @@ var isFooterMenuShowing = true;
 
 $("document").ready(function() {
 	setupMoreBtnClickListener();
+	disableGettingStartedLinks();
 });
 
 function setupMoreBtnClickListener() {
@@ -26,3 +27,10 @@ function changeFooterDisplay(isFooterMenuShowing) {
 		}
 	});
 }
+
+function disableGettingStartedLinks() {
+	$('.footer .starting a').click(function() { 
+		return false; 
+	});
+}
+
