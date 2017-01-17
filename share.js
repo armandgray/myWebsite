@@ -1,1 +1,4 @@
-changeFooterDisplay(true);
+$("document").ready(function() {
+	changeFooterDisplay(true);
+});
+
