@@ -2,6 +2,7 @@ var isFooterMenuShowing = true;
 
 $("document").ready(function() {
 	setupMoreBtnClickListener();
+	disableGettingStartedLinks();
 });
 
 function setupMoreBtnClickListener() {
@@ -21,4 +22,10 @@ function changeFooterDisplay(isFooterMenuShowing) {
 			$("#footer-bottom-text-container").show();
 			$("#more-less-btn").html("Less");
 		}
+}
+
+function disableGettingStartedLinks() {
+	$('.footer .starting a').click(function() { 
+		return false; 
+	});
 }
