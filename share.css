@@ -1,0 +1,207 @@
+/*********************************************
+1. Global Styles
+2. Header
+3. Footer
+4. Main Content
+5. Network Details
+6. Parallax Content
+X. Miscellaneous
+*********************************************/
+
+/*======== Global Styles ========*/
+
+html, body {
+	font-family: "Futura PT", Helvetica, sans-serif;
+	background-color: #000;
+	color: #FFF;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1em;
+	padding-bottom: 4px;
+	border-width: 2px;
+	border-color: #FFF;
+}
+
+sup {
+	font-size: .5em;
+}
+
+a:link, a:visited {
+	color: #FFF;
+}
+
+a:hover, a:active {
+	color: #949494;
+	text-decoration: none;
+}
+
+.icon img {
+	margin: 30px 60px 30px 60px;
+	width: 30px;
+	height: 30px;
+}
+
+/*======== Header ========*/
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	text-align: center;
+	margin: 0;
+	padding: 15px 15px 25px;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.header button {
+	z-index: 2000;
+}
+
+.header img {
+	margin-top: 5px;
+}
+
+.icon-bar {
+	display: block;
+	margin: 5px;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: #FFF;
+}
+
+.btn-color-background {
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
+}
+
+/*======== Footer ========*/
+
+.footer {
+	padding: 0 100px;
+	margin: 0px -100px;
+	padding-bottom: 10px; 
+	color: #949494;
+	background-color: #000;
+}
+
+#footer-container {
+	padding-top: 100px;
+}
+
+.footer h4, a, li {
+	color: #FFF;
+	font-size: .8em;
+}
+
+.footer .footer-bottom-text {
+	margin-top: -25px;
+	color: #949494;
+	font-size: .8em;
+}
+
+.footer ul {
+	list-style: none;
+	padding-left: 0px;
+	color: #949494;
+}
+
+.footer .row a:link, .footer .row a:visited {
+	color: #949494;
+}
+
+.footer .row a:hover, .footer .row a:active {
+	color: #333333;
+	text-decoration: none;
+}
+
+#footer-bottom-text {
+	padding: 40px 0px 0px 0px;
+	margin-bottom: -40px 
+}
+
+.page-footer-copyright {
+	font-size: .7em;
+  	text-align: center;
+	margin: 50px 0 0 0;
+	padding-top: 15px; 
+	border-top: 1px solid #949494;
+}
+
+#footer-personal-logo {
+	margin: -2.7px 2px 0 0;
+}
+
+.language img {
+	margin: -2.7px 5px 0 0;
+}
+
+/*======== Main Content ========*/
+
+.parallax {
+	height: 45%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.parallax-section1 {
+	background-image: url("assets/bay_area_bart/cropped_large_background.jpg");
+	background-size: 100% auto;
+}
+
+#main-content {
+	z-index: 1000;
+	background-color: #000;
+	text-align: center;
+	padding: 0px 50px 0px;
+	margin: 0px;
+}
+
+#main-content .item {
+	padding: 0px -10px;
+}
+
+#main-content .item-2 {
+	padding: 0% 5.5%;
+}
+
+#main-content img {
+	margin-top: 30px;
+	height: 35px;
+	width: 35px;
+}
+
+#main-content h2 {
+	font-size: 1.4em;
+	padding: 0px;
+}
+
+#main-content p {
+	height: 145px;
+	font-size: .8em;
+	line-height: 1.7em;
+	padding: 0px 0px;
+}
+
+/*======== Modal ========*/
+
+.modal-content {
+	color: #000;
+	text-align: left;
+}
+
+/*======== Miscellaneous ========*/
+
+
+
+

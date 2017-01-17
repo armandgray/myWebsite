@@ -6,71 +6,199 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html; charset=utf-8" />
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Armand Gray - Digital Portfolio</title>
+	<title>Armand Gray</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_readable.css">
-	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="share.css">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body>
-	<!-- Collapsible Navigation Bar -->
-<div class="container">
- 
-<!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
- 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
- 
-      <!-- Button that toggles the navbar on and off on small screens -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
- 
-      <!-- Hides information from screen readers -->
-        <span class="sr-only"></span>
- 
-        <!-- Draws 3 bars in navbar button when in small mode -->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
- 
-      <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-      <a class="pull-left" href="#"><img src="assets/personal_logo_white.svg"></a>
-    </div>
- 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Phone</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Set Appointment</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- navbar-left will move the search to the left -->
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-</div>
+	<div class="row header"> 
+		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html"><img src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo"></a>
+
+		<a class="col-lg-offset-10 col-lg-1 col-md-offset-10 col-md-1 col-sm-offset-10 col-sm-1 col-xs-offset-10 col-xs-1" href="menu.html">	
+			<button type="button" class="btn btn-color-background">
+				
+				<span class="sr-only"></span>
+
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</a>
+	</div>
+	
+	<div class="parallax parallax-section1"></div>
+	<div id="main-content">
+		<div class="item item-1 col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-12">
+			<img border="0" alt="book icon" src="assets/icons/ic_reply_white_48dp.png" width="30" height="30">
+			<h2>Contact, Comment, Feedback</h2>
+			<p>This website is a subjective product from the learning specfictive of Armand Gray. The information here is a partial demonstration of Armand Gray's software engineering knowledge. As such, Armand welcomes feedback, comments corrections or any other insterest. Replies are welcome.</p>
+			<button class="btn btn-primary" data-target="#replyModal" data-toggle="modal">Reply to Armand Gray</button>
+		</div>
+
+		<div class="modal fade" id="replyModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Reply</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="inputSenderName">Sender</label>
+								<input class="form-control" placeholder="Name" type="text" id="inputSenderName"></input>
+							</div>
+							<div class="form-group">
+								<label for="inputMessage">Message</label>
+								<input class="form-control" placeholder="Type text here..." type="text" id="inputMessage"></input>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item item-2 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<img border="0" alt="book icon" src="assets/icons/ic_paperclip_white_48dp.png" width="30" height="30">
+			<h2>Skills, Projects, Experience</h2>
+			<p>The contents of this website embody 8th months of programming learning from a variety of resources. For more a specific overview of Armand Gray's Skills, Experience, Projects, and Education check out his resume with the button below.</p>
+			<form method="get" action="assets/Armand Gray Resume 1.1.pdf"> 
+				<button class="btn btn-primary">Download Resume</button>
+			</form>
+		</div>
+
+		<div class="item item-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+			<img border="0" alt="book icon" src="assets/icons/ic_send_white_48dp.png" width="30" height="30">
+			<h2>Spread, Share, <br>Enjoy</h2>
+			<p>This website contains information learned by Armand Gray through his software engineer learning process and represents the summary culmination of his understanding. The website is an on-going library of programming information. Please Spread, Share and Enjoy!</p> 
+			<button class="btn btn-primary">Share with Connections</button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="container">		
+		<div class="footer">
+			<div class="row" id="footer-container">
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" id="cc">
+					<h4>Favorites</h4>
+					<ul>
+						<li><a href="#">Derek Banas</a></li>
+				      	<li><a href="#">/dev/mission</a></li>
+					</ul>
+
+					<h4><br>Explore</h4>
+			        <ul>
+				      	<li><a href="#">Android Dev Digest</a></li>
+				      	<li><a href="#">Android Weekly</a></li>
+				      	<li><a href="#">Bootstrap.js</a></li>
+				      	<li><a href="#">Dagger</a></li>
+				      	<li><a href="#">Espresso</a></li>
+				      	<li><a href="#">JQuery</a></li>
+				      	<li><a href="#">UIL</a></li>
+				      	<li><a href="#">RxJava</a></li>
+			        </ul>
+			    </div>
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>BLOC App</h4>
+			        <ul>
+				      	<li><a href="#">Android - Java, XML</a></li>
+				      	<li><a href="#">Firebase</a></li>
+				      	<li><a href="#">Joda-Time</a></li>
+				      	<li><a href="#">Picasso</a></li>
+				      	<li><a href="#">JUnit</a></li>
+			        </ul>
+			    </div>			 
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>myWebsite</h4>
+			        <ul>
+				      	<li><a href="#">Adobe Illustrator</a></li>
+				      	<li><a href="#">Adobe Photoshop</a></li>
+				      	<li><a href="#">AWS</a></li>
+				      	<li><a href="#">HTML, CSS, JS</a></li>
+				      	<li><a href="#">nginx</a></li>
+			        </ul>
+			    </div>
+
+			    <div class="clearfix visible-xs"></div>
+		 
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+					<h4>Assets</h4>
+					<ul>
+						<li><a href="#">Clean Code</a></li>
+						<li><a href="#">Design Patterns</a></li>
+						<li><a href="#">Effective Java</a></li>
+						<li><a href="#">Lynda.com</a></li>
+						<li><a href="#">TDD</a></li>
+					</ul>
+			    </div>
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>Getting Started</h4>
+			        <ul>
+				      	<li><a href="#">Algorithms</a></li>
+				      	<li><a href="#">Code Efficiency</a></li>
+				      	<li><a href="#">Data Structures</a></li>
+				      	<li><a href="#">Databases</a></li>
+				      	<li><a href="#">Design Patterns</a></li>
+				      	<li><a href="#">Fundamentals</a></li>
+				      	<li><a href="#">Object-Oriented Design</a></li>
+				      	<li><a href="#">Software Quality Assurance</a></li>
+				      	<li><a href="#">Web Services</a></li>
+			        </ul>
+			    </div>	
+			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			        <h4>Other</h4>
+			        <ul>
+				      	<li><a href="#">Go</a></li>
+				      	<li><a href="#">Mission Techies</a></li>
+				      	<li><a href="#">Node.js</a></li>
+				      	<li><a href="#">React Native</a></li>
+				      	<li><a href="#">SQL</a></li>
+			        </ul>
+			    </div>
+			</div>
+
+			<div class="footer-bottom-text" id="footer-bottom-text-container">
+				<p id="footer-bottom-text">Find more ways to check out my work: Visit my 
+					<a href="https://www.linkedin.com/in/armand-gray-03aa03a">LinkedIn</a> 
+				or my work on 
+					<a href="https://www.github.com/armandgray">GitHub</a>
+				</p>
+			</div>
+			<div class="page-footer-copyright row" id="bottom-footer">
+				<p class="col-lg-3 col-md-4 col-sm-6 col-xs-1 hidden-xs ">Copyright © 2016 Armand Gray - Digital Portfolio</p>
+				<p class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<a href="landing.html">
+				<img id="footer-personal-logo" src="assets/personal_logo_white.svg" width="15" height="11" alt="personal logo">
+				</a>
+				<a href="resources.html" id="explore-btn">Explore</a>
+				&nbsp; | &nbsp; 
+				<a href="share.html">Share</a>
+				&nbsp; | &nbsp; 
+				<a id="more-less-btn" href="#bottom-footer">Less</a>
+				</p>
+				<p class="pull-right language col-lg-2 col-md-2 col-sm-1 col-xs-1 hidden-sm hidden-xs"><img src="assets/icons/ic_circular_us_flag.png" height="15" width="15">United States</p>
+			</div>
+		</div>
+	</div>
 
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="footer.js"></script>
+	<script type="text/javascript" src="share.js"></script>
+	<script>
+		changeFooterDisplay(true);
+	</script>
 
 </body>
 </html>  
+
+
