@@ -19,6 +19,10 @@ function setupItemsNavListener() {
     	}
     });
 
-    
+    $(itemSelectors[1]).click(function() {
+    	for (var i = 0; i < favorites.length; i++) {
+    		$(favorites[i]).hide();
+    	}
+    });
 
 }
