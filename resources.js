@@ -5,6 +5,7 @@ $(document).ready(function() {
 function setupItemsNavListener() {
     var itemSelectors = $('.items-nav button');
     var items = $('.item-container');
+
     var favorites = $('.favorites');
     var assets = $('.assets');
     var projects = $('.projects');
@@ -18,11 +19,6 @@ function setupItemsNavListener() {
     	}
     });
 
-    $(itemSelectors[1]).click(function() {
-    	for (var i = 0; i < items.length; i++) {
-    		if (items.indexOf(items[i]) == -1 {
+    
 
-    		}
-    	}
-	}
 }
