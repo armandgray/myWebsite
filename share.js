@@ -5,13 +5,16 @@ $("document").ready(function() {
 
 
 function setupSendMessageListener() {
+	$('#replyModal .modal-footer p').hide();
+
 	$('.btn-send').click(function() {
 		if (verifyInputsNonEmpty()) {
+			$('#replyModal .modal-footer p').hide();
 	    	$('#replyModal').modal('toggle');
 			clearInputContents();
 	    	displaySnackbar("Message Sent!");
 		} else {
-	    	// displaySnackbar("Please enter a name & message");
+			$('#replyModal .modal-footer p').show();
 		}
 	});
 }
