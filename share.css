@@ -154,7 +154,8 @@ a:hover, a:active {
 	text-align: left;
 }
 
-#shareModal .modal-body {
+#shareModal .modal-body a {
+	margin: 0 21.8px;
 }
 
 .fb-share-button {
