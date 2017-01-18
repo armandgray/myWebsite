@@ -154,7 +154,8 @@ a:hover, a:active {
 	text-align: left;
 }
 
-#shareModal .modal-body {
+#shareModal .modal-body a {
+	margin: 0 21.8px;
 }
 
 .fb-share-button {
@@ -181,7 +182,7 @@ a:hover, a:active {
     border-radius: 10px; /* Rounded borders */
     padding: 10px; /* Padding */
     position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
+    z-index: 1000; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* 30px from the bottom */
 }
