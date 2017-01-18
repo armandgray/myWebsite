@@ -154,12 +154,16 @@ a:hover, a:active {
 	text-align: left;
 }
 
+#shareModal .modal-body {
+}
+
 .fb-share-button {
 	text-align: center;
-	background: #3B5998;
-	width: 10%;
+	width: 6%;
 	font-size: .9em;
-	padding: 2px 0;
+	padding: 0;
+	margin-bottom: 100px;
+	margin-top: -30px;
 	border-color: #333333;
 	border-width: 0.5px;
 	border-radius: 2px;
