@@ -3,8 +3,7 @@
 2. Header
 3. Footer
 4. Main Content
-5. Network Details
-6. Parallax Content
+5. Modals
 X. Miscellaneous
 *********************************************/
 
@@ -148,11 +147,22 @@ a:hover, a:active {
 	padding: 0px 0px;
 }
 
-/*======== Modal ========*/
+/*======== Modals ========*/
 
 .modal-content {
 	color: #000;
 	text-align: left;
+}
+
+.fb-share-button {
+	text-align: center;
+	background: #3B5998;
+	width: 10%;
+	font-size: .9em;
+	padding: 2px 0;
+	border-color: #333333;
+	border-width: 0.5px;
+	border-radius: 2px;
 }
 
 /*======== Miscellaneous ========*/
