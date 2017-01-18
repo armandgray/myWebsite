@@ -1,38 +1,52 @@
-window.onload = function() {
-	whenWindowReady();
-};
+var items;
 
-function whenWindowReady() {
-	addListenersToIcons();
+var animDuration = 500;
+
+$(document).ready(function() {
+	setupItemsNavListener();
+});
+
+function setupItemsNavListener() {
+    items = $('.item-container');
+    var favorites = $('.favorites');
+    var assets = $('.assets');
+    var projects = $('.projects');
+    var gettingStartedItems = $('.getting-started');
+
+    var itemSelectors = $('.items-nav button');
+
+    $(itemSelectors[0]).click(function() {
+    	showAllItems();
+    });
+
+    $(itemSelectors[1]).click(function() {
+    	onlyShow(favorites);
+    });
+
+    $(itemSelectors[2]).click(function() {
+    	onlyShow(assets);
+    });
+
+    $(itemSelectors[3]).click(function() {
+    	onlyShow(projects);
+    });
+
+    $(itemSelectors[4]).click(function() {
+    	onlyShow(gettingStartedItems);
+    });
 }
 
-function addListenersToIcons() {
-	var iconsList = document.getElementsByClassName('icon');
-	for (var i = 0; i < iconsList.length; i++) {
-		var img = iconsList[i].childNodes[1];
-		img.addEventListener('mouseover', addAnimationTo(img, 'bounce'), false);
+function showAllItems() {
+	for (var i = 0; i < items.length; i++) {
+		$(items[i]).show(animDuration);
 	}
 }
 
-function addAnimationTo(element, anim) {
-	if (!isAnimated(element) && !hasAnimation(anim, element)) {
-		addClassTo(element, 'animated');
-		addClassTo(element, anim);
-	} else if (!isAnimated(element)) {
-		addClassTo(element, 'animated');
-	} else if (!hasAnimation(anim, element)) {
-		addClassTo(element, anim);
+function onlyShow(itemsList) {
+	for (var i = 0; i < items.length; i++) {
+		$(items[i]).hide(animDuration);
 	}
-}
-
-function isAnimated(element) {
-	return element.className.indexOf('animated') >= 0;
-}
-
-function hasAnimation(anim, element) {
-	return element.className.indexOf(anim) >= 0;
-}
-
-function addClassTo(element, className) {
-	element.className += ' ' + className;
+	for (var i = 0; i < itemsList.length; i++) {
+		$(itemsList[i]).show(animDuration);
+	}
 }

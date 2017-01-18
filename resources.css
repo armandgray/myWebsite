@@ -58,57 +58,6 @@ a:hover, a:active {
 
 /*======== Footer ========*/
 
-.footer {
-	margin: 0px 0 0 0;
-	padding-bottom: 10px; 
-	color: #949494;
-}
-
-.footer h4, a, li {
-	color: #333333;
-	font-size: .8em;
-}
-
-.footer .footer-bottom-text {
-	margin-top: -25px;
-	color: #949494;
-	font-size: .8em;
-}
-
-.footer ul {
-	list-style: none;
-	padding-left: 0px;
-	color: #949494;
-}
-
-.footer .row a:link, .footer .row a:visited {
-	color: #949494;
-}
-
-.footer .row a:hover, .footer .row a:active {
-	color: #333333;
-	text-decoration: none;
-}
-
-#footer-bottom-text {
-	padding: 40px 0px 5px 0px;
-	border-bottom: 1px solid #949494;
-}
-
-.page-footer-copyright {
-	font-size: .7em;
-  	text-align: center;
-	padding-top: 15px; 
-}
-
-#footer-personal-logo {
-	margin: -2.7px 2px 0 0;
-}
-
-.language img {
-	margin: -2.7px 5px 0 0;
-}
-
 #explore-btn {
 	cursor: default;
 	color: #949494;
