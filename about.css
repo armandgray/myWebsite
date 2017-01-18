@@ -237,19 +237,19 @@ a:hover, a:active {
 }
 
 .parallax-section2 {
-	background-image: url("background2.jpg");
+	background-image: url("assets/northstar_ca.jpg");
 }
 
 .parallax-section3 {
-	background-image: url("background3.jpg");
+	background-image: url("assets/bay_area_mist_below/opacity_35.jpg");
 }
 
 .parallax-section4 {
-	background-image: url("background1.jpg");
+	background-image: url("assets/uber_screenshots/DSC00843 copy.JPG");	
 }
 
 .parallax-section5 {
-	background-image: url("background2.jpg");
+	background-image: url("assets/uber_screenshots/Screen Shot 2017-01-12 at 12.06.42 PM.jpg");
 }
 
 .parallax-section6 {
@@ -257,11 +257,11 @@ a:hover, a:active {
 }
 
 .parallax-section7 {
-	background-image: url("background1.jpg");
+	background-image: url("assets/bay_area_night_life/10356373155_06bf9b4a8f_o.jpg");
 }
 
 .parallax-section8 {
-	background-image: url("background2.jpg");
+	background-image: url("assets/split_screen_coding/opacity_30.jpg");
 	margin-bottom: 50px;
 }
 
