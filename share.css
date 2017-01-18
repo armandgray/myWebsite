@@ -3,8 +3,7 @@
 2. Header
 3. Footer
 4. Main Content
-5. Network Details
-6. Parallax Content
+5. Modals
 X. Miscellaneous
 *********************************************/
 
@@ -90,8 +89,6 @@ a:hover, a:active {
 .footer {
 	padding: 0 100px;
 	margin: 0px -100px;
-	padding-bottom: 10px; 
-	color: #949494;
 	background-color: #000;
 }
 
@@ -101,49 +98,6 @@ a:hover, a:active {
 
 .footer h4, a, li {
 	color: #FFF;
-	font-size: .8em;
-}
-
-.footer .footer-bottom-text {
-	margin-top: -25px;
-	color: #949494;
-	font-size: .8em;
-}
-
-.footer ul {
-	list-style: none;
-	padding-left: 0px;
-	color: #949494;
-}
-
-.footer .row a:link, .footer .row a:visited {
-	color: #949494;
-}
-
-.footer .row a:hover, .footer .row a:active {
-	color: #333333;
-	text-decoration: none;
-}
-
-#footer-bottom-text {
-	padding: 40px 0px 0px 0px;
-	margin-bottom: -40px 
-}
-
-.page-footer-copyright {
-	font-size: .7em;
-  	text-align: center;
-	margin: 50px 0 0 0;
-	padding-top: 15px; 
-	border-top: 1px solid #949494;
-}
-
-#footer-personal-logo {
-	margin: -2.7px 2px 0 0;
-}
-
-.language img {
-	margin: -2.7px 5px 0 0;
 }
 
 /*======== Main Content ========*/
@@ -193,14 +147,75 @@ a:hover, a:active {
 	padding: 0px 0px;
 }
 
-/*======== Modal ========*/
+/*======== Modals ========*/
 
 .modal-content {
 	color: #000;
 	text-align: left;
 }
 
+#shareModal .modal-body {
+}
+
+.fb-share-button {
+	text-align: center;
+	width: 6%;
+	font-size: .9em;
+	padding: 0;
+	margin-bottom: 100px;
+	margin-top: -30px;
+	border-color: #333333;
+	border-width: 0.5px;
+	border-radius: 2px;
+}
+
 /*======== Miscellaneous ========*/
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 10px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
 
 
 

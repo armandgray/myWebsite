@@ -9,11 +9,22 @@
 	<title>Armand Gray</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_readable.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
 	<link rel="stylesheet" type="text/css" href="share.css">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<div class="row header"> 
 		<a class="col-lg-1 col-md-1 col-sm-1 col-xs-1" href="landing.html"><img src="assets/personal_logo_white.svg" width="40" height="28" alt="personal logo"></a>
 
@@ -58,17 +69,19 @@
 						</form>
 					</div>
 					<div class="modal-footer">
-						<button class="btn btn-primary">Send</button>
+						<button class="btn btn-primary btn-send">Send</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div id="snackbar">Message Sent!</div>
+
 		<div class="item item-2 col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<img border="0" alt="book icon" src="assets/icons/ic_paperclip_white_48dp.png" width="30" height="30">
 			<h2>Skills, Projects, Experience</h2>
 			<p>The contents of this website embody 8th months of programming learning from a variety of resources. For more a specific overview of Armand Gray's Skills, Experience, Projects, and Education check out his resume with the button below.</p>
-			<form method="get" action="assets/Armand Gray Resume 1.1.pdf"> 
+			<form method="get" action="assets/Armand Gray Resume 1.1.pdf" target="_blank"> 
 				<button class="btn btn-primary">Download Resume</button>
 			</form>
 		</div>
@@ -77,8 +90,31 @@
 			<img border="0" alt="book icon" src="assets/icons/ic_send_white_48dp.png" width="30" height="30">
 			<h2>Spread, Share, <br>Enjoy</h2>
 			<p>This website contains information learned by Armand Gray through his software engineer learning process and represents the summary culmination of his understanding. The website is an on-going library of programming information. Please Spread, Share and Enjoy!</p> 
-			<button class="btn btn-primary">Share with Connections</button>
+			<button class="btn btn-primary" data-target="#shareModal" data-toggle="modal">Share with Connections</button>
 		</div>
+
+		<div class="modal fade" id="shareModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Share</h4>
+					</div>
+					<div class="modal-body">
+						<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_button_google_gmail" data-dismiss="modal"></a>
+						<a class="a2a_button_linkedin" data-dismiss="modal"></a>
+						<a class="a2a_button_facebook" data-dismiss="modal"></a>
+						<a class="a2a_button_facebook_messenger" data-dismiss="modal"></a>
+						<a class="a2a_button_sms" data-dismiss="modal"></a>
+						<a class="a2a_button_twitter" data-dismiss="modal"></a>
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<div class="clearfix"></div>
 
@@ -88,40 +124,38 @@
 			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" id="cc">
 					<h4>Favorites</h4>
 					<ul>
-						<li><a href="#">Derek Banas</a></li>
-				      	<li><a href="#">/dev/mission</a></li>
+						<li><a href="https://www.youtube.com/user/derekbanas">Derek Banas</a></li>
+				      	<li><a href="item-detail/item-mission.html">Mission Techies</a></li>
 					</ul>
 
 					<h4><br>Explore</h4>
 			        <ul>
-				      	<li><a href="#">Android Dev Digest</a></li>
-				      	<li><a href="#">Android Weekly</a></li>
-				      	<li><a href="#">Bootstrap.js</a></li>
-				      	<li><a href="#">Dagger</a></li>
-				      	<li><a href="#">Espresso</a></li>
-				      	<li><a href="#">JQuery</a></li>
-				      	<li><a href="#">UIL</a></li>
-				      	<li><a href="#">RxJava</a></li>
+				      	<li><a href="https://www.androiddevdigest.com/">Android Dev Digest</a></li>
+				      	<li><a href="http://androidweekly.net/">Android Weekly</a></li>
+				      	<li><a href="https://www.youtube.com/watch?v=gqOEoUR5RHg&t=3379s&index=31&list=PLGLfVvz_LVvSX7fVd4OUFp_ODd86H0ZIY">Bootstrap.js</a></li>
+				      	<li><a href="https://www.youtube.com/watch?v=BWXggB-T1jQ&t=2720s&index=29&list=PLGLfVvz_LVvSX7fVd4OUFp_ODd86H0ZIY">JQuery</a></li>
+				      	<li><a href="https://github.com/nostra13/Android-Universal-Image-Loader">UIL</a></li>
+				      	<li><a href="http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/">RxJava</a></li>
 			        </ul>
 			    </div>
 			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
 			        <h4>BLOC App</h4>
 			        <ul>
-				      	<li><a href="#">Android - Java, XML</a></li>
-				      	<li><a href="#">Firebase</a></li>
-				      	<li><a href="#">Joda-Time</a></li>
-				      	<li><a href="#">Picasso</a></li>
-				      	<li><a href="#">JUnit</a></li>
+				      	<li><a href="item-detail/item-bloc.html">Android - Java, XML</a></li>
+				      	<li><a href="https://firebase.google.com/">Firebase</a></li>
+				      	<li><a href="http://www.joda.org/joda-time/">Joda-Time</a></li>
+				      	<li><a href="http://square.github.io/picasso/">Picasso</a></li>
+				      	<li><a href="https://developer.android.com/training/testing/start/index.html">JUnit</a></li>
 			        </ul>
 			    </div>			 
 			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
 			        <h4>myWebsite</h4>
 			        <ul>
-				      	<li><a href="#">Adobe Illustrator</a></li>
-				      	<li><a href="#">Adobe Photoshop</a></li>
-				      	<li><a href="#">AWS</a></li>
-				      	<li><a href="#">HTML, CSS, JS</a></li>
-				      	<li><a href="#">nginx</a></li>
+				      	<li><a href="http://www.adobe.com/creativecloud.html">Adobe Illustrator</a></li>
+				      	<li><a href="http://www.adobe.com/creativecloud.html">Adobe Photoshop</a></li>
+				      	<li><a href="https://aws.amazon.com/">AWS</a></li>
+				      	<li><a href="item-detail/item-html-css-js.html">HTML, CSS, JS</a></li>
+				      	<li><a href="https://www.nginx.com/resources/wiki/">nginx</a></li>
 			        </ul>
 			    </div>
 
@@ -130,19 +164,16 @@
 			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
 					<h4>Assets</h4>
 					<ul>
-						<li><a href="#">Clean Code</a></li>
-						<li><a href="#">Design Patterns</a></li>
-						<li><a href="#">Effective Java</a></li>
-						<li><a href="#">Lynda.com</a></li>
-						<li><a href="#">TDD</a></li>
+						<li><a href="item-detail/item-clean-code.html">Clean Code</a></li>
+						<li><a href="item-detail/item-patterns.html">Design Patterns</a></li>
+						<li><a href="item-detail/item-effective.html">Effective Java</a></li>
+						<li><a href="item-detail/item-lynda.html">Lynda.com</a></li>
 					</ul>
 			    </div>
-			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+			    <div class="starting col-lg-2 col-md-2 col-sm-4 col-xs-6">
 			        <h4>Getting Started</h4>
 			        <ul>
-				      	<li><a href="#">Algorithms</a></li>
 				      	<li><a href="#">Code Efficiency</a></li>
-				      	<li><a href="#">Data Structures</a></li>
 				      	<li><a href="#">Databases</a></li>
 				      	<li><a href="#">Design Patterns</a></li>
 				      	<li><a href="#">Fundamentals</a></li>
@@ -150,15 +181,22 @@
 				      	<li><a href="#">Software Quality Assurance</a></li>
 				      	<li><a href="#">Web Services</a></li>
 			        </ul>
+
+			        <h4><br>Core Principles</h4>
+			        <ul>
+				      	<li><a href="#">Algorithms</a></li>
+				      	<li><a href="#">Big O Notations</a></li>
+				      	<li><a href="#">Data Structures</a></li>
+				      	<li><a href="#">Material Design</a></li>
+				      	<li><a href="#">Parallelism</a></li>
+			        </ul>
 			    </div>	
 			    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
 			        <h4>Other</h4>
 			        <ul>
-				      	<li><a href="#">Go</a></li>
-				      	<li><a href="#">Mission Techies</a></li>
-				      	<li><a href="#">Node.js</a></li>
-				      	<li><a href="#">React Native</a></li>
-				      	<li><a href="#">SQL</a></li>
+				      	<li><a href="https://golang.org/">Go</a></li>
+				      	<li><a href="https://facebook.github.io/react-native/">React Native</a></li>
+				      	<li><a href="https://www.youtube.com/watch?v=yPu6qV5byu4">MySQL</a></li>
 			        </ul>
 			    </div>
 			</div>
@@ -191,12 +229,10 @@
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="footer.js"></script>
 	<script type="text/javascript" src="share.js"></script>
-	<script>
-		changeFooterDisplay(true);
-	</script>
 
 </body>
 </html>  
