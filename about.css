@@ -192,6 +192,13 @@ a:hover, a:active {
 	padding: 30px 0;
 }
 
+#learning a:link,
+#learning a:visited,
+#services a:link,
+#services a:visited {
+	font-size: 1em;
+}
+
 /*======== Network Details ========*/
 
 #network-details {
