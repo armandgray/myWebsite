@@ -16,6 +16,11 @@ Tips:
 4. Overwhelmed... Give it a rest/ Take a break
 5. Take good notes and share what you've learned
 
+Principles of Photography:
+1. Geographic Features set horizontal alignement
+2. Rule of Thirds - The 2/3 line of the crop overlay determines the angle the img is viewed: eyes below to look down and vice-versa.
+3. Leading Lines Draw the Eye
+
 /*======== Where Photoshop Fits In ========*/
 
 Photoshop not only fits into our workflow after we've captured the image. It actually fits into our workflow as we're making the image and we say, hey, I have a vision for something like this. And sometimes the work is really simple and straight forward as we've seen. Other times, maybe it's a bit more involved. Either way, my hope is that by showing you some of these before and afters of my own work, you can start to think about, okay, well these are some of the things that we can do with Photoshop. Now of course this isn't exhaustive.
@@ -143,10 +148,102 @@ Scale:
 
 Color Space: Convert to sRGB
 
-
 /*======== Cropping and Straightening Images ========*/
 
 /*======== Increased Control with Layers ========*/
+
+/*======== Cropping and Straightening Images ========*/
+
+CROPPING
+Toolbar > Crop ('c')
+Options Bar > Deselect Delete Cropped Pixels (Deleted Forever)
+
+To re-crop: c + click img - re-enter crop overlay (Cycle Overlay - 'o')
+Recommended - Options Bar > Overlay Icon (net) > Auto Show Overlay - Display onLongClick
+
+Crop to Specific Aspect Ration:
+Options Bar > Ration > ...
+
+STRAIGHTENING
+Crop Tool ('c') > Options Bar > Level Tool (Hold Command) > Click and Drag - Create Desired Level Line on Img
+
+Position Cursor in Corner > Drag Curved Cursor
+
+To Resize and Mainatin Aspect Ration - Shift + Crop
+
+To Check for Level - Use Rulers
+View > Rulers (Command R) - Toggle
+
+Click and Drag Out Guide from ruler.
+
+To Compare & Contrast:
+Image > Duplicate
+Window > Arrange > 2-Up Vertical
+
+/*======== Increased Control with Layers ========*/
+
+Ideas: 
+1. Retouching
+2. Layer Opacity - Layers Panel
+3. More Conceptual - Retouch Away Distracting Elements
+4. Add Effects
+5. Change Mood with Color
+
+Covert to Black and White:
+Image > Adjustments > Black & White (opt + shift + comm. b) - B & W Dialog
+
+Note: This workflow is destructive & changes the actual img itself
+
+Solution: Create layer above:
+Right Panels > Adjustments Panel > Black & White
+
+Layers provides extra flexibility and allows us to manipulate images and toggle changes.
+
+Click and Drag over Eye Icons in Layers Panel to toggle multiple.
+
+Opt Click Eye toggle all other layers.
+
+NEW LAYERS
+Layers Panel > New Layer (Bottom Icons, index 5)
+Dbl Click to Rename
+Opacity Percentage - Top Right
+Eye Icon - Toggle Visibility
+Selected Layer is Highlighted
+
+To Change Size of Contents:
+Edit > Free Transform (Comm T)
+Drag or Shift Drag or Shift + Opt Drag
+
+Typography:
+Toolbar > T or ('t') - Manipulate with Options Bar
+
+Duplicate Layer - Drag Layer onto New Layer Icon
+
+Reorder Layers by Drag & Drop Layers
+
+COLOR OR TONE WITH ADJUSTMENT LAYERS
+Adjustments Panel > ...
+Ex: Hue/Saturation...
+Mute Img by Lowering Saturation
+Snap or Pop by Increasing Saturation
+
+Reset with Bottom Return Circle Icon in Dialog
+
+STYLE EFFECTS
+Layer Panel > fx (effects) > ...
+Drag Fill in top Right to Change Content Fill Color
+
+COMBINING IMAGES INTO 1 FILE
+Open Files as Tabs
+Click and Drag Layer Itself to New Tab
+OR
+Drag and Pull Out the Tab > Use Move tool To Drag it over the other Img
+
+CHANGING CANVAS SIZE
+Image > Canvas Size (opt + com C)
+> Select Anchor Point & Resize Width with Percent
+OR
+Place Img Outside of Canvas > Image > Reveal All 
 
 /*======== Improving Exposure ========*/
 
