@@ -65,12 +65,17 @@ a:hover, a:active {
 }
 
 .header ul {
-	padding: 6px 0 0 135px;
+	margin-right: -110px;
+	padding: 9px 0 0 0px;
 }
 
 .header li {
 	margin: 0 20px;
 	padding: 0;
+}
+
+.header #last {
+	margin-right: 0px;
 }
 
 .header li a {
@@ -89,7 +94,7 @@ a:hover, a:active {
 
 .btn-color-background {
 	background-color: rgba(18, 18, 18, 0);
-	margin-top: -6px;
+	margin-top: -2px;
 }
 
 .icon-bar {
