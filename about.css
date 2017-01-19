@@ -12,7 +12,7 @@ X. Miscellaneous
 
 html, body {
 	font-family: "Futura PT", Helvetica, sans-serif;
-	background-color: #121212;
+	background-color: #000;
 	color: #FFF;
 	height: 100%;
 	margin: 0;
@@ -238,7 +238,7 @@ a:hover, a:active {
 }
 
 .parallax-section1 {
-	background-image: url("assets/work_rms_photo_profile.png");
+	background-image: url("assets/headshot_overlay.png");
 }
 
 .parallax-section2 {
