@@ -356,19 +356,19 @@ GameScene ..., SKPhysicsContactDelegate {
 		self.physicsWorld.contactDelegate = self
 
 		player = self.childNode(withName: "player") as! SKSpriteNode
-		player?.physicsBody.categoryBitMask = playerCategory
-		player.physicsBody.collisionBitMask = noCategory // all things go through
-		player?.physicsBody.contactTestBitMask = enemyCategory | itemCategory // respond to coll
+		player?.physicsBody?.categoryBitMask = playerCategory
+		player.physicsBody?.collisionBitMask = noCategory // all things go through
+		player?.physicsBody?.contactTestBitMask = enemyCategory | itemCategory // respond to coll
 		
 		item = self.childNode(withName: "item") as! SKSpriteNode
-		item?.physicsBody.categoryBitMask = itemCategory
-		item.physicsBody.collisionBitMask = noCategory 
-		item?.physicsBody.contactTestBitMask = itemCategory // respond to coll
+		item?.physicsBody?.categoryBitMask = itemCategory
+		item.physicsBody?.collisionBitMask = noCategory 
+		item?.physicsBody?.contactTestBitMask = itemCategory // respond to coll
 		
 		enemy = self.childNode(withName: "enemy") as! SKSpriteNode
-		player?.physicsBody.categoryBitMask = enemyCategory
-		player.physicsBody.collisionBitMask = noCategory
-		player?.physicsBody.contactTestBitMask = playerCategory | laserCategory // respond to coll
+		player?.physicsBody?.categoryBitMask = enemyCategory
+		player.physicsBody?.collisionBitMask = noCategory
+		player?.physicsBody?.contactTestBitMask = playerCategory | laserCategory // respond to coll
 	}
 
 	// called on each contact given  contactTestBitMask
@@ -400,7 +400,7 @@ GameScene ..., SKPhysicsContactDelegate {
 
 	func spawnLaser() {
 	let laser = ...
-	laser?.physicsBody.categoryBitMask = laserCategory
+	laser?.physicsBody?.categoryBitMask = laserCategory
 	laser?.physicsBody?.collisionBitMask = noCategory
 	laser?.physicsBody?.contactTestBitMask = enemyCategory
 	}
@@ -435,3 +435,60 @@ func didBegin() {
 	self.addChild(explosion)
 	}
 }
+
+/*======== Work with Actions ========*/
+
+Actions allow you to perform animations and tasks in a specific order. (and loops)
+
+
+CREATE IN GAMESCENE
+in GameScene.sks click bottom button for lower panel
+
+Timeline - Lower panel
+Timeline > Obj Library > Move Action > Drag onto timeline > modify in Attributes Inspector
+
+Timeline Easing Function - Timing Function in Attributes Inspector > Linear/ Ease In...
+
+Right-Click Anim > Duplicate & > Reverse
+Select both Anims > Select Refresh btn > Loop > infinity
+
+CREATE IN CODE
+GameScene.swift > didMove {
+	...
+
+	let moveAction:SKAction = SKAction.moveBy(x: -200, y: 0, duration: 2)
+	moveAction.timingMode = .easeInEaseOut
+	item.run(moveAction)
+}
+
+ACTION SEQUENCES
+didMove() {
+	...
+
+	let moveAction:SKAction = SKAction.moveBy(x: -200, y: 0, duration: 2)
+	moveAction.timingMode = .easeInEaseOut
+	let reversedAction:SKAction = moveAction.reversed()
+	let sequence:SKAction = SKAction.sequence([moveAction, reversedAction])
+	let repeatAction:SKAction = SKAction.repeatForever(sequence)
+
+	item?.run(repeatAction)
+}
+
+STOP ACTION LOOP ON CLICK
+
+
+Needs run KEY: 
+	item?.run(repeatAction, withKey: "itemMove")
+
+GameScene.swift > touchDown(atPoint pos: CGPoint) {
+	player?.position = pos
+	item?.removeAction(forKey: "itemMove")
+}
+
+FRAME ANIMATIONS - Change Sprites Texture Over Time
+
+GameScene.sks > Obj. Lib > AnimatewithTextures Action > Drag to timeline
+
+Attributes Inspector > Media Lib. (index 3) drag frames or textures to Textures
+
+Animation > Right Click > Create Loop
