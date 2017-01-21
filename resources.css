@@ -155,7 +155,13 @@ a:hover, a:active {
 }
 
 .second-item {
-	background-color: #6DA8D4;
+	background-color: #87b12a;
+}
+
+.item-photo-2 {
+	position: absolute;
+	right: -8%;
+	top: 0%;
 }
 
 .third-item {
@@ -221,6 +227,10 @@ a:hover, a:active {
 
 .ninth-item {
 	background-color: #0ED482;
+}
+
+.tenth-item {
+	background-color: #6DA8D4;
 }
 
 /*======== Item Image Animations ========*/
