@@ -104,6 +104,7 @@ button {
 	position: absolute;
 	bottom: 15%;
 	left: 4%;
+	z-index: 1000;
 }
 
 .content-header .item-header h3 {

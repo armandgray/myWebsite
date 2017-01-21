@@ -16,13 +16,15 @@ X. Miscellaneous
 /*======== Content Header ========*/
 
 .container-fluid {
-	background-color: #87b12a; 
+	background-color: #72b300; 
 }
 
 #content-header-photo {
 	position: absolute;
-	right: -2%;
-	top: 1%;
+	right: 0%;
+	top: -20%;
+	height: auto;
+	width: 84.9%;
 }
 
 /*======== Main Content ========*/
