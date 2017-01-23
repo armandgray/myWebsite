@@ -55,7 +55,6 @@ a:hover, a:active {
 	position: fixed;
 	width: 100%;
 	padding: 25px 0 15px 25px;
-	margin: 0;
 	border: none;
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -65,7 +64,6 @@ a:hover, a:active {
 }
 
 .header ul {
-	margin-right: -110px;
 	padding: 9px 0 0 0px;
 }
 
@@ -90,6 +88,10 @@ a:hover, a:active {
 .header li a:hover, .header li a:active {
 	color: #FFF;
 	border-bottom: solid;
+}
+
+.header button {
+	margin-right: 5px;
 }
 
 .btn-color-background {
