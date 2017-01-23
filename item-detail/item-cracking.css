@@ -29,4 +29,38 @@ X. Miscellaneous
 
 /*======== Main Content ========*/
 
+.gallery-images {
+	margin: 0 30px 0 0px;
+	padding: 275px;
+}
+
+.gallery-images #gal-img-1 {
+	position: absolute;
+	left: -2%;
+	top: 10%;
+	width: 450px;
+	height: auto;
+}
+
+.gallery-images #gal-img-2 {
+	position: absolute;
+	left: 31%;
+	top: 5%;
+	width: 350px;
+	height: auto;
+	z-index: 1;
+}
+
+.gallery-images #gal-img-3 {
+	position: absolute;
+	right: 1%;
+	top: 8%;
+	width: 460px;
+	height: auto;
+}
+
+.intro {
+	margin: 50px 0;
+}
+
 /*======== Miscellaneous ========*/
