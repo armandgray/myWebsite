@@ -52,6 +52,10 @@ a:hover, a:active {
 	margin-top: 5px;
 }
 
+.header button {
+	margin-right: -19px;
+}
+
 .btn-color-background {
 	background-color: #000;
 	position: absolute;
