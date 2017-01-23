@@ -30,8 +30,7 @@ X. Miscellaneous
 /*======== Main Content ========*/
 
 .gallery-images {
-	margin: 0 30px 0 0px;
-	padding: 275px;
+	padding: 280px;
 }
 
 .gallery-images #gal-img-1 {
@@ -60,7 +59,7 @@ X. Miscellaneous
 }
 
 .intro {
-	margin: 50px 0 0 0;
+	margin: 100px 0 0 0;
 	font-size: .8em;
 }
 
