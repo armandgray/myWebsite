@@ -76,6 +76,12 @@ button {
 	background-color: #FFF;
 }
 
+/*======== Footer ========*/
+
+.footer {
+	margin-top: 250px;
+}
+
 /*======== Content Header ========*/
 
 .container {
@@ -104,7 +110,7 @@ button {
 	position: absolute;
 	bottom: 15%;
 	left: 4%;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .content-header .item-header h3 {
