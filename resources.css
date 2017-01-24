@@ -40,11 +40,15 @@ a:hover, a:active {
 
 .header {
 	text-align: center;
-	margin: 15px 15px;
+	margin: 15px 15px 19px;
 }
 
 .header img {
 	margin-top: 5px;
+}
+
+.items-nav {
+	margin-top: 2px;
 }
 
 .icon-bar {
@@ -178,7 +182,8 @@ a:hover, a:active {
 }
 
 .fourth-item img {
-	margin-top: 20px;
+	margin-top: 2%;
+	margin-right: -8%;
 }
 
 .fifth-item {
