@@ -116,56 +116,48 @@ a:hover, a:active {
 /*======== CTA Items - Main Img Dimensions ========*/
 
 .first-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 615px;
+	width: 515px;
 }
 
 .second-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 320px;
+	width: 240px;
 }
 
 .third-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 320px;
+	width: 240px;
 }
 
 .fourth-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 225px;
+	width: 400px;
 }
 
 .fifth-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 320px;
+	width: 240px;
 }
 
 .sixth-item figure img {
-	height: 180px;
-	width: 120px;
 }
 
 .seventh-item figure img {
-	height: 180px;
-	width: 120px;
-}
-
-.seventh-item img {
 	margin: 0 -20px 0 0;
+	height: 430px;
+	width: 1040px;
 }
 
 .eigth-item figure img {
-	height: 180px;
-	width: 120px;
-}
-
-.eigth-item img {
 	margin-top: 40px;
+	height: 150px;
+	width: 256px;
 }
 
 .ninth-item figure img {
-	height: 180px;
-	width: 120px;
+	height: 320px;
+	width: 240px;
 }
 
 /*======== CTA Items - Specific Dim. ========*/
