@@ -16,7 +16,7 @@ X. Miscellaneous
 /*======== Content Header ========*/
 
 .container-fluid {
-	background-color: #72b300; 
+	background-color: #72b200; 
 }
 
 #content-header-photo {
@@ -59,7 +59,7 @@ X. Miscellaneous
 }
 
 .intro {
-	margin: 100px 0 0 0;
+	margin: 100px 20px 0;
 	font-size: .8em;
 }
 
