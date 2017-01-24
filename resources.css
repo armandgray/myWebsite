@@ -2,10 +2,13 @@
 1. Global Styles
 2. Header
 3. Footer
-4. CTA Items
-5. Item Image Animations
-6. @media max: 768
-7. @media max: 480
+4. CTA Items - General
+5. CTA Items - Main Img Dimensions
+6. CTA Items - Specific Dim.
+7. CTA Items - Background Colors
+8. Item Image Animations
+9. @media max: 768
+10. @media max: 480
 X. Miscellaneous
 *********************************************/
 
@@ -76,7 +79,7 @@ a:hover, a:active {
 	color: #949494;
 }
 
-/*======== CTA Items ========*/
+/*======== CTA Items - General ========*/
 
 #all-items-container {
 	margin-bottom: 5px;
@@ -110,6 +113,63 @@ a:hover, a:active {
 	height: 30px;
 }
 
+/*======== CTA Items - Main Img Dimensions ========*/
+
+.first-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.second-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.third-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.fourth-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.fifth-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.sixth-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.seventh-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.seventh-item img {
+	margin: 0 -20px 0 0;
+}
+
+.eigth-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+.eigth-item img {
+	margin-top: 40px;
+}
+
+.ninth-item figure img {
+	height: 180px;
+	width: 120px;
+}
+
+/*======== CTA Items - Specific Dim. ========*/
+
 .item-photo-1 img {
 	position: absolute;
 	right: -40%;
@@ -134,10 +194,42 @@ a:hover, a:active {
 	left: 52%;
 }
 
+
+.third-item figure {
+	-ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.third-item figure img {
+	margin: -80px 275px 0 0;
+	height: 320px;
+	width: 240px;
+}
+
+.fourth-item img {
+	margin-top: 2%;
+	margin-right: -8%;
+}
+
 .item-container .item-content-6 {
 	position: absolute;
 	bottom: 6%;
 	left: 9%;
+}
+
+.item-photo-6 {
+	margin-top: 15px;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	height: 150px;
+	background-image: url("assets/Computer_Program1_8244.jpg");
+}
+
+.item-photo-6 .jumbotron {
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .item-content-8 {
@@ -161,6 +253,8 @@ a:hover, a:active {
 	background-color: #FFF;
 }
 
+/*======== CTA Items - Background Colors ========*/
+
 .first-item {
 	background-color: #0000D6;
 }
@@ -173,26 +267,9 @@ a:hover, a:active {
 	background-color: #D47200;
 }
 
-.third-item figure {
-	-ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-}
-
-.third-item figure img {
-	margin: -80px 275px 0 0;
-	height: 320px;
-	width: 240px;
-}
-
 .fourth-item {
 	background-color: #FFF;
 	color: #000;
-}
-
-.fourth-item img {
-	margin-top: 2%;
-	margin-right: -8%;
 }
 
 .fifth-item {
@@ -203,34 +280,12 @@ a:hover, a:active {
 	background-color: #D4B329;
 }
 
-.item-photo-6 {
-	margin-top: 15px;
-	border-radius: 10px;
-	border-color: white;
-	border-style: solid;
-	border-width: 1px;
-	height: 150px;
-	background-image: url("assets/Computer_Program1_8244.jpg");
-}
-
-.item-photo-6 .jumbotron {
-	background-color: rgba(255, 255, 255, 0);
-}
-
 .seventh-item {
 	background-color: #131241;
 }
 
-.seventh-item img {
-	margin: 0 -20px 0 0;
-}
-
 .eigth-item {
 	background-color: #C92228;
-}
-
-.eigth-item img {
-	margin-top: 40px;
 }
 
 .ninth-item {
@@ -240,19 +295,19 @@ a:hover, a:active {
 /*======== Item Image Animations ========*/
 
 .item-container {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 figure img {
-  -webkit-transition: all 0.5s linear;
-          transition: all 0.5s linear;
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
+    -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
 }
 
 figure:hover img {
-  -webkit-transform: scale3d(1.2, 1.2, 1);
-          transform: scale3d(1.2, 1.2, 1);
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
 }
 
 /*======== @media max: 768 ========*/
@@ -284,7 +339,7 @@ figure:hover img {
 	}
 }
 
-/*======== @media max: 768 ========*/
+/*======== @media max: 480 ========*/
 
 @media screen and (max-width: 480px) {
 	.item-container {
@@ -310,12 +365,6 @@ figure:hover img {
 	.item-container .item-content h3 {
 		margin: 0 0 4px;
 		font-size: 1.5em;
-	}
-
-    .third-item figure img {
-		margin: -80px 275px 0 0;
-		height: 320px;
-		width: 240px;
 	}
 }
 
