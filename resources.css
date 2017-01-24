@@ -201,7 +201,7 @@ a:hover, a:active {
 
 .fourth-item img {
 	margin-top: 2%;
-	margin-right: -8%;
+	margin-right: -2%;
 }
 
 .item-container .item-content-6 {
@@ -273,7 +273,7 @@ a:hover, a:active {
 }
 
 .seventh-item {
-	background-color: #131241;
+	background-color: #000;
 }
 
 .eigth-item {
@@ -329,6 +329,53 @@ figure:hover img {
 		margin: 0 0 7px;
 		font-size: 2em;
 	}
+
+	.first-item figure img {
+		margin-right: 12%;
+		height: 492px;
+		width: 412px;
+	}
+
+	.second-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+
+	.third-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+
+	.fourth-item figure img {
+		margin-right: 0%;
+		height: 202px;
+		width: 360px;
+	}
+
+	.fifth-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+
+	.sixth-item figure img {
+	}
+
+	.seventh-item figure img {
+		margin: 27px -160px 0 0;
+		height: 344px;
+		width: 832px;
+	}
+
+	.eigth-item figure img {
+		margin-top: 40px;
+		height: 150px;
+		width: 256px;
+	}
+
+	.ninth-item figure img {
+		height: 288px;
+		width: 216px;
+	}
 }
 
 /*======== @media max: 480 ========*/
@@ -357,6 +404,51 @@ figure:hover img {
 	.item-container .item-content h3 {
 		margin: 0 0 4px;
 		font-size: 1.5em;
+	}
+
+	.first-item figure img {
+		height: 615px;
+		width: 515px;
+	}
+
+	.second-item figure img {
+		height: 320px;
+		width: 240px;
+	}
+
+	.third-item figure img {
+		height: 320px;
+		width: 240px;
+	}
+
+	.fourth-item figure img {
+		height: 225px;
+		width: 400px;
+	}
+
+	.fifth-item figure img {
+		height: 320px;
+		width: 240px;
+	}
+
+	.sixth-item figure img {
+	}
+
+	.seventh-item figure img {
+		margin: 0 -20px 0 0;
+		height: 430px;
+		width: 1040px;
+	}
+
+	.eigth-item figure img {
+		margin-top: 40px;
+		height: 150px;
+		width: 256px;
+	}
+
+	.ninth-item figure img {
+		height: 320px;
+		width: 240px;
 	}
 }
 
