@@ -343,6 +343,9 @@ figure:hover img {
 	}
 
 	.third-item figure img {
+		position: absolute;
+		right: 10%;
+		margin-top: 13%;
 		height: 288px;
 		width: 216px;
 	}
@@ -364,7 +367,7 @@ figure:hover img {
 
 	.item-photo-6 {
 		position: absolute;
-		top: 6%;
+		top: 3%;
 		right: 5%;
 		height: 135px;
 		width: 400px;
@@ -398,6 +401,12 @@ figure:hover img {
 		position: relative;
 	}
 
+	.item-container figure img {
+		position: absolute;
+		top: 4%;
+		right: 2%;
+	}
+
     .item-container .item-content {
 		position: absolute;
 		bottom: 4%;
@@ -417,49 +426,61 @@ figure:hover img {
 	}
 
 	.first-item figure img {
-		height: 615px;
-		width: 515px;
+		margin-right: -70px;
+		height: 307px;
+		width: 257px;
 	}
 
 	.second-item figure img {
-		height: 320px;
-		width: 240px;
+		height: 224px;
+		width: 168px;
 	}
 
 	.third-item figure img {
-		height: 320px;
-		width: 240px;
+		right: -10%;
+		margin-top: 14px;
+		height: 224px;
+		width: 168px;
 	}
 
 	.fourth-item figure img {
-		height: 225px;
-		width: 400px;
+		height: 169px;
+		width: 300px;
 	}
 
 	.fifth-item figure img {
-		height: 320px;
-		width: 240px;
+		height: 224px;
+		width: 168px;
 	}
 
 	.sixth-item figure img {
 		/*none*/
 	}
 
+	.item-photo-6 {
+		position: absolute;
+		top: 2%;
+		right: 5%;
+		height: 130px;
+		width: 300px;
+	}
+
 	.seventh-item figure img {
-		margin: 0 -20px 0 0;
-		height: 430px;
-		width: 1040px;
+		margin: 35px -60px 0 0;
+		height: 258px;
+		width: 624px;
 	}
 
 	.eigth-item figure img {
-		margin-top: 40px;
-		height: 150px;
-		width: 256px;
+		margin-top: 0px;
+		margin-right: 15px;
+		height: 120px;
+		width: 205px;
 	}
 
 	.ninth-item figure img {
-		height: 320px;
-		width: 240px;
+		height: 224px;
+		width: 168px;
 	}
 }
 
