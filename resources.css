@@ -141,6 +141,7 @@ a:hover, a:active {
 }
 
 .sixth-item figure img {
+	/*none*/
 }
 
 .seventh-item figure img {
@@ -358,6 +359,15 @@ figure:hover img {
 	}
 
 	.sixth-item figure img {
+		/*none*/
+	}
+
+	.item-photo-6 {
+		position: absolute;
+		top: 6%;
+		right: 5%;
+		height: 135px;
+		width: 400px;
 	}
 
 	.seventh-item figure img {
@@ -432,6 +442,7 @@ figure:hover img {
 	}
 
 	.sixth-item figure img {
+		/*none*/
 	}
 
 	.seventh-item figure img {
