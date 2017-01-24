@@ -60,6 +60,13 @@ a:hover, a:active {
 	background-color: #FFF;
 }
 
+.btn-color-background {
+	background-color: #CCCCCC;
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
+}
+
 /*======== Footer ========*/
 
 #explore-btn {
@@ -174,6 +181,8 @@ a:hover, a:active {
 
 .third-item figure img {
 	margin: -80px 275px 0 0;
+	height: 320px;
+	width: 240px;
 }
 
 .fourth-item {
@@ -246,14 +255,23 @@ figure:hover img {
           transform: scale3d(1.2, 1.2, 1);
 }
 
-/*======== Miscellaneous ========*/
-
-.btn-color-background {
-	background-color: #CCCCCC;
-	position: absolute;
-	right: 2%;
-	margin-top: -1px;
+@media screen and (max-width: 768px) {
+    .third-item figure img {
+		margin: -80px 275px 0 0;
+		height: 180px;
+		width: 120px;
+	}
 }
+
+@media screen and (max-width: 480px) {
+    .third-item figure img {
+		margin: -80px 275px 0 0;
+		height: 320px;
+		width: 240px;
+	}
+}
+
+/*======== Miscellaneous ========*/
 
 .cta.row {
 	margin: 40px;
