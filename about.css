@@ -5,6 +5,7 @@
 4. Main Content
 5. Network Details
 6. Parallax Content
+7. Parallax Content - @media
 X. Miscellaneous
 *********************************************/
 
@@ -236,12 +237,14 @@ a:hover, a:active {
 	color: #FFF;
 }
 
-
 /*======== Parallax Content ========*/
 
 .parallax {
 	height: 100%;
-	background-size: cover;
+	-moz-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -277,6 +280,17 @@ a:hover, a:active {
 .parallax-section8 {
 	background-image: url("assets/split_screen_coding/opacity_30.jpg");
 	margin-bottom: 50px;
+}
+
+/*======== Parallax Content - @media ========*/
+
+@media screen and (max-width: 992px) {
+	.parallax {
+		-moz-background-size: auto 50%;
+		-webkit-background-size: auto 50%;
+		-o-background-size: auto 50%;
+		background-size: auto 50%;
+	}
 }
 
 /*======== Miscellaneous ========*/
