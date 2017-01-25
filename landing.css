@@ -3,7 +3,8 @@
 2. Header
 3. Footer
 4. Main Content
-5. Bootstrap Col Override
+5. Main Content - Icon Dim. @media
+6. Bootstrap Col Override
 X. Miscellaneous
 *********************************************/
 
@@ -93,63 +94,6 @@ p.cta {
 	margin: 0 0 20px;
 }
 
-@media screen and (max-width: 768px) {
-	.main-content {
-		margin: 0 -12%;
-		margin-bottom: -7px;
-	}
-
-/*	#all-icons-container {
-		margin: 0 18.7%;
-	}*/
-
-/*	.cta-2.row {
-		text-align: center;
-		width: 100%;
-	}*/
-}
-
-/*@media screen and (max-width: 600px) {
-	#all-icons-container {
-		margin: 0 12%;
-	}
-
-	.cta-2.row {
-		margin: 0 10% 0;
-	}
-}
-
-@media screen and (max-width: 540px) {
-	#all-icons-container {
-		margin: 0 8%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.main-content {
-		margin: 0 -30%;
-		margin-bottom: -7px;
-	}
-
-	#all-icons-container {
-		margin: 0 13.3%;
-	}
-
-	.cta-2.row {
-		margin: 0 10% 0;
-	}
-}
-
-@media screen and (max-width: 420px) {
-	#all-icons-container {
-		margin: 0 8%;
-	}
-
-	.cta-2.row {
-		margin: 0 10% 0;
-	}
-}*/
-
 #icon-container {
 	margin-bottom: 0px;
 }
@@ -191,6 +135,53 @@ p.cta {
 
 a:hover, a:active {
 	color: #FFF;
+}
+
+/*======== Main Content - Icon Dim. @media ========*/
+
+@media screen and (max-width: 768px) {
+	#all-icons-container {
+		width: 400%;
+	}
+
+	.cta.row a {
+		padding: 20px 10px;
+	}
+
+	.cta-2.row {
+		margin: 0 4%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.landing-header {
+		margin: -30px 0 0;
+	}
+
+	.landing-header img {
+		height: 73px;
+		width: 105px;
+		margin-left: 7px;
+	}
+
+	.landing-header h1 {
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+	.main-content p.cta {
+		font-size: .9em;
+		margin: -10px 0 10px;
+	}
+
+	#all-icons-container {
+		margin: 0 -14%;
+		width: 500%;
+	}
+
+	.cta.row a {
+		padding: 5px 10px;
+	}
 }
 
 /*======== Bootstrap Col Override ========*/
