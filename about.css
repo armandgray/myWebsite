@@ -241,10 +241,10 @@ a:hover, a:active {
 
 .parallax {
 	height: 100%;
-	-moz-background-size: 100% auto;
-	-webkit-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: 100% auto;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -285,12 +285,7 @@ a:hover, a:active {
 /*======== Parallax Content - @media ========*/
 
 @media screen and (max-width: 992px) {
-	.parallax {
-		-moz-background-size: auto 50%;
-		-webkit-background-size: auto 50%;
-		-o-background-size: auto 50%;
-		background-size: auto 50%;
-	}
+	
 }
 
 /*======== Miscellaneous ========*/
