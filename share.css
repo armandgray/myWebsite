@@ -3,7 +3,8 @@
 2. Header
 3. Footer
 4. Main Content
-5. Modals
+5. Main Content - CTA @media
+6. Modals
 X. Miscellaneous
 *********************************************/
 
@@ -103,7 +104,7 @@ a:hover, a:active {
 /*======== Main Content ========*/
 
 .parallax {
-	height: 45%;
+	height: 40%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -117,27 +118,27 @@ a:hover, a:active {
 	z-index: 1000;
 	background-color: #000;
 	text-align: center;
-	padding: 0px 50px 0px;
-	margin: 0px;
+	padding: 0px 20px 0px;
+	margin: -20px 0 0;
 }
 
 #main-content .item {
-	padding: 0px -10px;
-}
-
-#main-content .item-2 {
-	padding: 0% 5.5%;
+	padding: 0px 30px;
 }
 
 #main-content img {
-	margin-top: 30px;
+	margin-top: 60px;
 	height: 35px;
 	width: 35px;
 }
 
 #main-content h2 {
 	font-size: 1.4em;
-	padding: 0px;
+	padding: 0 40px;
+}
+
+#main-content .item3 h2 {
+	padding: 0 80px;
 }
 
 #main-content p {
@@ -145,6 +146,93 @@ a:hover, a:active {
 	font-size: .8em;
 	line-height: 1.7em;
 	padding: 0px 0px;
+}
+
+/*======== Main Content - CTA @media ========*/
+
+@media screen and (max-width: 1200px) {
+	#main-content h2 {
+		padding: 0 20px;
+	}
+
+	#main-content .item3 h2 {
+		padding: 0 30px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#main-content h2 {
+		padding: 0 40px;
+	}
+
+	#main-content .item3 h2 {
+		padding: 0 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#main-content {
+		margin-top: -7%;
+	}
+
+	#main-content h2 {
+		padding: 0 0px;
+	}
+
+	#main-content .item {
+		padding: 0px 80px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#main-content {
+		margin-top: -20%;
+	}
+
+@media screen and (max-width: 540px) {
+	#main-content {
+		margin-top: -110px;
+	}
+
+	#main-content .item {
+		padding: 0px 20px;
+	}
+
+	#main-content p {
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#main-content {
+		margin-top: -170px;
+	}
+
+	#main-content img {
+		margin-top: 70px;
+		height: 25px;
+		width: 25px;
+	}
+
+	#main-content h2 {
+		font-size: 1.1em;
+	}
+
+	#main-content p {
+		height: 90px;
+		font-size: .7em;
+		line-height: 1.5em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#main-content {
+		margin-top: -200px;
+	}
+
+	#main-content p {
+		height: 130px;
+	}
 }
 
 /*======== Modals ========*/
