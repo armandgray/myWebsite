@@ -478,6 +478,24 @@ figure:hover img {
 		width: 205px;
 	}
 
+	.item-content-8 {
+		margin: 0px 0px 12px 43px;
+	}
+
+	.item-content-8 div {
+		margin: 0px 0px -16.3px -45px;
+	}
+
+	.item-content-8 p {
+		margin: 8px 0px 0px -43px;
+	}
+
+	.item-content-8 .icon-bar {
+		margin: 3px;
+		width: 30px;
+		height: 2px;
+	}
+
 	.ninth-item figure img {
 		height: 224px;
 		width: 168px;
