@@ -437,10 +437,14 @@ figure:hover img {
 	}
 
 	.third-item figure img {
-		right: -10%;
+		right: -15%;
 		margin-top: 14px;
 		height: 224px;
 		width: 168px;
+	}
+
+	.third-item h3 {
+		font-size: 1.3em;
 	}
 
 	.fourth-item figure img {

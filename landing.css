@@ -66,8 +66,22 @@ a:hover, a:active {
 
 .main-content {
 	padding-top: 100px;
+  margin: 0 4.4%;
 	margin-bottom: -7px;
 }
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
 
 .landing-header h1 {
 	font-size: 2em;
