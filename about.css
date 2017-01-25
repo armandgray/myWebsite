@@ -286,23 +286,23 @@ a:hover, a:active {
 
 @media screen and (max-width: 992px) {
 	.jumbotron {
-		padding: 0px 0px 0px;
+		padding: 30px 0px 10px;
 		margin: 0px 0 -25px;
 	}
 
 	.jumbotron.transparent {
-		margin-top: -25px;
-		padding-top: 50px;
+		margin-top: 0px;
+		padding-top: 80px;
 	}
 
 	.jumbotron h2 {
-		font-size: 5em;
+		font-size: 3.5em;
 		padding: 0px;
 	}
 
 	.jumbotron p {
-		font-size: 1.1em;
-		padding: 30px 150px 60px;
+		font-size: 1em;
+		padding: 30px 90px;
 	}
 }
 
