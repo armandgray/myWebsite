@@ -107,10 +107,8 @@ function toggleTextAnimAt(iconIndex) {
 
 function getImgIndex(imgElement, imgList) {
 	for (var i = 0; i < imgList.length; i++) {
-		if (imgElement == imgList[i] && i <= 2) {
+		if (imgElement == imgList[i]) {
 			return i;
-		} else if (imgElement == imgList[i] && i > 2) {
-			return i - 1;
 		}
 	}
 }
