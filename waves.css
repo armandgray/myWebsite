@@ -51,6 +51,14 @@ body {
             transform: translate3d(0, 0, 0);
 }
 
+/*======== Main Content - Icon Dim. @media ========*/
+
+@media screen and (max-width: 768px) {
+  .wave-outer-container {
+    left: 1px;
+  }
+}
+
 .wave-container {
   z-index: -100;
   position: absolute;
