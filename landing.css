@@ -66,22 +66,14 @@ a:hover, a:active {
 
 .main-content {
 	padding-top: 100px;
-  margin: 0 4.4%;
+	margin: 0 4%;
 	margin-bottom: -7px;
 }
 
-@media screen and (max-width: 1200px) {
+#all-icons-container {
+	width: 100%;
+	text-align: center;
 }
-
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 480px) {
-}
-
 
 .landing-header h1 {
 	font-size: 2em;
@@ -100,6 +92,63 @@ p.cta {
 .cta-2.row {
 	margin: 0 0 20px;
 }
+
+@media screen and (max-width: 768px) {
+	.main-content {
+		margin: 0 -12%;
+		margin-bottom: -7px;
+	}
+
+/*	#all-icons-container {
+		margin: 0 18.7%;
+	}*/
+
+/*	.cta-2.row {
+		text-align: center;
+		width: 100%;
+	}*/
+}
+
+/*@media screen and (max-width: 600px) {
+	#all-icons-container {
+		margin: 0 12%;
+	}
+
+	.cta-2.row {
+		margin: 0 10% 0;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#all-icons-container {
+		margin: 0 8%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-content {
+		margin: 0 -30%;
+		margin-bottom: -7px;
+	}
+
+	#all-icons-container {
+		margin: 0 13.3%;
+	}
+
+	.cta-2.row {
+		margin: 0 10% 0;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#all-icons-container {
+		margin: 0 8%;
+	}
+
+	.cta-2.row {
+		margin: 0 10% 0;
+	}
+}*/
 
 #icon-container {
 	margin-bottom: 0px;
