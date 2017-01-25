@@ -7,7 +7,7 @@
 6. CTA Items - Specific Dim.
 7. CTA Items - Background Colors
 8. Item Image Animations
-9. @media max: 768
+9. @media max: 1200 & 768
 10. @media max: 480
 X. Miscellaneous
 *********************************************/
@@ -303,7 +303,17 @@ figure:hover img {
         transform: scale3d(1.2, 1.2, 1);
 }
 
-/*======== @media max: 768 ========*/
+
+
+/*======== @media max: 1200 & 768 ========*/
+
+@media screen and (max-width: 1200px) {
+	.third-item figure img {
+		position: absolute;
+		right: 10%;
+		margin-top: 0%;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	.item-container {
@@ -345,7 +355,7 @@ figure:hover img {
 	.third-item figure img {
 		position: absolute;
 		right: 10%;
-		margin-top: 13%;
+		margin-top: 12%;
 		height: 288px;
 		width: 216px;
 	}
