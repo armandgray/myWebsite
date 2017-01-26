@@ -249,17 +249,16 @@ a:hover, a:active {
 	background-attachment: fixed;
 }
 
+.parallax img {
+	height: auto;
+	width: 100%;
+	opacity: 0;
+    filter: alpha(opacity=0);
+}
+
 .parallax-section1 {
 	height: auto;
 	background-image: url("assets/headshot_overlay.png");
-}
-
-.parallax-section1 img {
-	height: auto;
-	width: 100%;
-	margin-top: 20px;
-	opacity: 0;
-    filter: alpha(opacity=0);
 }
 
 .parallax-section2 {
