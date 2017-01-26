@@ -177,7 +177,7 @@ a:hover, a:active {
 
 .jumbotron.transparent {
 	margin-top: -25px;
-	padding-top: 100px;
+	padding-top: 50px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -250,7 +250,16 @@ a:hover, a:active {
 }
 
 .parallax-section1 {
+	height: auto;
 	background-image: url("assets/headshot_overlay.png");
+}
+
+.parallax-section1 img {
+	height: auto;
+	width: 100%;
+	margin-top: 20px;
+	opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 .parallax-section2 {
