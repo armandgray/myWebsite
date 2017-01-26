@@ -241,7 +241,7 @@ a:hover, a:active {
 /*======== Parallax Content ========*/
 
 .parallax {
-	height: 100%;
+	height: auto;
 	-moz-background-size: 100% auto;
 	-webkit-background-size: 100% auto;
 	-o-background-size: 100% auto;
@@ -251,6 +251,7 @@ a:hover, a:active {
 }
 
 .parallax img {
+	float: unset;
 	height: auto;
 	width: 100%;
 	opacity: 0;
@@ -259,7 +260,6 @@ a:hover, a:active {
 }
 
 .parallax-section1 {
-	height: auto;
 	background-image: url("assets/headshot_overlay.png");
 }
 
@@ -280,7 +280,7 @@ a:hover, a:active {
 }
 
 .parallax-section6 {
-	background-image: url("background3.jpg");
+	background-image: url("assets/background3.jpg");
 }
 
 .parallax-section7 {
