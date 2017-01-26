@@ -184,12 +184,13 @@ a:hover, a:active {
 
 .jumbotron h2 {
 	font-size: 5em;
-	padding: 60px 0px 30px;
+	margin-bottom: -5px;
+	padding: 40px 0px 0px;
 }
 
 .jumbotron p {
 	font-size: 1.1em;
-	padding: 30px 150px 60px;
+	padding: 40px 150px 70px;
 }
 
 #work {
@@ -242,6 +243,7 @@ a:hover, a:active {
 
 .parallax {
 	height: auto;
+	width: 100%;
 	-moz-background-size: 100% auto;
 	-webkit-background-size: 100% auto;
 	-o-background-size: 100% auto;
@@ -251,7 +253,6 @@ a:hover, a:active {
 }
 
 .parallax img {
-	float: unset;
 	height: auto;
 	width: 100%;
 	opacity: 0;
@@ -280,6 +281,7 @@ a:hover, a:active {
 }
 
 .parallax-section6 {
+	height: 40%;
 	background-image: url("assets/background3.jpg");
 }
 
