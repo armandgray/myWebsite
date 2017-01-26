@@ -58,6 +58,7 @@ a:hover, a:active {
 	padding: 25px 0 15px 25px;
 	border: none;
 	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 20;
 }
 
 .header img {
@@ -254,6 +255,7 @@ a:hover, a:active {
 	width: 100%;
 	opacity: 0;
     filter: alpha(opacity=0);
+    z-index: -100;
 }
 
 .parallax-section1 {
