@@ -54,7 +54,7 @@ a:hover, a:active {
 
 .header {
 	position: fixed;
-	width: 104%;
+	width: 102%;
 	padding: 25px 0 15px 25px;
 	border: none;
 	background-color: rgba(0, 0, 0, 0.8);
