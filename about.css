@@ -198,10 +198,15 @@ a:hover, a:active {
 	padding: 30px 0;
 }
 
+#talent {
+	padding-bottom: 15px;
+}
+
 #learning a:link,
 #learning a:visited,
-#services a:link,
-#services a:visited {
+#talent a:link,
+#talent a:visited {
+	text-decoration: underline;
 	font-size: 1em;
 }
 
@@ -287,11 +292,10 @@ a:hover, a:active {
 }
 
 .parallax-section5 {
-	background-image: url("assets/uber_screenshots/Screen Shot 2017-01-12 at 12.06.42 PM.jpg");
+	background-image: url("assets/uber_screenshots/cropped-img-laughing.jpg");
 }
 
 .parallax-section6 {
-	height: 40%;
 	background-image: url("assets/background3.jpg");
 }
 
