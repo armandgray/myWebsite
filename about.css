@@ -242,6 +242,7 @@ a:hover, a:active {
 /*======== Parallax Content ========*/
 
 .parallax {
+	position: relative;
 	height: auto;
 	width: 100%;
 	-moz-background-size: 100% auto;
@@ -258,6 +259,13 @@ a:hover, a:active {
 	opacity: 0;
     filter: alpha(opacity=0);
     z-index: -100;
+}
+
+.parallax .jumbotron {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
 }
 
 .parallax-section1 {
