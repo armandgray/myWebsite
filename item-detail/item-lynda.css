@@ -50,3 +50,19 @@ X. Miscellaneous
 /*======== Main Content ========*/
 
 /*======== Miscellaneous ========*/
+
+@media screen and (max-width: 480px) {
+	.item-photo-6 {
+		right: 2%;
+		top: 8%;
+		height: 100px;
+		width: 250px;
+		margin-top: 30px;
+		border-radius: 10px;
+	}
+
+	.content-header .item-header img {
+		height: 130px;
+		width: 130px;
+	}
+}
