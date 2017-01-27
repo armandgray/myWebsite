@@ -10,7 +10,11 @@ var anims = document.getElementsByClassName('wave-container');
 window.onload = function() {
 	checkForJQuery();
 	hideImageAnims();
-	addListenersToIcons();
+	if (window.innerWidth > 768) {
+		addListenersToIcons();
+	} else {
+		showIconTexts();
+	}
 	changeFooterDisplay(true);
 	isFooterMenuShowing = false;
 };
@@ -110,5 +114,11 @@ function getImgIndex(imgElement, imgList) {
 		if (imgElement == imgList[i]) {
 			return i;
 		}
+	}
+}
+
+function showIconTexts() {
+	for (var i = 0; i < iconsTextList.length; i++) {
+		$(iconsTextList[i]).show();
 	}
 }
