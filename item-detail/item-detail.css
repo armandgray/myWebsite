@@ -204,11 +204,21 @@ button {
 	}
 
 	.content-header .item-header h3 {
-		margin: 20px 0px;
+		margin: 10px 0px;
+	}
+
+	#needle {
+		position: absolute;
+		left: 49.47%;
 	}
 
 	.main-content {
 		padding: 18% 3% 0 12%;
+	}
+
+	.short-desc div {
+		line-height: .8em;
+		margin: 0; 
 	}
 }
 
