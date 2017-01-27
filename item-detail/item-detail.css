@@ -177,6 +177,7 @@ button {
 @media screen and (max-width: 768px) {
 	.content-header .item-header {
 		left: 7%;
+		bottom: 20%;
 	}
 
 	.content-header .item-header img {
@@ -193,7 +194,7 @@ button {
 @media screen and (max-width: 480px) {
 	#content-header-photo {
 		margin-top: 30px;
-		height: 60%;
+		height: 50%;
 	}
 
 	.content-header .item-header img {
