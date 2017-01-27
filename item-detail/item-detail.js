@@ -30,12 +30,16 @@ function setupHeaderColorScrollListener() {
 }
 
 function setupSliderAnim() {
-    if ($(this).scrollTop() > 20) {
+	var scrollThreshold = 20;
+	if (window.innerWidth < 600) {
+		scrollThreshold = 5;
+	}
+    if ($(this).scrollTop() > scrollThreshold) {
     	$('.slider').hide();
 		$('#needle').removeClass('bounce');
 	}
 	$(window).scroll(function() {
-	    if ($(this).scrollTop() > 20) {
+	    if ($(this).scrollTop() > scrollThreshold) {
 			$('.slider').hide();
 	    } else {
 			$('.slider').show();

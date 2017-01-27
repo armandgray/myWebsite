@@ -194,7 +194,7 @@ button {
 @media screen and (max-width: 480px) {
 	#content-header-photo {
 		margin-top: 30px;
-		height: 50%;
+		height: 40%;
 	}
 
 	.content-header .item-header img {
