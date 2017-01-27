@@ -23,6 +23,8 @@ X. Miscellaneous
 	position: absolute;
 	right: 5%;
 	top: 8%;
+	height: 30%;
+	width: auto;
 }
 
 .item-header {
