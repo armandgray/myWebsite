@@ -363,15 +363,20 @@ a:hover, a:active {
 	}
 
 	.jumbotron.transparent {
-		padding: 60px 0;
+		padding: 30px 0px;
 	}
 
 	.jumbotron h2 {
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 
 	.jumbotron p {
-		font-size: .8em;
+		font-size: .7em;
+		padding: 30px 20px;
+	}
+
+	#talent {
+		padding-top: 40px;
 	}
 
 	#network-details {
