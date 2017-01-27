@@ -38,6 +38,12 @@
 	margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+	#footer-container {
+		margin: 30px 50px 0;
+	}
+}
+
 #footer-bottom-text {
 	padding: 40px 0px 0px 0px;
 	margin-bottom: -40px 

@@ -294,6 +294,7 @@ a:hover, a:active {
 }
 
 .parallax-section6 {
+	height: 50%;
 	background-image: url("assets/background3.jpg");
 }
 
@@ -351,6 +352,10 @@ a:hover, a:active {
 	.jumbotron p {
 		font-size: 1em;
 		padding: 30px 90px;
+	}
+
+	#network-details {
+		padding: 100px 0px 150px;
 	}
 }
 
