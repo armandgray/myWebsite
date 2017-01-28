@@ -59,7 +59,7 @@ X. Miscellaneous
 }
 
 .intro {
-	margin: 100px 20px 0;
+	margin: 100px 20px 0px;
 	font-size: .8em;
 }
 
@@ -75,6 +75,11 @@ X. Miscellaneous
 
 .intro h4 {
 	font-size: 1em;
+}
+
+.bigO {
+	margin: 0;
+	padding: 0;
 }
 
 /*======== Miscellaneous ========*/
