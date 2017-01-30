@@ -121,8 +121,8 @@ a:hover, a:active {
 }
 
 .second-item figure img {
-	height: 320px;
-	width: 240px;
+	height: 432px;
+	width: auto;
 }
 
 .third-item figure img {
@@ -157,6 +157,11 @@ a:hover, a:active {
 }
 
 .ninth-item figure img {
+	height: 320px;
+	width: 240px;
+}
+
+.tenth-item figure img {
 	height: 320px;
 	width: 240px;
 }
@@ -358,8 +363,6 @@ figure:hover img {
 	}
 
 	.second-item figure img {
-		height: 288px;
-		width: 216px;
 	}
 
 	.third-item figure img {
@@ -409,6 +412,11 @@ figure:hover img {
 		height: 288px;
 		width: 216px;
 	}
+
+	.tenth-item figure img {
+		height: 288px;
+		width: 216px;
+	}
 }
 
 /*======== @media max: 480 ========*/
@@ -453,7 +461,7 @@ figure:hover img {
 
 	.second-item figure img {
 		height: 224px;
-		width: 168px;
+		width: auto;
 	}
 
 	.third-item figure img {
@@ -521,6 +529,11 @@ figure:hover img {
 	}
 
 	.ninth-item figure img {
+		height: 224px;
+		width: 168px;
+	}
+
+	.tenth-item figure img {
 		height: 224px;
 		width: 168px;
 	}
