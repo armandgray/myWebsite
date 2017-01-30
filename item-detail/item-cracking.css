@@ -23,8 +23,20 @@ X. Miscellaneous
 	position: absolute;
 	right: 0%;
 	top: -12.5%;
-	height: auto;
-	width: 84.9%;
+	height: 101%;
+	width: auto;
+}
+
+.slider {
+	padding-top: 34px;
+	background-color: #fff;
+	z-index: 10000;
+}
+
+#needle {
+	position: absolute;
+	bottom: 28%;
+	left: 49.9%;
 }
 
 /*======== Main Content ========*/
@@ -59,7 +71,7 @@ X. Miscellaneous
 }
 
 .intro {
-	margin: 100px 20px 0px;
+	margin: 100px 20px 0px -2%;
 	font-size: .8em;
 }
 
@@ -83,3 +95,9 @@ X. Miscellaneous
 }
 
 /*======== Miscellaneous ========*/
+
+@media screen and (max-height: 660px) {
+	.content-header .item-header {
+		margin-bottom: 15px;
+	}
+}
