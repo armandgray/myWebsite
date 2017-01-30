@@ -5,6 +5,9 @@
 4. Main Content
 5. Network Details
 6. Parallax Content
+7. Parallax Content - @media 1100 & 992
+8. Parallax Content - @media 768
+9. Parallax Content - @media 415
 X. Miscellaneous
 *********************************************/
 
@@ -53,11 +56,11 @@ a:hover, a:active {
 
 .header {
 	position: fixed;
-	width: 100%;
+	width: 102%;
 	padding: 25px 0 15px 25px;
-	margin: 0;
 	border: none;
 	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 20;
 }
 
 .header img {
@@ -65,7 +68,6 @@ a:hover, a:active {
 }
 
 .header ul {
-	margin-right: -110px;
 	padding: 9px 0 0 0px;
 }
 
@@ -92,6 +94,10 @@ a:hover, a:active {
 	border-bottom: solid;
 }
 
+.header button {
+	margin-right: 40px;
+}
+
 .btn-color-background {
 	background-color: rgba(18, 18, 18, 0);
 	margin-top: -2px;
@@ -104,20 +110,6 @@ a:hover, a:active {
 	height: 2px;
 	border-radius: 1px;
 	background-color: #FFF;
-}
-
-.dropdown-menu {
-	background-color: #121212;
-	color: #FFF;
-	position: absolute;
-	right: 2%;
-}
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #121212;
 }
 
 /*======== Footer ========*/
@@ -161,8 +153,14 @@ a:hover, a:active {
 	position: fixed;
 	bottom: 2%;
 	right: 1.3%;
-	padding: 14px 15px;
+	padding: 6px 8px;
 	background-color: rgba(0, 0, 255, 0.5);
+	z-index: 5000;
+}
+
+#btn-back-to-top img {
+	height: 35px;
+	width: 33px;
 }
 
 .jumbotron {
@@ -173,29 +171,35 @@ a:hover, a:active {
 }
 
 .jumbotron.transparent {
-	margin-top: -25px;
-	padding-top: 100px;
+	margin-top: 50px;
+	padding-top: 50px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
 .jumbotron h2 {
-	font-size: 5em;
-	padding: 60px 0px 30px;
+	font-size: 4em;
+	margin-bottom: -5px;
+	padding: 40px 0px 0px;
 }
 
 .jumbotron p {
 	font-size: 1.1em;
-	padding: 30px 150px 60px;
+	padding: 40px 150px 70px;
 }
 
 #work {
 	padding: 30px 0;
 }
 
+#talent {
+	padding-bottom: 15px;
+}
+
 #learning a:link,
 #learning a:visited,
-#services a:link,
-#services a:visited {
+#talent a:link,
+#talent a:visited {
+	text-decoration: underline;
 	font-size: 1em;
 }
 
@@ -221,12 +225,10 @@ a:hover, a:active {
 	padding: 0;
 }
 
-#network-details .col-lg-3 span {
-	margin-left: 133px;
-}
-
-#network-details .col-lg-4 span {
-	margin-left: 187px;
+#network-details span {
+	justify-content: center;
+    margin: auto;
+    width: 20px;
 }
 
 #network-details a:hover,
@@ -234,14 +236,34 @@ a:hover, a:active {
 	color: #FFF;
 }
 
-
 /*======== Parallax Content ========*/
 
 .parallax {
-	height: 100%;
-	background-size: cover;
+	position: relative;
+	height: auto;
+	width: 100%;
+	-moz-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	z-index: 0;
+}
+
+.parallax img {
+	height: auto;
+	width: 100%;
+	opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: -100;
+}
+
+.parallax .jumbotron {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
 }
 
 .parallax-section1 {
@@ -261,11 +283,12 @@ a:hover, a:active {
 }
 
 .parallax-section5 {
-	background-image: url("assets/uber_screenshots/Screen Shot 2017-01-12 at 12.06.42 PM.jpg");
+	background-image: url("assets/uber_screenshots/cropped-img-laughing.jpg");
 }
 
 .parallax-section6 {
-	background-image: url("background3.jpg");
+	height: 50%;
+	background-image: url("assets/background3.jpg");
 }
 
 .parallax-section7 {
@@ -275,6 +298,153 @@ a:hover, a:active {
 .parallax-section8 {
 	background-image: url("assets/split_screen_coding/opacity_30.jpg");
 	margin-bottom: 50px;
+}
+
+/*======== Parallax Content - @media 1100 & 992 ========*/
+
+@media screen and (max-width: 1100px) {
+	/*.parallax {
+		height: 100%;
+		width: auto;
+		-moz-background-size: auto 100%;
+		-webkit-background-size: auto 100%;
+		-o-background-size: auto 100%;
+		background-size: auto 100%;
+	}
+
+	.parallax img {
+		height: 100%;
+		width: auto;
+	}*/
+
+	.jumbotron {
+		padding: 30px 0px 10px;
+		margin: 0px 0 -25px;
+	}
+
+	.jumbotron.transparent {
+		margin-top: 0px;
+		padding-top: 80px;
+	}
+
+	.jumbotron h2 {
+		padding: 0px;
+	}
+
+	.jumbotron p {
+		padding: 30px 90px;
+	}
+
+	#talent {
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#network-details {
+		padding: 100px 0px 150px;
+	}
+}
+
+/*======== Parallax Content - @media 768 ========*/
+
+@media screen and (max-width: 768px) {
+	.header {
+		width: 104%;
+		padding: 15px 0 5px 25px;
+	}
+
+	.jumbotron {
+		padding: 0px 0px 10px;
+	}
+
+	.jumbotron.transparent {
+		padding: 30px 0px;
+	}
+
+	.jumbotron p {
+		padding: 30px 20px;
+	}
+
+	#talent {
+		padding-top: 40px;
+	}
+
+	#network-details {
+		padding: 40px 0px 80px;
+	}
+
+	#network-details img {
+		height: 30px;
+		width: 30px;
+		margin-bottom: 0px;
+	}
+
+	#network-details h3 {
+		margin: 15px 0;
+	}
+
+	#network-details p {
+		margin: 6px;
+	}
+
+	#network-details span {
+	    width: 20px;
+	}
+
+	.parallax-section8 {
+		padding-bottom: 140px;
+	}
+}
+
+/*======== Parallax Content - @media 415 ========*/
+
+@media screen and (max-width: 415px) {
+	.header {
+		padding: 10px 0 0px 0px;
+	}
+
+	.jumbotron {
+		padding: 0px 0px 10px;
+	}
+
+	.jumbotron.transparent {
+		padding: 30px 0px;
+	}
+
+	.jumbotron p {
+		padding: 30px 15px;
+	}
+
+	#talent {
+		padding-top: 40px;
+	}
+
+	#network-details {
+		padding: 40px 0px 80px;
+	}
+
+	#network-details img {
+		height: 18px;
+		width: 18px;
+		margin-bottom: 0px;
+	}
+
+	#network-details h3 {
+		margin: 10px 0;
+	}
+
+	#network-details p {
+		margin: 6px;
+	}
+
+	#network-details span {
+	    width: 10px;
+	}
+
+	.parallax-section8 {
+		padding-bottom: 500px;
+	}
 }
 
 /*======== Miscellaneous ========*/

@@ -34,3 +34,12 @@ X. Miscellaneous
 /*======== Main Content ========*/
 
 /*======== Miscellaneous ========*/
+
+@media screen and (max-width: 480px) {
+	#content-header-photo {
+		margin-top: 0px;
+		height: 70%;
+		width: auto;
+		right: -70%;
+	}
+}

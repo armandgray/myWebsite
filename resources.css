@@ -2,8 +2,13 @@
 1. Global Styles
 2. Header
 3. Footer
-4. CTA Items
-5. Item Image Animations
+4. CTA Items - General
+5. CTA Items - Main Img Dimensions
+6. CTA Items - Specific Dim.
+7. CTA Items - Background Colors
+8. Item Image Animations
+9. @media max: 1200 & 768
+10. @media max: 480
 X. Miscellaneous
 *********************************************/
 
@@ -40,11 +45,15 @@ a:hover, a:active {
 
 .header {
 	text-align: center;
-	margin: 15px 15px;
+	margin: 15px 15px 19px;
 }
 
 .header img {
 	margin-top: 5px;
+}
+
+.items-nav {
+	margin-top: 2px;
 }
 
 .icon-bar {
@@ -56,6 +65,13 @@ a:hover, a:active {
 	background-color: #FFF;
 }
 
+.btn-color-background {
+	background-color: #CCCCCC;
+	position: absolute;
+	right: 2%;
+	margin-top: -1px;
+}
+
 /*======== Footer ========*/
 
 #explore-btn {
@@ -63,7 +79,7 @@ a:hover, a:active {
 	color: #949494;
 }
 
-/*======== CTA Items ========*/
+/*======== CTA Items - General ========*/
 
 #all-items-container {
 	margin-bottom: 5px;
@@ -81,8 +97,6 @@ a:hover, a:active {
 	position: relative;
 }
 
-.item-container 
-
 .item-container img {
 	z-index: 0;
 }
@@ -98,6 +112,56 @@ a:hover, a:active {
 	width: 30px;
 	height: 30px;
 }
+
+/*======== CTA Items - Main Img Dimensions ========*/
+
+.first-item figure img {
+	height: 615px;
+	width: 515px;
+}
+
+.second-item figure img {
+	height: 320px;
+	width: 240px;
+}
+
+.third-item figure img {
+	height: 320px;
+	width: 240px;
+}
+
+.fourth-item figure img {
+	height: 225px;
+	width: 400px;
+}
+
+.fifth-item figure img {
+	height: 320px;
+	width: 240px;
+}
+
+.sixth-item figure img {
+	/*none*/
+}
+
+.seventh-item figure img {
+	margin: 0 -20px 0 0;
+	height: 430px;
+	width: 1040px;
+}
+
+.eigth-item figure img {
+	margin-top: 40px;
+	height: 150px;
+	width: 256px;
+}
+
+.ninth-item figure img {
+	height: 320px;
+	width: 240px;
+}
+
+/*======== CTA Items - Specific Dim. ========*/
 
 .item-photo-1 img {
 	position: absolute;
@@ -123,10 +187,42 @@ a:hover, a:active {
 	left: 52%;
 }
 
+
+.third-item figure {
+	-ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.third-item figure img {
+	margin: -80px 275px 0 0;
+	height: 320px;
+	width: 240px;
+}
+
+.fourth-item img {
+	margin-top: 2%;
+	margin-right: -2%;
+}
+
 .item-container .item-content-6 {
 	position: absolute;
 	bottom: 6%;
 	left: 9%;
+}
+
+.item-photo-6 {
+	margin-top: 15px;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	height: 150px;
+	background-image: url("assets/Computer_Program1_8244.jpg");
+}
+
+.item-photo-6 .jumbotron {
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .item-content-8 {
@@ -150,6 +246,8 @@ a:hover, a:active {
 	background-color: #FFF;
 }
 
+/*======== CTA Items - Background Colors ========*/
+
 .first-item {
 	background-color: #0000D6;
 }
@@ -168,23 +266,9 @@ a:hover, a:active {
 	background-color: #D47200;
 }
 
-.third-item figure {
-	-ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-}
-
-.third-item figure img {
-	margin: -80px 275px 0 0;
-}
-
 .fourth-item {
 	background-color: #FFF;
 	color: #000;
-}
-
-.fourth-item img {
-	margin-top: 20px;
 }
 
 .fifth-item {
@@ -195,34 +279,12 @@ a:hover, a:active {
 	background-color: #D4B329;
 }
 
-.item-photo-6 {
-	margin-top: 15px;
-	border-radius: 10px;
-	border-color: white;
-	border-style: solid;
-	border-width: 1px;
-	height: 150px;
-	background-image: url("assets/Computer_Program1_8244.jpg");
-}
-
-.item-photo-6 .jumbotron {
-	background-color: rgba(255, 255, 255, 0);
-}
-
 .seventh-item {
-	background-color: #131241;
-}
-
-.seventh-item img {
-	margin: 0 -20px 0 0;
+	background-color: #000;
 }
 
 .eigth-item {
 	background-color: #C92228;
-}
-
-.eigth-item img {
-	margin-top: 40px;
 }
 
 .ninth-item {
@@ -236,29 +298,235 @@ a:hover, a:active {
 /*======== Item Image Animations ========*/
 
 .item-container {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 figure img {
-  -webkit-transition: all 0.5s linear;
-          transition: all 0.5s linear;
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
+    -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
 }
 
 figure:hover img {
-  -webkit-transform: scale3d(1.2, 1.2, 1);
-          transform: scale3d(1.2, 1.2, 1);
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+}
+
+
+
+/*======== @media max: 1200 & 768 ========*/
+
+@media screen and (max-width: 1200px) {
+	.third-item figure img {
+		position: absolute;
+		right: 10%;
+		margin-top: 0%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.item-container {
+		border-width: 3px;
+		border-color: #000;
+		height: 375px;
+		position: relative;
+	}
+
+    .item-container .item-content {
+		position: absolute;
+		bottom: 4%;
+		left: 6%;
+		font-size: 1em;
+	}
+
+	.item-container .item-content img {
+		margin: 0px 8px 6px 0px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.item-container .item-content h3 {
+		margin: 0 0 7px;
+		font-size: 2em;
+	}
+
+	.first-item figure img {
+		margin-right: 12%;
+		height: 492px;
+		width: 412px;
+	}
+
+	.second-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+
+	.third-item figure img {
+		position: absolute;
+		right: 10%;
+		margin-top: 12%;
+		height: 288px;
+		width: 216px;
+	}
+
+	.fourth-item figure img {
+		margin-right: 0%;
+		height: 202px;
+		width: 360px;
+	}
+
+	.fifth-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+
+	.sixth-item figure img {
+		/*none*/
+	}
+
+	.item-photo-6 {
+		position: absolute;
+		top: 3%;
+		right: 5%;
+		height: 135px;
+		width: 400px;
+	}
+
+	.seventh-item figure img {
+		margin: 27px -160px 0 0;
+		height: 344px;
+		width: 832px;
+	}
+
+	.eigth-item figure img {
+		margin-top: 40px;
+		height: 150px;
+		width: 256px;
+	}
+
+	.ninth-item figure img {
+		height: 288px;
+		width: 216px;
+	}
+}
+
+/*======== @media max: 480 ========*/
+
+@media screen and (max-width: 480px) {
+	.item-container {
+		border-width: 2px;
+		border-color: #000;
+		height: 300px;
+		position: relative;
+	}
+
+	.item-container figure img {
+		position: absolute;
+		top: 4%;
+		right: 2%;
+	}
+
+    .item-container .item-content {
+		position: absolute;
+		bottom: 4%;
+		left: 8%;
+		font-size: .8em;
+	}
+
+	.item-container .item-content img {
+		margin: 0px 5px 5px 0px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.item-container .item-content h3 {
+		margin: 0 0 4px;
+		font-size: 1.5em;
+	}
+
+	.first-item figure img {
+		margin-right: -70px;
+		height: 307px;
+		width: 257px;
+	}
+
+	.second-item figure img {
+		height: 224px;
+		width: 168px;
+	}
+
+	.third-item figure img {
+		right: -15%;
+		margin-top: 14px;
+		height: 224px;
+		width: 168px;
+	}
+
+	.third-item h3 {
+		font-size: 1.3em;
+	}
+
+	.fourth-item figure img {
+		height: 169px;
+		width: 300px;
+	}
+
+	.fifth-item figure img {
+		height: 224px;
+		width: 168px;
+	}
+
+	.sixth-item figure img {
+		/*none*/
+	}
+
+	.item-photo-6 {
+		position: absolute;
+		top: 2%;
+		right: 5%;
+		height: 130px;
+		width: 300px;
+	}
+
+	.seventh-item figure img {
+		margin: 35px -60px 0 0;
+		height: 258px;
+		width: 624px;
+	}
+
+	.eigth-item figure img {
+		margin-top: 0px;
+		margin-right: 15px;
+		height: 120px;
+		width: 205px;
+	}
+
+	.item-content-8 {
+		margin: 0px 0px 12px 43px;
+	}
+
+	.item-content-8 div {
+		margin: 0px 0px -16.3px -45px;
+	}
+
+	.item-content-8 p {
+		margin: 8px 0px 0px -43px;
+	}
+
+	.item-content-8 .icon-bar {
+		margin: 3px;
+		width: 30px;
+		height: 2px;
+	}
+
+	.ninth-item figure img {
+		height: 224px;
+		width: 168px;
+	}
 }
 
 /*======== Miscellaneous ========*/
-
-.btn-color-background {
-	background-color: #CCCCCC;
-	position: absolute;
-	right: 2%;
-	margin-top: -1px;
-}
 
 .cta.row {
 	margin: 40px;

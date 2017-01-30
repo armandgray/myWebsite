@@ -3,6 +3,7 @@
 2. Header
 3. Footer
 4. Main Content
+5. Main Content - CTA @media
 X. Miscellaneous
 *********************************************/
 
@@ -52,6 +53,11 @@ a:hover, a:active {
 	margin-top: 5px;
 }
 
+.header button {
+	margin-right: -19px;
+	margin-top: -10px;
+}
+
 .btn-color-background {
 	background-color: #000;
 	position: absolute;
@@ -90,6 +96,23 @@ a:hover, a:active {
 	margin-left: -4px;
 	height: 18px;
 	width: 30px;
+}
+
+/*======== Main Content - CTA @media ========*/
+
+@media screen and (max-width: 400px) {
+	.main-content {
+		padding: 50px 0 40px;
+	}
+
+	.main-content .cta h3 {
+		font-size: 1.5em;
+	}
+
+	.main-content .cta p {
+		padding: 10px 0 5px 0;
+		font-size: .8em;
+	}
 }
 
 /*======== Miscellaneous ========*/

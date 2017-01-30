@@ -10,7 +10,11 @@ var anims = document.getElementsByClassName('wave-container');
 window.onload = function() {
 	checkForJQuery();
 	hideImageAnims();
-	addListenersToIcons();
+	if (window.innerWidth > 768) {
+		addListenersToIcons();
+	} else {
+		showIconTexts();
+	}
 	changeFooterDisplay(true);
 	isFooterMenuShowing = false;
 };
@@ -107,10 +111,14 @@ function toggleTextAnimAt(iconIndex) {
 
 function getImgIndex(imgElement, imgList) {
 	for (var i = 0; i < imgList.length; i++) {
-		if (imgElement == imgList[i] && i <= 2) {
+		if (imgElement == imgList[i]) {
 			return i;
-		} else if (imgElement == imgList[i] && i > 2) {
-			return i - 1;
 		}
+	}
+}
+
+function showIconTexts() {
+	for (var i = 0; i < iconsTextList.length; i++) {
+		$(iconsTextList[i]).show();
 	}
 }
