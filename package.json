@@ -1,0 +1,19 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Personal Website - Digital Portfolio",
+  "main": "landing.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armandgray/myWebsite.git"
+  },
+  "author": "Armand Gray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/armandgray/myWebsite/issues"
+  },
+  "homepage": "https://github.com/armandgray/myWebsite#readme"
+}
