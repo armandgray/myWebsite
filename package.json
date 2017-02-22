@@ -4,7 +4,7 @@
   "description": "Personal Website - Digital Portfolio",
   "main": "landing.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "httpster -d ./dist -p 3000"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/armandgray/myWebsite#readme",
   "devDependencies": {
-    "babel-cli": "^6.23.0"
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0"
   }
 }

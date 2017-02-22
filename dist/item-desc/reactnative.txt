@@ -1,0 +1,60 @@
+/*======== Introduction ========*/
+
+What is React Native: "React Native lets you build [cross-platform] mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components. With React Native, you don't build a “mobile web app”, an “HTML5 app”, or a “hybrid app”. You build a real mobile app that's indistinguishable from an app built using Objective-C or Java. React Native uses the same fundamental UI building blocks as regular iOS and Android apps. You just put those building blocks together using JavaScript and React."
+
+Services: Android Dev
+iOS Dev
+Cross-Platform
+Drops to Native
+
+Visit: 
+https://facebook.github.io/react-native/
+Docs: https://facebook.github.io/react-native/docs/getting-started.html
+React - Basics: https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html?srchtrk=index%3a4%0alinktypeid%3a2%0aq%3areact+native%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
+
+/*======== Getting Started ========*/
+
+Go to https://facebook.github.io/react-native/docs/getting-started.html#content & follow the provided startup.
+
+For Android or cross-platform dev on macOS:
+
+1. Install Dependencies:
+
+brew install node
+brew install watchman
+
+2. Install React Native Command Line Interface:
+
+npm install -g react-native-cli
+
+3.Download the IDE - Android Studio --- GET INSTRUCTIONS FROM LYNDA
+
+4. Set up the ANDROID_HOME environment variable
+Add the following lines to your ~/.bashrc (or equivalent) config file:
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+5. Test Installation
+In Android Studio > Tools > Android > AVD Manager and Start a virtual device by clicking the play button or adding a new device.
+
+At command line run:
+
+react-native init AwesomeProject
+cd AwesomeProject
+react-native run-android
+
+Note: Make sure that android > app > build.gradle > {
+  compileSdkVersion 24 - matches the installed packages
+  buildToolsVersion "24.0.1" - matches the installed packages
+}
+
+6. Making Changes
+- Make changes in index.android.js
+- Instant Run by tapping R -twice
+
+/*======== Running with the Basics ========*/
+
+"React Native is like React, but it uses native components instead of web components as building blocks. So to understand the basic structure of a React Native app, you need to understand some of the basic React concepts, like JSX, components, state, and props. If you already know React, you still need to learn some React-Native-specific stuff, like the native components. This tutorial is aimed at all audiences, whether you have React experience or not."
+

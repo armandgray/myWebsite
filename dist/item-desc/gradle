@@ -1,0 +1,77 @@
+
+/*======== Introduction ========*/
+
+What is Gradle: Gradle is an open source build automation system for technology in the Java (JVM) world. Gradle adds to Ant and Maven concepts and uses a directed acyclic graph to determine execution order. Gradle provides a Groovy-based domain-specific language and was designed for multi-project scalable builds.
+
+Services: 
+
+Visit: https://gradle.org
+https://gradle.org/docs
+
+/*======== Getting Started ========*/
+
+INSTALL == with a package manager
+
+SDKMAN!
+SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits on most Unix-based systems.
+
+$ sdk install gradle 3.3
+Homebrew
+Homebrew is “the missing package manager for macOS”.
+
+$ brew install gradle
+Chocolatey
+Chocolatey is “the package manager for Windows”.
+
+C:\> choco install gradle
+
+CREATE A PROJECT
+
+gradle init --type=java-library
+
+/*======== Core Concepts ========*/
+
+https://docs.gradle.org/current/userguide/build_lifecycle.html
+
+- Gradle’s build phases
+- Tasks
+- File handling
+- Dependency management
+
+
+BUILD PHASES
+
+Initialization
+Gradle determines which projects are in the build, and creates a Project instance for each. 
+Tasks are created. 
+Settings file (usually settings.gradle) is executed. This file determines which projects will be executed in the build. 
+
+Configuration
+The build scripts of all projects are executed. 
+Configuration on demand: In this mode, Gradle intelligently configures only relevant projects. 
+Tasks are configured.
+build.gradle:
+println 'This is executed during the configuration phase.'
+
+task configured {
+    println 'This is also executed during the configuration phase.'
+}
+
+task test {
+    doLast {
+        println 'This is executed during the execution phase.'
+    }
+}
+
+task testBoth {
+    doFirst {
+      println 'This is executed first during the execution phase.'
+    }
+    doLast {
+      println 'This is executed last during the execution phase.'
+    }
+    println 'This is executed during the configuration phase as well.'
+}
+
+Execution
+Gradle determines the subset of the tasks to be executed. The subset is determined by the task name arguments passed to the gradle command and the current directory.

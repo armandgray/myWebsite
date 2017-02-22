@@ -1,0 +1,495 @@
+Swift 3 and SpriteKit
+
+/*======== Introduction ========*/
+
+What is SpriteKit: "The SpriteKit framework adds new features to make it easier to create high-performance, battery-efficient 2D games. With support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games." 
+
+≠ SceneKit for 3D games
+
+Services: SKView
+SKScene
+SKNode
+SKSpriteNode
+SKAction
+SKPhysicsBody
+
+Visit: https://developer.apple.com/reference/spritekit
+https://developer.apple.com/swift/
+https://developer.apple.com/xcode/
+https://developer.apple.com/reference/swift
+
+Get information getting started with Xcode and Swift 3 (links).
+
+/*======== Project Differences ========*/
+
+ViewController = GameViewController
+View = SKView ≠ UIView
+GameViewController.swift still UIViewController
+Only difference is view casted as SKView and then game scene loaded.
+Loaded from SKScene file GameScene.sks (sPRITEkITsCENE file)
+
+GameScene.sks > Util.Custom Class Inspector (index 3) > Custom Class = GameScene
+Class GameScene = GameScene.swift
+
+Action.sks holds animations
+
+GameScene.swift ==> contains all of the basic code for your game. Write your game logic here.
+
+Run the app and play around with some clicks.
+
+GameScene.sks > Document Outline > Assets (Layers) In Scene
+
+Animate Panel - Bottom Panel used to create animations
+
+Object names are important for reference 
+
+/*======== Design For Multiple Devices ========*/
+
+GameViewController.swift > viewDidLoad() {
+	...
+		scene = ...
+		scene.scaleMode = .aspectFill or .aspectFit or .fill or .resizeFill
+}
+
+/*======== Creating Scenes ========*/
+
+File > New > File... > Resource > SpriteKit Scene ... Name
+
+Set as Launcher:
+GameViewController.swift > viewDidLoad() {
+	...
+	if let scene = SKScene(fileName: "***********") {...}
+}
+
+Add Custom Class to Obj:
+File > New > File... > Source > Cocoa Touch Class ... (subclass of your class) Subclass:SKScene
+
+Change import to SpriteKit
+
+Connect to Class:
+Select MainMenu.sks > Utils.Custom Class Inspector > Custom Class: MainMenu
+Optional: change GameViewController.swift > viewDidLoad() {
+	...
+	if let scene = MainMenu(fileName: "MainMenu" {...}
+}
+
+TRANSITION BETWEEN SCENES - onTouch
+GameViewController.swift - after shouldAutrotate: Bool {} handle touches Began
+
+touchesBegan(...) {
+	1. copy code to get view and load scene from viewDidLoad()
+	2. change filename
+	3. Delete View Changes at bottom
+	4. Optional: Add transition parameter to view.presentScene(scene, transition: SKTransition.crossFade(withDuration: 1.0))
+}
+
+/*======== Creating Sprites ========*/
+
+REMOVE TEMPLATING CODE
+
+GameScene.sks > Delete Label - Hello, World
+GameScene.swift > Delete vars label & spinnyNode
+GameScene.swift > Delete contents of didMove(to view: SKView) {...}
+GameScene.swift > Delete contents of touchDown() {...}
+GameScene.swift > Delete contents of touchMoved() {...}
+GameScene.swift > Delete contents of touchUp() {...}
+GameScene.swift > touchesbegan() {} > Delete: let label = self.label {...}
+
+
+CREATE GAME OBJECT & SETTING UP SCENE
+
+Add Sprite = 2-D Gaming Object:
+GameScene.sks Library > Object
+
+Select Sprite > Utils.Attributes Inspector > Texture > Spaceship (ships w/)
+
+Anchor Point - VERY IMPORTANT
+Utils.Attributes Inspector > Anchor Point
+== x, y origin of object in % of the Sprite itself (ie within the obj image) (defaults: .5, .5 = center)
+Optional: Select Scene > Anchor Point (0, 0) for Positive X, Y only
+
+GameScene.sks > Select Scene > Size > iPhone SE...
+GameScene.sks > Select Scene > Size > Portrait
+
+Sprite > (scroll) Scale (in %): 0.5, 0.5
+
+MODIFYING SPRITE IN CODE
+
+Name Obj for Reference:
+Select Sprite > Attributes Inspector > Name ... > Enter
+
+Scale with Code:
+GameScene.swift > didMove() {
+	leet myShip:SKSpriteNode = self.chidNode(withName: "ship") as! SKSpriteNode // finds object with name of string; returns optional SKNode
+	myShip.xScale = 0.25
+	myShip.yScale = 0.25	
+}
+
+CREATE GAME OBJECT FROM IMAGE
+
+Drag Img from Finder into Assets.xcassets
+add Sprite in GameScene.swift w/ constructor:
+
+let player:SKSpriteNode = SKSpriteNode(imageNamed: "player_frame1")
+
+NOTE: Sprite will not show yet, because it must have a parent
+
+Add Parent: 
+
+self.addChild(player)
+
+Set Position:
+player.position = CGPoint(x: 100, y: 100)
+
+Child sprites can be dragged in and out their parent in the GameScene.sks Document Outline. Indentation shows the parent child relationship.
+
+DELETING DRONES WITH CODE
+
+GameScene.swift > didMove() {
+	let player:SKSpriteNode = self.childNode(withName: "player") as! SKSpriteNode
+	let drone:SKSpriteNode = player.childNode(withName: "drone") as! SKSpriteNode
+	drone.removeFromParent()
+}
+
+CHANGING PARENTS DYNAMICALLY
+
+GameScene.swift > didMove() {
+	let player1...
+	let player2...
+	let drone...
+
+	player1.removeFromParent()
+	player2.addChild(drone)
+
+	== OR ==
+
+	drone.move(toParent: player2)
+}
+
+/*======== Physics ========*/
+
+Floor - add Sprite width of device to bottom of screen, then:
+Utils.Attributes Inspector > (scroll) Physics Definition > Body Type > Bounding Rectangle
++ Deselect Affected by Gravity & Allow Rotation & Dynamic
+
+Dynamic = Affected by forces (ie moves on its own)
+
+Physics Box - add Another Sprite, then:
+Utils.Attributes Inspector > (scroll) Physics Definition > Body Type > Bounding Rectangle
+
+Hit Animate Button - Bottom of screen to toggle Animate.
+
+Body Type > Alpha Mask == Wrap Tight
+
+Add Physics Outlines to Simulator for Testing:
+GameScene.swift > didMove(){
+	view.showPhysics = true
+}
+
+GRAVITY - Set in Scene
+FORCES & IMPULSES 
+
+- Force = velocity applied gradually over time
+- Impulse = Sudden One Time Peak in Velocity (eg. jump)
+
+Utils.Attributes Inspector > (scroll) Physics Definition > Initial Velocity
+
+Results Depend on Friction, Restitution, Lin. Damping & Ang. Damping
+
+GameScene.swift > (scroll) update
+here you can create animations and apply forces over time
+
+update(...) {
+	platform?.physicsBody?.applyForce(CGVector(dx: -30, dy: 0))
+}
+
+To Change Velocity: 
+
+platform?.physicsBody.velocity...
+
+Impulse: GameScene.swift > touchDown(...) {
+	jump()
+}
+
+func jump() {
+	player.physicsBody.applyImpulse(CGVector(dx: 0, dy: 500))
+}
+
+Changing Animation Frame:
+func jump() {
+	player.texture = SKTexture(imageName: "guy_2")
+	player.physicsBody.applyImpulse(CGVector(dx: 0, dy: 500))
+}
+
+/*======== Spawning Objects Periodically ========*/
+
+Example: Spaceship Laser
+Create a Blue Sprite:
+0 Damping
+Restitution = 0.2 = Bounceness
+Friction = 0.2
+
+var player:SKSpriteNode?
+var fireRate:TimeInterval = 0.5
+var tiemSinceFire:TimeInterval = 0
+var lastTime:TimeInterval = 0
+
+didMove() {
+	player = self.childNode(withName: "player") as! SKSpriteNode
+}
+
+update(currentTime) {
+	checkLaser(currentTime - lastTime) \\ this is the frame rate of the app
+	lastTime = currentTime
+}
+
+func checkLaser(_ frameRate:TimeInterval) {
+	// add time to timer
+	timeSinceFire += frameRate
+
+	// return if it hasn't been enough time to fire laser
+	if timeSinceFire> fireRate {
+		return
+	}
+
+	spawnLaser()
+
+	timeSinceFire = 0
+}
+
+func spawnLaser() {
+    let laserColor:UIColor = UIColor(displayP3Red: 41.0 / 255.0, green: 184.0 / 255.0, blue: 242.0 / 255.0, alpha: 1.0)
+    let laser = SKSpriteNode(color: laserColor, size: CGSize(width: 7, height: 21))
+    laser.position = player!.position
+    self.addChild(laser)
+    
+    laser.physicsBody = SKPhysicsBody(rectangleOf: laser.size)
+    laser.physicsBody?.isDynamic = true
+    laser.physicsBody?.allowsRotation = true
+    laser.physicsBody?.affectedByGravity = true
+    laser.physicsBody?.friction = 0.2
+    laser.physicsBody?.restitution = 0.2
+    laser.physicsBody?.angularDamping = 0.2
+    laser.physicsBody?.mass = 0.006
+    laser.physicsBody?.linearDamping = 0
+    laser.physicsBody?.velocity = CGVector(dx: 0, dy: 500)
+}
+
+/*======== Handle Collisions ========*/
+
+GameScene must be a PhysicsContactDelegate:
+
+
+class GameScene: SKScene, SKPhysicsContactDelegate {
+	...
+
+	didMove() {
+		self.physicsWorld.contactDelegate = self
+	}
+
+	/* 
+	this method is only triggered when the collisions settings is enabled
+	Go to Laser > Attributes Inspector > (scroll) Contact Masks = 1
+	*/
+	didBegin(_ contact: SKPhysicsContact) {
+		print("contact")
+	}
+}
+
+BIT CODE - 32 Bit Ints
+
+Binary code Holds values of 1 and 0.
+Bit Code holds a sequence of binary numbers representing values of order 2^n
+4 bits = 1 byte:
+Bytes in Binary:
+0001 = 1
+0010 = 2
+0011 = 3
+0100 = 4
+0101 = 5
+
+Bit Shifting
+0b1 = 0001 = 1
+0b1 << 1 = 0010 = 2
+0b1 << 2 = 0100 = 4
+0b1 << 3 = 1000 = 8
+
+Bit Masks:
+
+Category Mask - Object Type
+Collision Mask - Categories Obj will collide with
+Contact Mask - which Objs that Trigger ContactDelegate method 
+Field Mask - gravity fields that affect obj
+
+Each physics object gets a category or binary number, 32 bits
+Category Combos have unique numbers
+
+Example:
+
+let playerCategory:UInt32 = 0b1      --> 1
+let enemyCategory:UInt32 = 0b1 << 1 --> 2
+let itemCategory:UInt32 = 0b1 << 2 --> 4
+let laser Category:UInt32 = 0b1 << 3 --> 8
+
+let playerMask:UInt 32 = enemyCategory | itemCategory --> 6
+
+let bits1 = 0b001 --> 1
+let bits2 = 0b011 --> 3
+let bits3 = bits1 | bits2 --> 3 // for | operator if either digit is a 1 the resulting binary digit is a 1
+
+Code Ex:
+
+GameScene ..., SKPhysicsContactDelegate {
+	var player:SKSpriteNode?
+	var enemy:SKSpriteNode?
+	var item:SKSpriteNode?
+	var fireRate:TimeInterval = 0.5
+	var tiemSinceFire:TimeInterval = 0
+	var lastTime:TimeInterval = 0
+	let noCategory:UInt32 = 0 // no phys collisions
+	let playerCategory:UInt32 = 0b1
+	let enemyCategory:UInt32 = 0b1 << 1
+	let itemCategory:UInt32 = 0b1 << 2
+	let laser Category:UInt32 = 0b1 << 3
+
+	didMove() {
+		self.physicsWorld.contactDelegate = self
+
+		player = self.childNode(withName: "player") as! SKSpriteNode
+		player?.physicsBody?.categoryBitMask = playerCategory
+		player.physicsBody?.collisionBitMask = noCategory // all things go through
+		player?.physicsBody?.contactTestBitMask = enemyCategory | itemCategory // respond to coll
+		
+		item = self.childNode(withName: "item") as! SKSpriteNode
+		item?.physicsBody?.categoryBitMask = itemCategory
+		item.physicsBody?.collisionBitMask = noCategory 
+		item?.physicsBody?.contactTestBitMask = itemCategory // respond to coll
+		
+		enemy = self.childNode(withName: "enemy") as! SKSpriteNode
+		player?.physicsBody?.categoryBitMask = enemyCategory
+		player.physicsBody?.collisionBitMask = noCategory
+		player?.physicsBody?.contactTestBitMask = playerCategory | laserCategory // respond to coll
+	}
+
+	// called on each contact given  contactTestBitMask
+	func didBegin(_ contact: SKPhysicsContact) {
+		let cA:UInt32 = contact.bodyA.categoryBitMask
+		let cB:UInt32 = contact.bodyB.categoryBitMask
+
+		if cA == playerCategory || cB == playerCategory {
+			let otherNode:SKSpriteNode = (cA == playerCategory) ? contact.bodyB.node : contact.bodyA.node as! SKSpriteNode
+			playerDidCollide(with: otherNode) 
+		} else {
+			contact.bodyA.node?.removeFromParent()
+		contact.bodyB.node?.removeFromParent()
+		}
+	}
+
+	func playerDidCollide(with other:SKNode) {
+		let otherCategory = other.physicsBody?.categoryBitMask
+		if otherCategory == itemCategory {
+			other.removeFromParent()
+		} else if otherCategory == enemyCategory {
+			other.removeFromParent()
+			player?.removeFromParent()
+		}
+
+	}
+
+	...
+
+	func spawnLaser() {
+	let laser = ...
+	laser?.physicsBody?.categoryBitMask = laserCategory
+	laser?.physicsBody?.collisionBitMask = noCategory
+	laser?.physicsBody?.contactTestBitMask = enemyCategory
+	}
+}
+
+/*======== Particle Effects ========*/
+
+Constant Emmission
+Add emitter to top of screen outside of view - need graphic for particle
+
+Attributes Inspector
+set Texture, Birthrate & Max (=0 ==> inf)
+set lifetime (how long)
+set position range
+set Angle, Speed, Scale and Range
+set z-position
+
+Explosion
+
+New > Resource > SpriteKit Particle File > Spark ... name
+change texture
+set color ramp (transition through colors) - range & speed
+set emitter max
+set position
+
+To add explosion:
+
+func didBegin() {
+	else {
+	let explosion:SKEmitterNode = SKEmitterNode(filename: "Explosion")!
+	explosion.position = contact.bodyA.node!.position
+	self.addChild(explosion)
+	}
+}
+
+/*======== Work with Actions ========*/
+
+Actions allow you to perform animations and tasks in a specific order. (and loops)
+
+
+CREATE IN GAMESCENE
+in GameScene.sks click bottom button for lower panel
+
+Timeline - Lower panel
+Timeline > Obj Library > Move Action > Drag onto timeline > modify in Attributes Inspector
+
+Timeline Easing Function - Timing Function in Attributes Inspector > Linear/ Ease In...
+
+Right-Click Anim > Duplicate & > Reverse
+Select both Anims > Select Refresh btn > Loop > infinity
+
+CREATE IN CODE
+GameScene.swift > didMove {
+	...
+
+	let moveAction:SKAction = SKAction.moveBy(x: -200, y: 0, duration: 2)
+	moveAction.timingMode = .easeInEaseOut
+	item.run(moveAction)
+}
+
+ACTION SEQUENCES
+didMove() {
+	...
+
+	let moveAction:SKAction = SKAction.moveBy(x: -200, y: 0, duration: 2)
+	moveAction.timingMode = .easeInEaseOut
+	let reversedAction:SKAction = moveAction.reversed()
+	let sequence:SKAction = SKAction.sequence([moveAction, reversedAction])
+	let repeatAction:SKAction = SKAction.repeatForever(sequence)
+
+	item?.run(repeatAction)
+}
+
+STOP ACTION LOOP ON CLICK
+
+
+Needs run KEY: 
+	item?.run(repeatAction, withKey: "itemMove")
+
+GameScene.swift > touchDown(atPoint pos: CGPoint) {
+	player?.position = pos
+	item?.removeAction(forKey: "itemMove")
+}
+
+FRAME ANIMATIONS - Change Sprites Texture Over Time
+
+GameScene.sks > Obj. Lib > AnimatewithTextures Action > Drag to timeline
+
+Attributes Inspector > Media Lib. (index 3) drag frames or textures to Textures
+
+Animation > Right Click > Create Loop
+
