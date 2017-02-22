@@ -1,25 +1,24 @@
 {
-  "name": "mywebsite",
+  "name": "react-essential",
   "version": "1.0.0",
-  "description": "Personal Website - Digital Portfolio",
-  "main": "landing.html",
+  "description": "A project focusing on React and related tools",
+  "main": "index.js",
   "scripts": {
-    "start": "httpster -d ./dist -p 3000"
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/armandgray/myWebsite.git"
-  },
-  "author": "Armand Gray",
+  "author": "Eve Porcello",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/armandgray/myWebsite/issues"
-  },
-  "homepage": "https://github.com/armandgray/myWebsite#readme",
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0"
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }
