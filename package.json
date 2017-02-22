@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/armandgray/myWebsite/issues"
   },
-  "homepage": "https://github.com/armandgray/myWebsite#readme"
+  "homepage": "https://github.com/armandgray/myWebsite#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0"
+  }
 }
