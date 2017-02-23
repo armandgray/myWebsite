@@ -12,10 +12,14 @@ const style = {
 	color: '#949494'
 }
 
+const footerColor = {
+	color: '#949494'
+}
+
 render(
 	<div id="bottom-footer"
 		className="page-footer-copyright" 
-		style={style}>
+		style={ style }>
 		<p style={{ cssFloat:"left" }}>
 			Copyright © 2016 Armand Gray - Digital Portfolio
 		</p>
@@ -31,11 +35,22 @@ render(
 					marginRight:7 
 				}}></img>
 			</a>
-			<a href="resources.html" id="explore-btn">Explore</a>
+			<a href="resources.html" 
+				id="explore-btn" 
+				style={ footerColor }>
+				Explore
+			</a>
 			&nbsp; | &nbsp; 
-			<a href="share.html">Share</a>
+			<a href="share.html"
+				style={ footerColor }>
+				Share
+			</a>
 			&nbsp; | &nbsp; 
-			<a id="more-less-btn" href="#bottom-footer">Less</a>
+			<a href="#bottom-footer"
+				id="more-less-btn"
+				style={ footerColor }>
+				Less
+			</a>
 		</p>
 		<p id="language" 
 			style={{
